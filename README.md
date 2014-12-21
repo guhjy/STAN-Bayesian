@@ -1,4 +1,4 @@
-LMEs
-====
+Differential Equations
+=============================
 
-Linear Mixed Effects Models in R
+MB4018 Differential Equations
