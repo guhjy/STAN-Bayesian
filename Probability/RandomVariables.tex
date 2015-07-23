@@ -1,0 +1,127 @@
+
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\documentclass[slidemain.tex]{subfiles} 
+\begin{document} 
+	\frame{
+		\frametitle{Random Variables}
+		\begin{itemize} \item The outcome of an experiment need not be a number, for example, the outcome when a coin is tossed can be `heads' or `tails'. \item
+			However, we often want to represent outcomes as numbers. \item
+			A \textbf{\emph{random variable}} is a function that associates a unique numerical value with every outcome of an experiment.
+			\item The value of the random variable will vary from trial to trial as the experiment is repeated.
+			\item Numeric values can be assigned to outcomes that are not usually considered numeric. \item For example, we could assign a `head' a value of $0$, and a `tail' a value of $1$, or vice versa.
+		\end{itemize}
+	}
+	%------------------------------------------------------------%
+	\frame{
+		\frametitle{Random Variables}
+		There are two types of random variable - discrete and continuous. The distinction between both types will be important later on in the course.\\ \bigskip
+		
+		\textbf{Examples}
+		\begin{itemize}
+			\item A coin is tossed ten times. The random variable X is the number of tails that are noted.
+			X can only take the values $\{0, 1, ..., 10\}$, so $X$ is a discrete random variable.
+			\item A light bulb is burned until it burns out. The random variable Y is its lifetime in hours.
+			Y can take any positive real value, so Y is a continuous random variable.
+		\end{itemize}
+	}
+	
+	%--------------------------------------------------------------------------------%
+	\frame{
+		\frametitle{Discrete Random Variable}
+		\begin{itemize}
+			\item A discrete random variable is one which may take on only a countable number of distinct values such as $\{0, 1, 2, 3, 4, ... \}$.\item Discrete random variables are usually (but not necessarily) counts. \item If a random variable can take only a finite number of distinct values, then it must be discrete. \item Examples of discrete random variables include the number of children in a family, the Friday night attendance at a cinema, the number of patients in a doctor's surgery, the number of defective light bulbs in a box of ten.
+		\end{itemize}
+	}
+	
+	
+	%--------------------------------------------------------------------------------%
+	\frame{
+		\frametitle{Continuous Random Variable}
+		\begin{itemize} \item
+			A continuous random variable is one which takes an infinite number of possible values. \item Continuous random variables are usually measurements. \item Examples include height, weight, the amount of sugar in an orange, the time required to run a computer simulation. \end{itemize}
+		
+	}
+\end{document}
+\begin{document}
+\section{Random variables}
+\begin{frame}
+\frametitle{Random Variables}
+\vspace{-1cm}
+\Large
+\begin{itemize}
+\item A random variable is defined as a numerical event whose value is determined by a chance process.
+\item When probability values are assigned to all possible numerical values of a random variable $X$, either by a listing
+or by a mathematical function, the result is a \textit{\textbf{probability distribution}}. 
+\end{itemize}
+\end{frame}
+%--------------------------------------------------------- %
+\begin{frame}
+\frametitle{Random Variables}
+\Large
+\vspace{-1cm}
+\begin{itemize}
+\item The sum of the probabilities for all the possible numerical outcomes must equal one. 
+\item Individual probability values may be denoted by the symbol $f(x)$,
+which indicates that a mathematical function is involved, by $P(X=x)$, which recognizes that the random
+variable can have various specific values, or simply by P(x).
+\end{itemize}
+\end{frame}
+%--------------------------------------------------------- %
+\section{Discrete random variables}
+
+\begin{frame}
+\frametitle{Discrete random variables}
+\Large
+\vspace{-0.7cm}
+\textbf{Discrete Random Variables}
+\begin{itemize}
+\item For a discrete random variable observed values can occur only at isolated points along a scale of values. In other words, observed values must be integers.
+\item Consider a six sided die: the only possible observed values are 1, 2, 3, 4, 5 and 6. 
+\item It is not possible to observe values that are real numbers, such as 2.091.
+\large
+\item \textit{(Remark: it is possible for the average of a discrete random variable to be a real number.)}
+%\item Therefore, it is possible that all numerical values for the variable can be listed in a table with accompanying
+%probabilities. 
+%\item
+%There are several standard probability distributions that can serve as models for a wide variety of discrete random variables involved in business applications. 
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Discrete random variables}
+\Large
+\vspace{-1cm}
+\textbf{Discrete Random Variables}
+\begin{itemize}
+%\item For a discrete random variable observed values can occur only at isolated points along a scale of values. 
+%\item Consider a six sided die: the only possible observed values are 1, 2, 3, 4, 5 and 6. It is not possible to observe values such as 5.732.
+\item Therefore, it is possible that all numerical values for the variable can be listed in a table with accompanying
+probabilities. 
+\item
+There are several standard probability distributions that can serve as models for a wide variety of discrete random variables involved in business applications. 
+\end{itemize}
+\end{frame}
+%--------------------------------------------------------- %
+%--------------------------------------------------------- %
+\begin{frame}
+\frametitle{Discrete probability distributions}
+\Large
+\vspace{-1cm}
+The discrete probability distributions that described in this course are
+\begin{itemize}
+\item the binomial distribution, 
+\item the geometric distribution,
+\item the hypergeometric distribution, 
+\item the Poisson distributions.
+\end{itemize}
+\end{frame}
+
+%\\
+%For a continuous random variable all possible fractional values of the variable cannot be listed, and
+%therefore the probabilities that are determined by a mathematical function are portrayed graphically by a
+%probability density function, or probability curve.
+%\end{frame}
+\end{document}
+

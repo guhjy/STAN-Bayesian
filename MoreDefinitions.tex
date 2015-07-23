@@ -1,0 +1,282 @@
+
+%--------------------------------------------------------------------------------%
+\frame{
+\frametitle{Conditional Probability}
+Suppose $B$ is an event in a sample space $S$ with $P(B) > 0$.
+The probability that an event $A$ occurs once $B$has occurred or, specifically, the
+conditional probability of A given $B$ (written $P(A|B)$), is defined as follows:
+\[ P(A|B) = \frac{P(A\cap B)}{P(B)}\]
+
+\begin{itemize}
+\item This can be expressed as a multiplication theorem
+\[ P(A\cap B) = P(A|B)\times P(B) \]
+\item The symbol $|$ is a vertical line and does not imply division.
+\item Also $P(A|B)$ is not the same as $P(B|A)$.
+\end{itemize}
+Remark: The Prosecutor's Fallacy , with reference to the O.J. Simpson trial.
+}
+
+%--------------------------------------------------------------------------------%
+\frame{
+\frametitle{Independent Events}
+Events A and B in a probability space $S$ are said to be independent if the
+occurrence of one of them does not influence the occurrence of the other.\\ \bigskip
+
+More specifically, $B$ is independent of A if $P(B)$ is the same as $P(B|A)$. Now
+substituting $P(B)$ for $P(B|A)$ in the multiplication theorem from the previous
+slide yields.
+\[ P(A\cap B) = P(A)\times P(B)\]
+We formally use the above equation as our definition of independence.
+
+}
+%--------------------------------------------------------------------------------%
+\frame{
+\frametitle{Mutually Exclusive Events}
+\begin{itemize}
+\item Two events are mutually exclusive (or disjoint) if it is impossible for
+them to occur together.
+\item Formally, two events $A$ and $B$ are mutually exclusive if and only if
+$A\cap B$ = $\varnothing$ \end{itemize}\bigskip
+Consider our die example
+\begin{itemize} 
+\item Event A = `observe an odd number' = $\{1,3,5\}$
+\item Event B = `observe an even number' = $\{2,4,6\}$
+
+\item $A\cap B$ = $\varnothing$ (i.e. the empty set), so $A$ and $B$ are mutually exclusive.
+\end{itemize}
+}
+
+%--------------------------------------------------------------------------------%
+\frame{
+\frametitle{Addition Rule}
+The addition rule is a result used to determine the probability that event $A$ or
+event $B$ occurs or both occur. The result is often written as follows, using set
+notation:
+\[ P(A\cup B) = P(A) + P(B)- P(A \cap B)\] 
+\begin{itemize}
+\item $P(A)$ = probability that event $A$ occurs.
+\item $P(B)$ = probability that event $B$ occurs.
+\item $P(A\cup B)$ = probability that either event $A$ or event $B$ occurs, or both
+occur.
+\item $P(A\cap B)$ = probability that event $A$ and event $B$ both occur.
+\end{itemize}\bigskip
+
+\noindent \textbf{Remark:} $P(A\cap B)$ is subtracted to prevent the relevant outcomes being
+counted twice.
+
+
+}
+
+%--------------------------------------------------------------------------------%
+\frame{
+\frametitle{Addition Rule (Continued)}
+For mutually exclusive events, that is events which cannot occur together:
+$P(A\cap B) = 0$. The addition rule therefore reduces to
+\[ P(A\cup B) = P(A) + P(B)\]
+}
+%--------------------------------------------------------------------------------%
+\frame{
+\frametitle{Addition Rule: Worked Example}
+Suppose we wish to find the probability of drawing either a Queen or a Heart
+in a single draw from a pack of 52 playing cards. We define the events $Q$ =
+`draw a queen' and $H$ = `draw a heart'.
+\begin{itemize}
+\item $P(Q)$ probability that a random selected card is a Queen
+\item  $P(H)$ probability that a randomly selected card is a Heart.
+\item  $P(Q\cap H)$ probability that a randomly selected card is the Queen of
+Hearts.
+\item  $P(Q\cup H)$ probability that a randomly selected card is a Queen or a Heart.
+\end{itemize}
+}
+%--------------------------------------------------------------------------------%
+\frame{
+\frametitle{Solution}
+\begin{itemize} 
+\item Since there are 4 Queens in the pack and 13 Hearts, so the $P(Q)$ = $4/52$
+and $P(H) = 13/52$ respectively.
+\item The probability of selecting the Queen of Hearts is $P(Q\cap H) = 1/52$.
+\item We use the addition rule to find $P(Q\cup H)$:
+\[ P(Q\cup H) = (4/52) + (13/52) - (1/52) = 16/52 \]
+\item So, the probability of drawing either a queen or a heart is
+$16/52 (= 4/13)$.
+\end{itemize}
+}
+%--------------------------------------------------------------------------------%
+
+%-------------------------------------------------------%
+\frame{
+	\frametitle{Multiplication Rule}
+	The multiplication rule is a result used to determine the probability that two events, $A$ and $B$, both occur.
+	The multiplication rule follows from the definition of conditional probability.\\ \bigskip
+	
+	The result is often written as follows, using set notation:
+	\[ P(A|B)\times P(B) = P(B|A)\times P(A) \qquad \left( = P(A \cap B) \right) \]
+	
+	Recall that for independent events, that is events which have no influence on one another, the rule simplifies to:
+	\[P(A \cap B)  = P(A)\times P(B) \]
+}
+%-------------------------------------------------------%
+\frame{
+	\frametitle{Multiplication Rule}
+	From the first year intake example, check that
+	\[ P(E|F)\times P(F) = P(F|E)\times P(E)\]
+	\begin{itemize}
+		\item $P(E|F)\times P(F) = 0.58 \times 0.38  = 0.22$
+		\item $P(F|E)\times P(E) = 0.55 \times 0.40  = 0.22$
+	\end{itemize}
+}
+%------------------------------------------------------------%
+\frame{
+	\frametitle{Law of Total Probability}
+	The law of total probability is a fundamental rule relating marginal probabilities to conditional probabilities. The result is often written as follows, using set notation:
+	\[ P(A)  = P(A \cap B) + P(A \cap B^c) \]
+	
+	where $P(A \cap B^c)$ is probability that event $A$ occurs and $B$ does not.\\ \bigskip
+	
+	
+	Using the multiplication rule, this can be expressed as
+	\[ P(A) = P(A | B)\times P(B) + P(A | B^{c})\times P(B^{c}) \]
+}
+%------------------------------------------------------------%
+\frame{
+	\frametitle{Law of Total Probability}
+	From the first year intake example , check that
+	\[ P(E)  = P(E \cap M) + P(E \cap F) \]
+	with $ P(E) = 0.40$, $ P(E \cap M) = 0.18$ and  $ P(E \cap F) = 0.22$
+	\[ 0.40  = 0.18 + 0.22 \]
+	\textbf{Remark:}  $M$ and $F$ are complement events.
+	
+}
+
+%------------------------------------------------------------%
+\frame{
+	\frametitle{Bayes' Theorem}
+	Bayes' Theorem is a result that allows new information to be used to update the conditional probability of an event.
+	\bigskip
+	
+	Recall the definition of conditional probability:
+	\[ P(A|B) = \frac{P(A \cap B)}{P(B)} \]
+	
+	
+	Using the multiplication rule, gives Bayes' Theorem in its simplest form:
+	
+	\[ P(A|B) = \frac{P(B|A)\times P(A)}{P(B)} \]
+	
+}
+
+%------------------------------------------------------------%
+
+\frame{
+	\frametitle{Probability: Worked Example }
+	An electronics assembly subcontractor receives resistors from two suppliers: Deltatech provides
+	70\% of the subcontractors's resistors while another company, Echelon, supplies the remainder.
+	\\
+	1\% of the resistors provided by Deltatech fail the quality control test, while 2\% of the
+	resistors from Echelon also fail the quality control test.
+	
+	\begin{enumerate}
+		\item What is the probability that a resistor will fail the quality control test?
+		\item What is the probability that a resistor that fails the quality control test was supplied by Echelon?
+	\end{enumerate}
+}
+
+%------------------------------------------------------------%
+
+\frame{
+	\frametitle{Probability: Worked Example}
+	Firstly, let's assign names to each event.
+	\begin{itemize}
+		\item $D$ : a randomly chosen resistor comes from Deltatech.
+		\item $E$ : a randomly chosen resistor comes from Echelon.
+		\item $F$ : a randomly chosen resistor fails the quality control test.
+		\item $P$ : a randomly chosen resistor passes the quality control test.
+	\end{itemize}
+	\bigskip
+	We are given (or can deduce) the following probabilities:
+	\begin{itemize}
+		\item $P(D) = 0.70$,
+		\item $P(E) = 0.30$.
+	\end{itemize}
+	
+}
+%------------------------------------------------------------%
+
+\frame{
+	\frametitle{Probability: Worked Example}
+	
+	We are given two more important pieces of information:
+	\begin{itemize}
+		\item The probability that a randomly chosen resistor fails the quality control test, given that it comes from Deltatech: $P(F|D) = 0.01 $.
+		\item The probability that a randomly chosen resistor fails the quality control test, given that it comes from Echelon: $P(F|E) = 0.02$.
+	\end{itemize}
+	
+}
+%------------------------------------------------------------%
+
+\frame{
+	\frametitle{Probability: Worked Example}
+	
+	The first question asks us to compute the probability that a randomly chosen resistor fails the quality control test. i.e. $P(F)$.\\
+	\bigskip
+	All resistors come from either Deltatech or Echelon. So, using the \textbf{\emph{law of total probability}}, we can express $P(F)$ as follows:
+	
+	\[ P(F)  = P(F \cap D) + P(F \cap E) \]
+	
+}
+
+%------------------------------------------------------------%
+
+\frame{
+	\frametitle{Probability: Worked Example}
+	
+	Using the \textbf{\emph{multiplication rule}}  i.e. $P(A \cap B) = P(A|B) \times P(B)$, we can re-express the formula as follows
+	
+	\[ P(F)  = P(F|D) \times P(D) + P(F|E) \times P(E) \]
+	
+	We have all the necessary probabilities to solve this.
+	
+	\[ P(F)  = 0.01 \times 0.70 + 0.02 \times 0.30   = 0.007 + 0.006  = 0.013\]
+	
+}
+
+%------------------------------------------------------------%
+
+\frame{
+	\frametitle{Probability: Worked Example}
+	
+	\begin{itemize}
+		\item
+		The second question asks us to compute probability that a resistor that fails the quality control test was supplied by Echelon.
+		\item In other words; of the resistors that did fail the quality test only, what is the probability that a randomly selected resistor was supplied by Echelon?
+		\item We can express this mathematically as $P(E|F)$.
+		\item We can use \textbf{\emph{Bayes' theorem}} to compute the answer.
+	\end{itemize}
+	
+	
+}
+%------------------------------------------------------------%
+
+\frame{
+	\frametitle{Probability: Worked Example}
+	Recall Bayes' theorem
+	\[ P(A|B) = \frac{P(B|A)\times P(A)}{P(B)} \]
+	\bigskip
+	
+	\[ P(E|F) = \frac{P(F|E)\times P(E)}{P(F)}  =  \frac{0.02 \times 0.30}{0.013} = 0.46\]
+	
+}
+\frame{
+\frametitle{More on probability}
+For this lecture and the next.
+\begin{enumerate}
+\item Contingency Tables
+\item Conditional Probability: Worked Examples
+\item Joint Probability Tables
+\item The Multiplication Rule
+\item Law of Total Probability
+\item Bayes' Theorem
+\item Exam standard Probability Question
+\item Random Variables
+\end{enumerate}
+
+}

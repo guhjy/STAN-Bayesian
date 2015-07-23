@@ -1,3 +1,0 @@
-First Order ODEs
-
-2nd order ODEs
