@@ -1,4 +1,89 @@
-
+\documentclass[IntroMain.tex]{subfiles} 
+\begin{document}
+%=========================================================%
+\begin{frame}
+	\frametitle{Introduction to Probability}
+	\Large
+	\textbf{Combining Probabilities}
+	
+	Events rarely occur in isolation. Usually we are interested in a combination or compound of events; for example
+	\begin{itemize}
+		\item The probability that two sections of a factory will be understaffed on the same day 
+		\item The probability of having a car accident today, given that you have had a car accident in the last five years.
+	\end{itemize}	
+	
+	We will look at two laws of probability for combining events
+	\begin{itemize}
+		\item The Addition Law 
+		\item The multiplication Law
+	\end{itemize}	
+	
+\end{frame}
+%=========================================================%
+\begin{frame}
+	\frametitle{Introduction to Probability}
+	\Large
+	\textbf{Conditional Probability}
+	The conditional probability of an event is the probability that an event A occurs given that another event B has already occurred. This type of probability is calculated by restricting the sample space that we’re working with to only the set B.
+	
+	The formula for conditional probability can be rewritten using some basic algebra. Instead of the formula:
+	
+	\[P(A | B) = \frac{P(A \cap B) }{P( B )}  \]
+	
+\end{frame}
+%=========================================================%
+\begin{frame}
+	\frametitle{Introduction to Probability}
+	\Large
+	\textbf{Probability trees}
+	The setting out of solutions to problems requiring the manipulation of the probabilities of mutually exclusive and independent events can sometimes be helped by the use of probability tree diagrams. These have useful applications in decision theory.
+	
+	The best choice of probability tree structure often depends upon the question and the natural order in which events like A and B above occur.
+	
+\end{frame}
+%=========================================================%
+\begin{frame}
+	\frametitle{Introduction to Probability}
+	\Large
+	\textbf{Histograms}
+	A histogram is constructed from a frequency table. The intervals are shown on the X-axis and the number of scores in each interval is represented by the height of a rectangle located above the interval. A histogram of the response times from the dataset Target RT is shown below.
+	
+\end{frame}
+%=========================================================%
+\begin{frame}
+	\frametitle{Introduction to Probability}
+	\Large
+	
+	\textbf{Cumulative Distribution Function}
+	
+	The cumulative distribution function (c.d.f.) of a discrete random variable X is the function F(t) which tells you the probability that X is less than or equal to t. So if X has p.d.f. P(X = x), we have:
+	
+	\[F(t) = P(X \leq 1)\] % = SP(X = x).
+	
+	In other words, for each value that X can be which is less than or equal to t, work out the probability that X is that value and add up all such results.
+	
+\end{frame}
+%=========================================================%
+\begin{frame}
+	\frametitle{Introduction to Probability}
+	\Large
+	
+	\textbf{Example}\\
+	
+	In the above example where the die is thrown repeatedly, lets work out $P(X \leq t)$ for some values of t.
+	
+	P(X $\leq$ 1) is the probability that the number of throws until we get a 6 is less than or equal to 1. So it is either 0 or 1. 
+	
+	\begin{itemize}
+		\item P(X = 0) = 0 
+		\item $P(X = 1) = 1/6$.
+		\item  Hence $P(X \leq 1) = 1/6$
+	\end{itemize}
+	
+	Similarly, $P(X \leq 2) = P(X = 0) + P(X = 1) + P(X = 2)$\\ = 0 + 1/6 + 5/36 = 11/36
+	
+\end{frame}
+%================================================================================%
 %--------------------------------------------------------------------------------%
 \frame{
 \frametitle{Conditional Probability}
@@ -280,3 +365,5 @@ For this lecture and the next.
 \end{enumerate}
 
 }
+
+\end{document}

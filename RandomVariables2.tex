@@ -1,55 +1,31 @@
-\documentclass[a4]{beamer}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage{subfigure}
-\usepackage{newlfont}
-\usepackage{amsmath,amsthm,amsfonts}
-%\usepackage{beamerthemesplit}
-\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
-\usepackage{mathptmx}  % Font Family
-\usepackage{helvet}   % Font Family
-\usepackage{color}
-
-\mode<presentation> {
- \usetheme{Default} % was Frankfurt
- \useinnertheme{rounded}
- \useoutertheme{infolines}
- \usefonttheme{serif}
- %\usecolortheme{wolverine}
-% \usecolortheme{rose}
-\usefonttheme{structurebold}
-}
-
-\setbeamercovered{dynamic}
-
-\title[MA4413]{Statistics for Computing \\ {\normalsize Lecture 2B}}
-\author[Kevin O'Brien]{Kevin O'Brien \\ {\scriptsize Kevin.obrien@ul.ie}}
-\date{Autumn Semester 2013}
-\institute[Maths \& Stats]{Dept. of Mathematics \& Statistics, \\ University \textit{of} Limerick}
-
-\renewcommand{\arraystretch}{1.5}
-
+\documentclass[IntroMain.tex]{subfiles} 
 \begin{document}
 
 
+%=================================================================== %
+\begin{frame}
 
-\frame{
 	\frametitle{Random Variables}
 	A pair of dice is thrown. Let X denote the minimum of the two numbers which occur.
 	Find the distributions and expected value of X.
-}
-%-------------------------------------------------------------%
-\frame{
+
+\end{frame}
+%=================================================================== %
+\begin{frame}
 	\frametitle{Random Variables}
 	A fair coin is tossed four times.
 	Let X denote the longest string of heads.
-	Find the distribution and expectation of X.}
-%-------------------------------------------------------------%
-\frame{\frametitle{Random Variables}
+	Find the distribution and expectation of X.
+\end{frame}
+%=================================================================== %
+\begin{frame}
+\frametitle{Random Variables}
 	A fair coin is tossed until a head or five tails occurs.
-	Find the expected number E of tosses of the coin.}
-%-------------------------------------------------------------%
-\frame{\frametitle{Random Variables}A coin is weighted so that P(H) = 0.75 and P(T ) = 0.25
+	Find the expected number E of tosses of the coin.
+\end{frame}
+%=================================================================== %
+\begin{frame}
+\frametitle{Random Variables}A coin is weighted so that P(H) = 0.75 and P(T ) = 0.25
 	
 	The coin is tossed three times. Let X denote the number of
 	heads that appear.
@@ -57,10 +33,10 @@
 		\item (a) Find the distribution f of X.
 		\item (b) Find the expectation E(X).
 	\end{itemize}
-}
 
-\frame{
-
+\end{frame}
+%=================================================================== %
+\begin{frame}
 \frametitle{Graphical Procedures for Statistics}
 \begin{itemize}
 \item Bar-plots
@@ -68,9 +44,10 @@
 \item Boxplots
 
 \end{itemize}
-}
-%----------------------------------------------------------------%
-\frame{
+
+\end{frame}
+%=================================================================== %
+\begin{frame}
 \frametitle{Histograms}
 \begin{itemize}
 \item Consider an experiment in which each student in a class of 60 rolls a die 100 times.
@@ -80,10 +57,10 @@
 \item The totals were put into ascending order, and tabulated as follows (next slide).
 \end{itemize}
 
-}
 
-%--------------------------------------------------------%
-\frame{
+\end{frame}
+%=================================================================== %
+\begin{frame}
 \frametitle{Outcomes of die-throw experiment}
 \small
 \begin{center}
@@ -104,27 +81,28 @@
 \item What proportion of outcomes are less than or equal to 330? \\ (Answer: $10\%$)
 \item What proportion of outcomes are greater than or equal to 370?\\ (Answer: $16.66\%$)
 \end{itemize}
-}
-%--------------------------------------------------------%
 
-\frame{
+\end{frame}
+%=================================================================== %
+\begin{frame}
 \frametitle{What is a Histograms}
 
+TEXT HERE
 
 
-}
-%--------------------------------------------------------%
-
-\frame{
+\end{frame}
+%=================================================================== %
+\begin{frame}
 \frametitle{Histograms}
 For the die-throw experiment;
 \begin{center}
-\includegraphics[scale=0.30]{3aDieHist}
+\includegraphics[scale=0.30]{images/3aDieHist}
 \end{center}
 
-}
-%----------------------------------------------------------------%
-\frame{
+
+\end{frame}
+%=================================================================== %
+\begin{frame}
 \frametitle{Constructing Histograms}
 \begin{itemize}
 \item Compute an appropriate number of class intervals.
@@ -133,26 +111,21 @@ For the die-throw experiment;
 \item To save time, we will just use 5 class intervals.
 \end{itemize}
 
-}
-%----------------------------------------------------------------%
-\frame{
-\frametitle{Frequency Tables}
+\end{frame}
 
+%=================================================================== %
+\begin{frame}
 
-}
-%--------------------------------------------------------%
-
-\frame{
 \frametitle{Histograms}
 
 \begin{center}
-\includegraphics[scale=0.30]{3aDieHist2}
+\includegraphics[scale=0.30]{images/3aDieHist2}
 \end{center}
 
-}
-%--------------------------------------------------------%
 
-\frame{
+\end{frame}
+%=================================================================== %
+\begin{frame}
 \frametitle{Histograms}
 \begin{itemize}
 \item Suppose that the experiment of throwing a die 100 times and recording the total was repeated 100,000 times.
@@ -161,20 +134,20 @@ For the die-throw experiment;
 \item How should the shape of the histogram be described?
 \item ``Bell-shaped" would be a suitable description.
 \end{itemize}
-}
-%--------------------------------------------------------%
 
-\frame{
+\end{frame}
+%=================================================================== %
+\begin{frame}
 \frametitle{Histograms}
 
 \begin{center}
-\includegraphics[scale=0.30]{3aDieHist3}
+\includegraphics[scale=0.30]{images/3aDieHist3}
 \end{center}
 
-}
-%--------------------------------------------------------%
 
-\frame{
+\end{frame}
+%=================================================================== %
+\begin{frame}
 \frametitle{Simulation Study}
 A couple of remarks about the simulation study, some of which will be relevant later on.
 \begin{itemize}
@@ -186,27 +159,32 @@ A couple of remarks about the simulation study, some of which will be relevant l
 \item 175 values are greater than or equal to 400, whereas 198 values are less than or equal to 300.
 \item Results such as these are unusual, but they are not impossible.
 \end{itemize}
-}
 
-%--------------------------------------------------------%
-
-\frame{
+\end{frame}
+%=================================================================== %
+\begin{frame}
 \frametitle{Random Variables}
 A pair of dice is thrown. Let X denote the minimum of the two numbers which occur.
 Find the distributions and expected value of X.
-}
-%-------------------------------------------------------------%
-\frame{
+
+\end{frame}
+%=================================================================== %
+\begin{frame}
 \frametitle{Random Variables}
 A fair coin is tossed four times.
 Let X denote the longest string of heads.
-Find the distribution and expectation of X.}
-%-------------------------------------------------------------%
-\frame{\frametitle{Random Variables}
+Find the distribution and expectation of X.
+
+\end{frame}
+%=================================================================== %
+\begin{frame}
+	\frametitle{Random Variables}
 A fair coin is tossed until a head or five tails occurs.
-Find the expected number E of tosses of the coin.}
-%-------------------------------------------------------------%
-\frame{\frametitle{Random Variables}A coin is weighted so that P(H) = 0.75 and P(T ) = 0.25
+Find the expected number E of tosses of the coin.
+\end{frame}
+%=================================================================== %
+\begin{frame}
+\frametitle{Random Variables}A coin is weighted so that P(H) = 0.75 and P(T ) = 0.25
 
 The coin is tossed three times. Let X denote the number of
 heads that appear.
@@ -214,78 +192,30 @@ heads that appear.
 \item (a) Find the distribution f of X.
 \item (b) Find the expectation E(X).
 \end{itemize}
-}
 
-%-------------------------------------------------------------%
-\frame{
+\end{frame}
+%=================================================================== %
+\begin{frame}
 \begin{itemize}
 \item Now consider an experiment with only two outcomes. Independent repeated trials of such an experiment are
 called Bernoulli trials, named after the Swiss mathematician Jacob Bernoulli (1654–1705). \item The term \textbf{\emph{independent
 trials}} means that the outcome of any trial does not depend on the previous outcomes (such as tossing a coin).
 \item We will call one of the outcomes the ``success" and the other outcome the ``failure".
 \end{itemize}
-}
 
-%-------------------------------------------------------------%
-\frame{
+\end{frame}
+%=================================================================== %
+\begin{frame}
 \begin{itemize} \item
 Let $p$ denote the probability of success in a Bernoulli trial, and so $q = 1 - p$ is the probability of failure.
 A binomial experiment consists of a fixed number of Bernoulli trials. \item A binomial experiment with $n$ trials and
 probability $p$ of success will be denoted by
 \[B(n, p)\]
 \end{itemize}
-}
-%-------------------------------------------------------------%
+\end{frame}
+%=================================================================== %
 
 
 \end{document}
 
 
-
-%---------------------------------------------------------------------------------------------------------------%
-%----R Code ----
-%---------------------------------------------------------------------------------------------------------------%
-n=60000
-Y=numeric(n)
-for ( i in 1:n){
-
-X=floor(runif(100,1,7))
-Y[i]=sum(X)
-}
-
-Y
-hist(Y,breaks=seq(300,400,by=10),main=c("Totals of 100 Die Throws"),cex.lab=1.4,font.lab=2,xlab=c("Total Score"))
-
-hist(Y,breaks=seq(300,400,by=20),main=c("Totals of 100 Die Throws"),cex.lab=1.4,font.lab=2,xlab=c("Total Score"))
-
-
-
-Z=seq(1:n)
-Y/Z
-
-plot(Y/Z,type="l",col="red",main=c("Die Rolls: Running Average"),font.lab=2,ylab="Average Value", xlab=
-" Number of Throws")
-abline(h=3.5,col="green")
-
-
-#####################################################
-
-plot(Z,Z.y,pch=16,col="red",ylim=c(2.5,5.5),main=c("Variance"),font.lab=2,ylab=" ", xlab="X: Green  Y: Blue  Z: Red" )
-
-points(Y,Y.y,pch=16,col="blue" )
-points(X,X.y,pch=16,col="green" )
-points(c(1000,1000,1000),c(3,4,5),pch=18,cex=1.2)
-lines(c(1000,1000),c(2.75,5.25),lty=3)
-
-
-
-n=100000
-Y=numeric(n)
-for ( i in 1:n){
-
-X=floor(runif(100,1,7))
-Y[i]=sum(X)
-}
-
-Y
-hist(Y,breaks=seq(270,430,by=2),main=c("Totals of 100 Die Throws (n= 100,000)"),cex.lab=1.4,font.lab=2,xlab=c("Total Score")) 

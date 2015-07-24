@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.20)  23 JUL 2015 16:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  24 JUL 2015 00:04
 entering extended mode
 **FactorialsChooseOperator.tex
 
-(C:\Users\kevin.obrien\Documents\GitHub\IntroStatsProb-MA4102\FactorialsChooseO
-perator.tex
+(C:\Users\Kevin\Documents\GitHub\IntroProbUdemy\Counting\FactorialsChooseOperat
+or.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -15,9 +15,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\subfiles\subfiles.c
-ls
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\subfiles\subfiles.cls
 Document Class: subfiles 2012/05/23 Federico Garcia
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
@@ -26,33 +24,31 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@in@stream=\read1
 )
 Preamble taken from file `IntroMain.tex'
-(C:\Users\kevin.obrien\Documents\GitHub\IntroStatsProb-MA4102\IntroMain.tex
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamer.
-cls
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asercs.sty
+(C:\Users\Kevin\Documents\GitHub\IntroProbUdemy\Counting\IntroMain.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamer.cls
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasercs.
+sty
 Package: beamerbasercs 2013/12/25 (rcs-revision 31cc758a62ae)
 )
 Document Class: beamer 2013/12/02 3.33 A class for typesetting presentations (r
 cs-revision 332bfd3ce558)
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asemodes.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasemode
+s.sty
 Package: beamerbasemodes 2013/09/03 (rcs-revision 768f2d98ca64)
 \beamer@tempbox=\box26
 \beamer@tempcount=\count79
 \c@beamerpauses=\count80
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asedecode.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasedeco
+de.sty
 Package: beamerbasedecode 2010/05/01 (rcs-revision efa082c6111d)
 \beamer@slideinframe=\count81
 \beamer@minimum=\count82
 )
 \beamer@commentbox=\box27
 \beamer@modecount=\count83
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
@@ -99,8 +95,8 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 \beamer@sectionadjust=\count100
 \beamer@tocsectionnumber=\count101
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-aseoptions.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbaseopti
+ons.sty
 Package: beamerbaseoptions 2013/03/10 (rcs-revision 47431932db0d)
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
@@ -108,7 +104,8 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 ))
 \beamer@paperwidth=\skip42
 \beamer@paperheight=\skip43
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
@@ -135,8 +132,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size11.clo"
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgfc
-ore.sty ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgfcore.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
@@ -164,40 +161,37 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen127
 \Gin@req@width=\dimen128
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\systemlayer\pgf
-sys.sty
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrc
-s.sty
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgf
-util-common.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\systemlayer\pgfsys.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrcs.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-co
+mmon.tex
 \pgfutil@everybye=\toks18
 \pgfutil@tempdima=\dimen129
 \pgfutil@tempdimb=\dimen130
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgf
-util-common-lists.tex))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgf
-util-latex.def
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-co
+mmon-lists.tex))
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-la
+tex.def
 \pgfutil@abb=\box34
-
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
+ (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgf
-rcs.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfrcs.cod
+e.tex
 Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
 ))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\p
-gfsys.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys.c
+ode.tex
 Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgf
-keys.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.co
+de.tex
 \pgfkeys@pathtoks=\toks19
 \pgfkeys@temptoks=\toks20
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgf
-keysfiltered.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeysfil
+tered.code.tex
 \pgfkeys@tmptoks=\toks21
 ))
 \pgf@x=\dimen131
@@ -218,31 +212,30 @@ keysfiltered.code.tex
 \t@pgf@tokb=\toks23
 \t@pgf@tokc=\toks24
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\p
-gf.cfg
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\p
-gfsys-pdftex.def
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-p
+dftex.def
 File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\p
-gfsys-common-pdf.def
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-c
+ommon-pdf.def
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\p
-gfsyssoftpath.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsysso
+ftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count110
 \pgfsyssoftpath@bigbuffer@items=\count111
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\p
-gfsysprotocol.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsyspr
+otocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
@@ -259,18 +252,18 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcore.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore.c
+ode.tex
 Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.
-code.tex
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathc
-alc.code.tex
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathu
-til.code.tex)
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathp
-arser.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.te
+x
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc.cod
+e.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.cod
+e.tex)
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparser.c
+ode.tex
 \pgfmath@dimen=\dimen139
 \pgfmath@count=\count112
 \pgfmath@box=\box35
@@ -278,30 +271,30 @@ arser.code.tex
 \pgfmath@stack@operand=\toks26
 \pgfmath@stack@operation=\toks27
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathf
-unctions.code.tex
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathf
-unctions.basic.code.tex)
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathf
-unctions.trigonometric.code.tex)
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathf
-unctions.random.code.tex)
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathf
-unctions.comparison.code.tex)
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathf
-unctions.base.code.tex)
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathf
-unctions.round.code.tex)
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathf
-unctions.misc.code.tex)
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathf
-unctions.integerarithmetics.code.tex)))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathf
-loat.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.basic.code.tex)
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.trigonometric.code.tex)
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.random.code.tex)
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.comparison.code.tex)
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.base.code.tex)
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.round.code.tex)
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.misc.code.tex)
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.integerarithmetics.code.tex)))
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat.co
+de.tex
 \c@pgfmathroundto@lastzeros=\count113
 ))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcorepoints.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepo
+ints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen140
 \pgf@picmaxx=\dimen141
@@ -318,90 +311,90 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen152
 \pgf@zy=\dimen153
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcorepathconstruct.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+thconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen154
 \pgf@path@lasty=\dimen155
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcorepathusage.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+thusage.code.tex
 File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
 \pgf@shorten@end@additional=\dimen156
 \pgf@shorten@start@additional=\dimen157
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcorescopes.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoresc
+opes.code.tex
 File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 \pgfpic=\box36
 \pgf@hbox=\box37
 \pgf@layerbox@main=\box38
 \pgf@picture@serial@count=\count114
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcoregraphicstate.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoregr
+aphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
 \pgflinewidth=\dimen158
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcoretransformations.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretr
+ansformations.code.tex
 File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
 \pgf@pt@x=\dimen159
 \pgf@pt@y=\dimen160
 \pgf@pt@temp=\dimen161
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcorequick.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorequ
+ick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcoreobjects.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreob
+jects.code.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcorepathprocessing.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+thprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcorearrows.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorear
+rows.code.tex
 File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
 \pgfarrowsep=\dimen162
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcoreshade.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoresh
+ade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen163
 \pgf@sys@shading@range@num=\count115
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcoreimage.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreim
+age.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcoreexternal.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreex
+ternal.code.tex
 File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
 \pgfexternal@startupbox=\box39
 ))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcorelayers.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorela
+yers.code.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcoretransparency.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretr
+ansparency.code.tex
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pg
-fcorepatterns.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+tterns.code.tex
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\xxcol
-or.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\xxcolor.sty
 Package: xxcolor 2003/10/24 ver 0.1
 \XC@nummixins=\count116
 \XC@countmixins=\count117
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
@@ -480,7 +473,7 @@ Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count121
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -517,19 +510,20 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-aserequires.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbaserequ
+ires.sty
 Package: beamerbaserequires 2010/05/01  (rcs-revision efa082c6111d)
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asecompatibility.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasecomp
+atibility.sty
 Package: beamerbasecompatibility 2012/05/01  (rcs-revision 67c48b3b652d)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asefont.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasefont
+.sty
 Package: beamerbasefont 2013/10/18  (rcs-revision 72f39e01808a)
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks28
@@ -538,45 +532,44 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\sansmathaccent\sans
-mathaccent.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\sansmathaccent\sansmathacc
+ent.sty
 Package: sansmathaccent 2013/03/28
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\filehook\filehook.s
-ty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\filehook\filehook.sty
 Package: filehook 2011/10/12 v0.5d Hooks for input files
 )))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asetranslator.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasetran
+slator.sty
 Package: beamerbasetranslator 2010/06/11  (rcs-revision 85fd1cc7fc42)
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\transla
-tor\translator.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\tra
+nslator.sty
 Package: translator 2010/06/12 ver 1.10
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\transla
-tor\translator-language-mappings.tex)))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asemisc.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\tra
+nslator-language-mappings.tex)))
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasemisc
+.sty
 Package: beamerbasemisc 2013/09/03  (rcs-revision a55719c41d85)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asetwoscreens.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasetwos
+creens.sty
 Package: beamerbasetwoscreens 2010/05/01  (rcs-revision efa082c6111d)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-aseoverlay.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbaseover
+lay.sty
 Package: beamerbaseoverlay 2013/12/25  (rcs-revision f6bd5e3805da)
 \beamer@argscount=\count126
 \beamer@lastskipcover=\skip44
 \beamer@trivlistdepth=\count127
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asetitle.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasetitl
+e.sty
 Package: beamerbasetitle 2010/09/21  (rcs-revision f0446ed0b6ae)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asesection.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasesect
+ion.sty
 Package: beamerbasesection 2013/06/07  (rcs-revision 60b9fe0f342f)
 \c@lecture=\count128
 \c@part=\count129
@@ -584,8 +577,8 @@ Package: beamerbasesection 2013/06/07  (rcs-revision 60b9fe0f342f)
 \c@subsection=\count131
 \c@subsubsection=\count132
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-aseframe.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasefram
+e.sty
 Package: beamerbaseframe 2013/10/02  (rcs-revision cdc8e9a3aaac)
 \beamer@framebox=\box40
 \beamer@frametitlebox=\box41
@@ -602,13 +595,13 @@ Package: beamerbaseframe 2013/10/02  (rcs-revision cdc8e9a3aaac)
 \framewidth=\dimen169
 \c@framenumber=\count136
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-aseverbatim.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbaseverb
+atim.sty
 Package: beamerbaseverbatim 2012/08/30  (rcs-revision dfdb135076b3)
 \beamer@verbatimfileout=\write4
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-aseframesize.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasefram
+esize.sty
 Package: beamerbaseframesize 2011/09/12  (rcs-revision 70f9d8411e54)
 \beamer@splitbox=\box43
 \beamer@autobreakcount=\count137
@@ -616,35 +609,35 @@ Package: beamerbaseframesize 2011/09/12  (rcs-revision 70f9d8411e54)
 \beamer@frametitletoks=\toks30
 \beamer@framesubtitletoks=\toks31
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-aseframecomponents.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasefram
+ecomponents.sty
 Package: beamerbaseframecomponents 2013/10/18  (rcs-revision 5cf6c5555a45)
 \beamer@footins=\box44
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asecolor.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasecolo
+r.sty
 Package: beamerbasecolor 2010/06/06  (rcs-revision d1a9b48be06d)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asenotes.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasenote
+s.sty
 Package: beamerbasenotes 2012/12/19  (rcs-revision 1686da3db3c9)
 \beamer@frameboxcopy=\box45
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asetoc.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasetoc.
+sty
 Package: beamerbasetoc 2013/05/23  (rcs-revision 0fdf5bc43be8)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asetemplates.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasetemp
+lates.sty
 Package: beamerbasetemplates 2010/05/01  (rcs-revision efa082c6111d)
 \beamer@sbttoks=\toks32
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-aseauxtemplates.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbaseauxt
+emplates.sty
 Package: beamerbaseauxtemplates 2013/09/04  (rcs-revision 4ac715c499d0)
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-aseboxes.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbaseboxe
+s.sty
 Package: beamerbaseboxes 2012/05/13  (rcs-revision 56972908a390)
 \bmb@box=\box46
 \bmb@colorbox=\box47
@@ -658,11 +651,10 @@ Package: beamerbaseboxes 2012/05/13  (rcs-revision 56972908a390)
 )
 \beamer@blockheadheight=\dimen175
 ))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-aselocalstructure.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbaseloca
+lstructure.sty
 Package: beamerbaselocalstructure 2013/09/04  (rcs-revision 4ac715c499d0)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks33
 )
@@ -671,16 +663,15 @@ Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asenavigation.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasenavi
+gation.sty
 Package: beamerbasenavigation 2013/10/05  (rcs-revision 62be157fe783)
 \beamer@section@min@dim=\dimen176
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asetheorems.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasetheo
+rems.sty
 Package: beamerbasetheorems 2010/06/06  (rcs-revision 7e7cc5e53e9d)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip51
 
@@ -752,34 +743,33 @@ Package: amsthm 2004/08/06 v2.20
 )
 \c@theorem=\count152
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerb
-asethemes.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\beamerbasethem
+es.sty
 Package: beamerbasethemes 2010/05/01  (rcs-revision efa082c6111d)
 ))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\
-theme\beamerthemedefault.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\theme\b
+eamerthemedefault.sty
 Package: beamerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\
-font\beamerfontthemedefault.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\font\be
+amerfontthemedefault.sty
 Package: beamerfontthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\
-color\beamercolorthemedefault.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\color\b
+eamercolorthemedefault.sty
 Package: beamercolorthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\
-inner\beamerinnerthemedefault.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\inner\b
+eamerinnerthemedefault.sty
 Package: beamerinnerthemedefault 2013/10/15  (rcs-revision 65cb471f9634)
 \beamer@dima=\dimen186
 \beamer@dimb=\dimen187
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\
-outer\beamerouterthemedefault.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\outer\b
+eamerouterthemedefault.sty
 Package: beamerouterthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 )))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure
-.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip57
 \subfigcapskip=\skip58
@@ -795,12 +785,11 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure
-.cfg)
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg)
 \subfig@top=\skip61
 \subfig@bottom=\skip62
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\newlfont.sty"
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\newlfont.sty"
 Package: newlfont 1998/08/17 v2.2m Standard LaTeX package
 LaTeX Info: Redefining \em on input line 67.
 
@@ -810,31 +799,30 @@ Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
 ))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.
-sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.sty
 Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmo
-duleshapes.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulesha
+pes.code.tex
 File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
 \pgfnodeparttextbox=\box53
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmo
-duleplot.code.tex
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduleplo
+t.code.tex
 File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\p
-gfcomp-version-0-65.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-
+version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen190
 \pgf@nodesepend=\dimen191
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\p
-gfcomp-version-1-18.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-
+version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
 ))
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\p
-gfarrows.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfarrow
+s.sty
 Package: pgfarrows 2006/10/11 v3.0.0 (rcs-revision 1.3)
 
 
@@ -842,8 +830,8 @@ Package pgfarrows Warning: This package is obsolete. pgf.sty will load arrow ma
 nagement automatically on input line 17.
 
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\p
-gfnodes.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfnodes
+.sty
 Package: pgfnodes 2006/10/11 v3.0.0 (rcs-revision 1.3)
 
 
@@ -851,8 +839,8 @@ Package pgfnodes Warning: This package is obsolete. pgf.sty will load node mana
 gement automatically on input line 17.
 
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\p
-gfautomata.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfautom
+ata.sty
 Package: pgfautomata 2006/10/11 v3.0.0 (rcs-revision 1.3)
 
 
@@ -863,8 +851,8 @@ Package pgfautomata Warning: This package is obsolete. on input line 17.
 \pgf@doublethickness=\dimen194
 \pgf@statebackoff=\dimen195
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\p
-gfheaps.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfheaps
+.sty
 Package: pgfheaps 2006/10/11 v3.0.0 (rcs-revision 1.3)
 
 
@@ -873,8 +861,8 @@ Package pgfheaps Warning: This package is obsolete. on input line 16.
 \pgf@heapx=\dimen196
 \pgf@heapy=\dimen197
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\p
-gfshade.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfshade
+.sty
 Package: pgfshade 2006/10/11 v3.0.0 (rcs-revision 1.3)
 
 
@@ -920,32 +908,31 @@ LaTeX Info: Redefining \hbar on input line 50.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\subfiles\subfiles.s
-ty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\subfiles\subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\
-theme\beamerthemeDefault.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\theme\b
+eamerthemeDefault.sty
 
 LaTeX Warning: You have requested package `beamerthemeDefault',
                but the package provides `beamerthemedefault'.
 
 Package: beamerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\
-inner\beamerinnerthemerounded.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\inner\b
+eamerinnerthemerounded.sty
 Package: beamerinnerthemerounded 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\
-outer\beamerouterthemeinfolines.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\outer\b
+eamerouterthemeinfolines.sty
 Package: beamerouterthemeinfolines 2012/10/16  (rcs-revision 51a8c72084af)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\
-font\beamerfontthemeserif.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\font\be
+amerfontthemeserif.sty
 Package: beamerfontthemeserif 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\
-font\beamerfontthemestructurebold.sty
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\themes\font\be
+amerfontthemestructurebold.sty
 Package: beamerfontthemestructurebold 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
 
@@ -953,8 +940,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 28.
 
 ))
-(C:\Users\kevin.obrien\Documents\GitHub\IntroStatsProb-MA4102\FactorialsChooseO
-perator.aux)
+(C:\Users\Kevin\Documents\GitHub\IntroProbUdemy\Counting\FactorialsChooseOperat
+or.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
@@ -1007,9 +994,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mki
-i
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count157
 \scratchdimen=\dimen198
@@ -1038,10 +1023,10 @@ LaTeX Info: Redefining \ref on input line 2.
 LaTeX Info: Redefining \pageref on input line 2.
 LaTeX Info: Redefining \nameref on input line 2.
 
-(C:\Users\kevin.obrien\Documents\GitHub\IntroStatsProb-MA4102\FactorialsChooseO
-perator.out)
-(C:\Users\kevin.obrien\Documents\GitHub\IntroStatsProb-MA4102\FactorialsChooseO
-perator.out)
+(C:\Users\Kevin\Documents\GitHub\IntroProbUdemy\Counting\FactorialsChooseOperat
+or.out)
+(C:\Users\Kevin\Documents\GitHub\IntroProbUdemy\Counting\FactorialsChooseOperat
+or.out)
 \@outlinefile=\write5
 \symnumbers=\mathgroup9
 \sympureletters=\mathgroup10
@@ -1082,33 +1067,30 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 2.
 
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\transla
-tor\dicts\translator-basic-dictionary\translator-basic-dictionary-English.dict
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\dic
+ts\translator-basic-dictionary\translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\transla
-tor\dicts\translator-bibliography-dictionary\translator-bibliography-dictionary
--English.dict
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\dic
+ts\translator-bibliography-dictionary\translator-bibliography-dictionary-Englis
+h.dict
 Dictionary: translator-bibliography-dictionary, Language: English 
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\transla
-tor\dicts\translator-environment-dictionary\translator-environment-dictionary-E
-nglish.dict
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\dic
+ts\translator-environment-dictionary\translator-environment-dictionary-English.
+dict
 Dictionary: translator-environment-dictionary, Language: English 
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\transla
-tor\dicts\translator-months-dictionary\translator-months-dictionary-English.dic
-t
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\dic
+ts\translator-months-dictionary\translator-months-dictionary-English.dict
 Dictionary: translator-months-dictionary, Language: English 
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\transla
-tor\dicts\translator-numbers-dictionary\translator-numbers-dictionary-English.d
-ict
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\dic
+ts\translator-numbers-dictionary\translator-numbers-dictionary-English.dict
 Dictionary: translator-numbers-dictionary, Language: English 
 )
-(C:\Users\kevin.obrien\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\transla
-tor\dicts\translator-theorem-dictionary\translator-theorem-dictionary-English.d
-ict
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\dic
+ts\translator-theorem-dictionary\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Info: Redefining \includegraphics on input line 2.
@@ -1116,7 +1098,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 16
 .
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 16
@@ -1153,7 +1136,7 @@ Overfull \vbox (11.5pt too high) has occurred while \output is active []
 
  [1
 
-{C:/Users/kevin.obrien/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
@@ -1181,8 +1164,8 @@ Overfull \vbox (11.5pt too high) has occurred while \output is active []
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
 
-(C:\Users\kevin.obrien\Documents\GitHub\IntroStatsProb-MA4102\FactorialsChooseO
-perator.aux)
+(C:\Users\Kevin\Documents\GitHub\IntroProbUdemy\Counting\FactorialsChooseOperat
+or.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 44.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 44.
 Package rerunfilecheck Info: File `FactorialsChooseOperator.out' has not change
@@ -1191,8 +1174,8 @@ d.
  ) 
 Here is how much of TeX's memory you used:
  17301 strings out of 493921
- 340503 string characters out of 3144855
- 399879 words of memory out of 3000000
+ 338646 string characters out of 3144875
+ 399876 words of memory out of 3000000
  20123 multiletter control sequences out of 15000+200000
  23500 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191

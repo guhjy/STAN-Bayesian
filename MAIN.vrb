@@ -1,0 +1,9 @@
+\frametitle{Exponential Distribution: Relationship to Poisson Mean}
+\begin{itemize}
+\item The Exponential Rate parameter ($\lambda$) is related to the Poisson mean (m)
+\item If we expect 12 occurrences per hour - what is the rate of occurrences?
+\item We would expected to wait 1/12 of an hour (i.e. 5 minutes) between occurrences.
+\item Be mindful to keep your time units consistent, if working with both Poisson and Exponential.
+\item If working in minutes, our rate parameter values is $\lambda$ = 0.20 (i.e. 1/5).
+\item (This could be the basis of an exam question).
+\end{itemize}
