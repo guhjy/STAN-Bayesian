@@ -1,4 +1,423 @@
+\documentclass{beamer}
+% http://www.hss.caltech.edu/~mshum/stats/lect2.pdf
 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+	
+	\begin{frame}
+		\bigskip
+		{
+			\huge
+			\[ \mbox{Expected Values of Random Variables}\]
+			\Large
+			\[ \mbox{Example Exercise}\]
+			\bigskip
+			\Large
+			\[ \mbox{www.MathsResource.com}\]
+		}
+		
+	\end{frame}
+	\begin{frame}
+		\frametitle{Expected Values of Random Variables}
+		\Large
+		If the random variable $Z$ has a distribution which is standard normal, show that the expected value of $e^{sZ}$ is given as follows:
+		
+		{
+			\LARGE
+			\[E(e^{sZ})  =  e^{\frac{s^2}{2}}\] 
+		}
+		
+		
+	\end{frame}
+	%---------------------------------------------------- %
+	
+	\begin{frame}
+		\frametitle{Expected Values of Random Variables}
+		\Large
+		\begin{itemize}
+			\item In general, the expected value is computed using this formula
+			{
+				\LARGE
+				\[ E(X) =  \int_{-\infty}^{\infty}  x \times f(x) dx   \]
+			}
+			\item The expected value of a \textbf{\textit{transformed}} random variable is computed using this formula
+			{
+				\LARGE
+				\[ E( tf(X) ) =  \int_{-\infty}^{\infty}  tf(x) \times f(x) dx   \]
+			}
+		\end{itemize}
+		
+	\end{frame}
+	%---------------------------------------------------- %
+	
+	\begin{frame}
+		\frametitle{Expected Values of Random Variables}
+		\Large
+		\begin{itemize}
+			\item 
+			The probability density function for the standard normal distribution is
+			{
+				\Large
+				\[f(x, \mu, \sigma) = \frac{1}{\sigma\sqrt{2\pi}} e^{ -\frac{(x-\mu)^2}{2\sigma^2} }\]}
+			\item 
+			The probability density function for the standard normal distribution is
+			{
+				\Large
+				\[f(z) = f(x, \mu= 0, \sigma=1) = \frac{1}{\sqrt{2\pi}} e^{ -{x \over 2}^2 }\]
+			}
+		\end{itemize}
+	\end{frame}
+	%---------------------------------------------------- %
+	\begin{frame}
+		\frametitle{Expected Values of Random Variables}
+		\Large
+		\vspace{-4cm}
+		
+		
+		
+		{
+			\LARGE
+			\[ E( e^{sZ} ) =  \int_{-\infty}^{\infty}  e^{sx} \;\times\; \frac{1}{\sqrt{2\pi}} \;e^{ -{x \over 2}^2 }\]
+		}
+		
+		
+	\end{frame}
+	%---------------------------------------------------- %
+	\begin{frame}
+		\frametitle{Expected Values of Random Variables}
+		\Large
+		\vspace{-4cm}
+		
+		
+		
+		{
+			\LARGE
+			\[ E( e^{sZ} ) =  \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}   e^{ \big[sx-\frac{(x)^2}{2} \big]} dx   \]
+		}
+		
+	\end{frame}
+	%---------------------------------------------------- %
+	\begin{frame}
+		\frametitle{Expected Values of Random Variables}
+		\Large
+		\vspace{-4cm}
+		
+		
+		
+		{
+			\LARGE
+			\[ E( e^{sZ} ) =  e^{{s^2\over 2}} \; \times\; \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{ \big[-\frac{(x-s)^2}{2} \big]} dx   \]
+		}
+		
+	\end{frame}
+	%---------------------------------------------------- %
+	\begin{frame}
+		\frametitle{Expected Values of Random Variables}
+		\Large
+		\vspace{-3cm}
+		\textbf{Mathematical Identity}
+		\begin{itemize}
+			\item Proven in a separate video
+		\end{itemize}
+		{
+			\LARGE
+			\[\int_{-\infty}^{\infty} e^{-{y\over 2}^2}dy  = \sqrt{2\pi}\]
+			
+		}
+	\end{frame}
+	
+	%---------------------------------------------------- %
+	\begin{frame}
+		\frametitle{Expected Values of Random Variables}
+		\Large
+		\vspace{-2.5cm}
+		
+		
+		
+		{
+			\LARGE
+			\[ E( e^{sZ} ) =  e^{{s^2\over 2}} \; \times\; \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{ \big[-\frac{(x-s)^2}{2} \big]} dx \]
+			
+			
+			\[ E( e^{sZ} ) =  e^{{s^2\over 2}} \; \times\; \frac{1}{\sqrt{2\pi}} \big[\sqrt{2\pi} \big] \]
+		}
+		
+	\end{frame}
+	
+	\begin{frame}
+		Suppose an electronics assembly subcontractor recieves resistors from two suppliers A and B
+		
+		Supplier A supplies 80% of the resistors
+		
+		P(A) = 0.80 probability that a randomly chosen resistor comes from A
+		
+		Supplier B supplies 20% of the resistors
+		
+		P(B) = 0.20 probability that a randomly chosen resistor comes from B
+		
+	\end{frame}
+	%-----------------------------------------------------%
+	\begin{frame}
+		\Large
+		\begin{itemize}
+			\item 1% of the resistors supplied by A are faulty (i.e. resistor fails the final test)
+			\item 3% of the resistors supplied by B are faulty 
+		\end{itemize}
+	\end{frame}
+	%-----------------------------------------------------%
+	\begin{frame}
+		
+		Qeustion: What is the probability that a randomly selected resistor fails the final test?
+		
+		Compute P(F) 
+		
+	\end{frame}
+	%------------------------------------------------------%
+	
+	\begin{frame}
+		\Large
+		P(F) = P(FandA) + P(FandB)
+		
+	\end{frame}
+	
+\end{document}
+
+
+
+
+\begin{frame}
+	\frametitle{Probability Distribution}
+\end{frame}
+%--------------------------------------%
+
+\begin{frame}
+	
+	
+\end{frame}
+%---------------------------------------%
+
+A probability distribution is a mathematical approach to quantifying uncertainty.
+
+There are two main classes of probability distributions: Discrete and continuous. 
+
+Discrete distributions describe variables that take on discrete values only (typically the positive integers), while continuous 
+distributions describe variables that can take on arbitrary values in a continuum (typically the real numbers).
+
+
+
+
+
+
+
+
+%---------------------------------------%
+
+
+\begin{frame}
+	
+	
+	
+	Binomial Distribution
+	
+	A manufacturer of hospital equipment knows from experience that 5% of the production will have some type of minor default, and will require adjustment.
+	
+	Number of independent trials    n
+	
+	Probability of a "success" p
+	
+	
+	
+	
+	
+	\begin{frame}
+		\frametitle{Poisson Distribution}
+	\end{frame}
+	%--------------------------------------%
+	
+	\begin{frame}
+		
+		
+	\end{frame}
+	%---------------------------------------%
+	
+	A basic introduction to the concept
+	
+	Example
+	
+	Certain events happen at unpredictable intervals. But for some reason, no matter how recent or long ago last event was, the probability that another event will occur within the next hour is exactly the same (say, 10%). The same holds for any other time interval (say, second). Moreover, the number of events within any given time interval is statistically independent of numbers of events in other intervals that do not overlap the given interval. Also, two events never occur simultaneously.
+	
+	Then the number of events per day is Poisson distributed.
+	
+	%---------------------------------------%
+	Formal definition
+	
+	Let X be a stochastic variable taking non-negative integer values with probability density function
+	
+	\[ P(X=k)=f(k)= e^{-\lambda} \frac{\lambda ^k}{k!}.\] 
+	Then X follows the Poisson distribution with parameter \lambda.
+	
+	%---------------------------------------%
+	Characteristics of the Poisson distribution
+	
+	If X is a Poisson distribution stochastic variable with parameter \lambda, then
+	
+	\begin{itemize}
+		\item The expected value $E[X]=\lambda$
+		\item The variance $Var[X]=\lambda$
+	\end{itemize}
+	%----------------------------------------%
+	
+	
+	
+	\begin{frame}
+		
+		\huge
+		\[ \mbox{The Normal Distribution} \]
+		\Large
+		\[ \mbox{Symmetric Intervals} \]
+		
+		
+		
+	\end{frame}
+	%---------------------------------------------------%
+	\begin{frame}
+		
+		
+		Symmetric Intervals
+		
+		\[ P( -z \leq Z \leq z) \]
+		
+		
+	\end{frame}
+	%---------------------------------------------------%
+	\begin{frame}
+		
+		
+	\end{frame}
+	%---------------------------------------------------%
+	
+	\begin{frame}
+		
+		\huge
+		\[ \mbox{The Normal Distribution} \]
+		\Large
+		\[ \mbox{The Symmetry Rule} \]
+		
+		
+		
+	\end{frame}
+	%---------------------------------------------------%
+	
+	\begin{frame}
+		
+		\huge
+		\[ \mbox{The Normal Distribution} \]
+		\Large
+		\[ \mbox{The Symmetry Rule} \]
+		
+	\end{frame}
+	%---------------------------------------------------%
+	\begin{frame}
+		\frametitle{Normal Distribution : The Symmetry Rule}
+		\Large
+		From statistical tables, we could determine the following:
+		\begin{itemize}
+			\item $P(Z \leq 1.5) $
+			\item $P(Z \geq 1.5) $
+		\end{itemize}
+		
+	\end{frame}
+	%---------------------------------------------------%
+	\begin{frame}
+		\frametitle{Normal Distribution : The Symmetry Rule}
+		\Large
+		
+		Consider the normally distributed random variable $X$
+		
+		\[ X \sim \mathcal{N}(\mu=1000,\sigma^2 = 2500) \]
+		
+		Paramters:
+		\begin{itemize}
+			\item $\mu =1000$
+			\item $\sigma =50$
+		\end{itemize}
+		Questions
+		
+		\begin{itemize}
+			\item $P(X \leq 925)$
+			\item $P(X \geq 925)$
+		\end{itemize}
+		
+		
+	\end{frame}
+	%---------------------------------------------------%
+	\begin{frame}
+		\frametitle{Normal Distribution : The Symmetry Rule}
+		\textbf{Z-score}
+		\[ z =\frac{x - \mu}{\sigma}\]
+		
+		\[ X \sim \mathcal{N}(\mu=1000,\sigma^2 = 2500) \]
+		
+		\begin{itemize}
+			\item Mean $\mu= 1000$
+			\item Standard Deviation $\sigma = 50$
+		\end{itemize}
+	\end{frame}
+	%---------------------------------------------------%
+	\begin{frame}
+		\frametitle{Normal Distribution : The Symmetry Rule}
+		
+		\[ P(X \leq 925)  = P(Z \leq -1.5) \]
+		
+		Applying the Symmetry Rule
+		\[ P(Z \leq -1.5) = P(Z \geq 1.5) = 0.0668\]
+		
+		Theerefore we can say 
+		\[ P(X \leq 925) = 0.0668 \]
+	\end{frame}
+	%---------------------------------------------------%
+	
+	\frametitle{Standardizing normal random variables}
+	
+	As a consequence of Property 1, it is possible to relate all normal random variables to the standard normal.
+	
+	If $X \sim N(\mu, \sigma^2)$, then
+	
+	Z = \frac{X - \mu}{\sigma} \!
+	is a standard normal random variable: Z \sim N(0,1). An important consequence is that the cdf of a general normal distribution is therefore
+	
+	\Pr(X \le x)
+	=
+	\Phi
+	\left(
+	\frac{x-\mu}{\sigma}
+	\right)
+	=
+	\frac{1}{2}
+	\left(
+	1 + \operatorname{erf}
+	\left(
+	\frac{x-\mu}{\sigma\sqrt{2}}
+	\right)
+	\right)
+	.
+	
+\end{frame}
+%-------------------------------------------------------------------------%
+\begin{frame}
+	
+	Conversely, if Z is a standard normal distribution, Z \sim N(0,1), then
+	
+	X = \sigma Z + \mu
+	is a normal random variable with mean \mu and variance \sigma^2.
+	
+	The standard normal distribution has been tabulated (usually in the form of value of the cumulative distribution function F), and the other normal distributions are the simple transformations, as described above, of the standard one. Therefore, one can use tabulated values of the cdf of the standard normal distribution to 
+	find values of the cdf of a general normal distribution.
+\end{frame}	
+\end{document}
 %------------------------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------------------------%
@@ -106,15 +525,6 @@ determining the probability of a specific number of successes X for a binomial d
 
 \[ \mbox{Formula} \]
 
-\section {The hypergeometric distribution }
-
-When sampling is done without replacement of each sampled item taken from a finite population of items, the
-Bernoulli process does not apply because there is a systematic change in the probability of success as items are
-removed from the population. When sampling without replacement is used in a situation that would otherwise
-qualify as a Bernoulli process, the hypergeometric distribution is the appropriate discrete probability distribution.
-Given that X is the designated number of successes, N is the total number of items in the population, T is
-the total number of successes included in the population, and n is the number of items in the sample, the formula
-for determining hypergeometric probabilities is
 
 
 
