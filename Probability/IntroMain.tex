@@ -3,31 +3,30 @@
 \usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage{newlfont}
+\usepackage{subfiles}
 \usepackage{amsmath,amsthm,amsfonts}
-%\usepackage{beamerthemesplit}
+\usepackage{beamerthemesplit}
 \usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
 \usepackage{mathptmx}  % Font Family
 \usepackage{helvet}   % Font Family
 \usepackage{color}
-\usepackage{subfiles}
 
 \mode<presentation> {
- \usetheme{Default} % was Frankfurt
- \useinnertheme{rounded}
- \useoutertheme{infolines}
-
- \usefonttheme{serif}
- %\usecolortheme{wolverine}
-% \usecolortheme{rose}
-\usefonttheme{structurebold}
+	\usetheme{Default} % was
+	\useinnertheme{rounded}
+	\useoutertheme{infolines}
+	\usefonttheme{serif}
+	%\usecolortheme{wolverine}
+	% \usecolortheme{rose}
+	\usefonttheme{structurebold}
 }
 
 \setbeamercovered{dynamic}
 
-\title[MathsCast]{Statistics for Computing \\ {\normalsize MA4413 Lecture 2A}}
-\author[Kevin O'Brien]{Kevin O'Brien \\ {\scriptsize Kevin.obrien@ul.ie}}
-\date{Autumn Semester 2012}
-\institute[Maths \& Stats]{Dept. of Mathematics \& Statistics, \\ University \textit{of} Limerick}
+\title[Stats-Lab.com]{\LARGE Introduction to Statistics and Probability \\ {\Large Probability : Contingency Tables}}
+\author[Kevin O'Brien]{Kevin O'Brien}
+\date{Spring 2014}
+
 
 \renewcommand{\arraystretch}{1.5}
 
@@ -36,8 +35,11 @@
 \begin{frame}
 \titlepage
 \end{frame}
-
-
+\subfile{MoreDefinitions.tex}
+\subfile{ContingencyTables.tex}
+\subfile{ProbabilityTrees.tex}
+\subfile{SampleSpaces.tex}
+\subfile{RandomVariables.tex}
 
 
 \end{document}

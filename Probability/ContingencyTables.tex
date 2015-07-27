@@ -1,40 +1,5 @@
-\documentclass[a4]{beamer}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage{subfigure}
-\usepackage{newlfont}
-\usepackage{amsmath,amsthm,amsfonts}
-\usepackage{beamerthemesplit}
-\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
-\usepackage{mathptmx}  % Font Family
-\usepackage{helvet}   % Font Family
-\usepackage{color}
-
-\mode<presentation> {
- \usetheme{Default} % was
- \useinnertheme{rounded}
- \useoutertheme{infolines}
- \usefonttheme{serif}
- %\usecolortheme{wolverine}
-% \usecolortheme{rose}
-\usefonttheme{structurebold}
-}
-
-\setbeamercovered{dynamic}
-
-\title[Stats-Lab.com]{\LARGE Introduction to Statistics and Probability \\ {\Large Probability : Contingency Tables}}
-\author[Kevin O'Brien]{Kevin O'Brien}
-\date{Spring 2014}
-
-
-\renewcommand{\arraystretch}{1.5}
-
+\documentclass[IntroMain.tex]{subfiles} 
 \begin{document}
-
-
-\begin{frame}
-\titlepage
-\end{frame}
 
 \frame{
 \Large
@@ -48,6 +13,13 @@
 \end{enumerate}
 
 }
+%=========================================================%
+\begin{frame}
+	\textbf{What is a contingency table?}
+	
+	A contingency table is essentially a display format used to analyse and record the relationship between two or more categorical variables. It is the categorical equivalent of the scatterplot used to analyse the relationship between two continuous variables.
+	
+\end{frame}
 %-------------------------------------------------------%
 \frame{
 \frametitle{Contingency Tables}
@@ -297,7 +269,7 @@ with $ P(E) = 0.40$, $ P(E \cap M) = 0.18$ and  $ P(E \cap F) = 0.22$
 \textbf{Remark:}  $M$ and $F$ are complement events.
 
 }
-\end{document}
+
 %------------------------------------------------------------%
 \frame{
 \frametitle{Bayes' Theorem}
