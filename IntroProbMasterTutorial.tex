@@ -514,11 +514,11 @@ which can be written using factorials as  whenever $k\leq n$
 
 \subsection*{Example 1}
 
-\[ \binom 5 2  = \frac{5!}{2!(5-2)!} = \frac{5.4.3!}{2! .3!} = \frac{5.4}{2.1} = 10\]
+\[ \binom 5 2  = \frac{5!}{2!\;(5-2)!} = \frac{5.4.3!}{2! .3!} = \frac{5.4}{2.1} = 10\]
 
 \subsection*{Example 2}
 
-\[ \binom 5 0  = \frac{5!}{0!(5-0)!} = \frac{5!}{0! .5!} = \frac{5!}{2!} = 1\]
+\[ \binom 5 0   = \frac{5!}{0!\;(5-0)!} = \frac{5!}{0! .5!} = \frac{5!}{2!} = 1\]
 Recall $0! =1$
 %-----------------------------------------------------%
 \section{Urn Questions}	
@@ -2238,7 +2238,123 @@ find values of the cdf of a general normal distribution.
 		\end{itemize}
 		
 		%=================================================================== %
-		\chapter{Discrete Probability Distributions}
+ 
+ MA4004 – Section 1b - Probability Questions
+ 
+ Repeat 2008
+ 
+ Spring 2008
+ Question 1
+ 
+ a)   One in 10, 000 people have a particular condition. Given that an individual has this condition, a test for this condition gives a positive result with probability 0.999. Given that an individual does not have this condition, this test gives a positive result with probability 0.001.
+ 
+ Suppose the individual tested is chosen at random from the population as a whole
+ i)                  Calculate the probability that the test result is positive.
+ 
+ ii)                Calculate the probability that the individual has the condition, given that the result of the test is positive.
+ (6 marks)
+ 
+ Repeats 2007
+ 
+ a) A company obtains 2000 components/week from supplier A, 2000 components/week from supplier B and 1000 components/week from supplier C. 3% of the components from supplier A are defective, 4% of the components from supplier B and 5% of the components from supplier C.
+ 
+ i) Calculate the probability that a randomly chosen component is defective.
+ 
+ ii) Calculate the probability that the component is from supplier A, given that it is not defective.
+ (6 marks)
+ 
+ 2.              c) Calculate the probability of obtaining exactly 3 sixes when I roll a die
+ 5 times.
+ (4 marks)
+ 
+ 
+ 
+ 
+ 
+ Spring 2007
+ 
+ a) A company obtains 1500 components/week from supplier A, 1000 components/week from supplier B and 500 components/week from supplier C. 3% of the components from supplier A are defective, 5% of the components from supplier B and 6% of the components from supplier C.
+ 
+ i) Calculate the probability that a randomly chosen component is defective.
+ 
+ ii) Calculate the probability that the component is from supplier C, given that it is defective.
+ (6 marks)
+ Question 3
+ c) Calculate the probability of obtaining exactly 2 sixes when I roll a die 5 times.
+ (4 marks)
+ 
+ Repeats 2006
+ (c)              A worker-operated machine produces a defective item with probability 0.01 if the worker follows the machine’s operating instructions exactly, and with probability 0.04 if he does not. If the worker follows the instructions 90% of the time, what is the probability that an item produced by the machine, selected at random, will be defective?
+ 
+ 
+ 
+\section*{Question 1 : Probability Distribution}
+
+\subsection*{Introduction}{\LARGE Consider playing a game in which you are winning when a \textbf{\emph{fair die}} is showing `six'
+	and losing otherwise.}
+\subsection*{Part 1}{\LARGE If you play three such games in a row, find the probability mass function (pmf) of the number
+	X of times you have won.}
+
+{\LARGE
+	\begin{itemize}
+		\item Firstly: what type of probability distribution is this?
+		
+		\item Is this the distribution \textbf{\emph{discrete}} or  \textbf{\emph{continuous}}?
+		
+		\item The outcomes are whole numbers - so the answer is discrete.
+		
+		\item So which type of discrete distribution? (We have two to choose from. See first page of formulae)
+		
+		
+		\item \textbf{Binomial:} characterizing the number of \textbf{\emph{successes}} in a series of \textbf{\emph{$n$ independent trials}}, with the \textbf{\emph{probability of a success}} in each trial being $p$.
+		
+		\item \textbf{Poisson:}  characterizing the \textbf{\emph{number of occurrences}} in a \textbf{\emph{unit space}} (i.e. a unit length, unit area or unit volume, or a unit period in time), where $\lambda$ is the the number of occurrences per unit space.
+		
+	\end{itemize}
+}
+
+
+\subsection{Standardisation Formula}
+
+\begin{equation}
+Z = ( X - \mu ) / \sigma
+\end{equation}
+
+%----------------------------------------------------------------%
+
+ 		\chapter{Discrete Probability Distributions}
+Overview
+1) The binomial distribution
+2) The Poisson distribution
+3) 
+
+\section{Poisson Approximation}
+The Poisson Approximation of the binomial ditribution
+
+Example
+
+P(X2) = 1- (0.134+0.27) = 0.596
+
+P(X=1) = 2000.010.99199
+
+P(X=1) = 0.270
+
+
+Poisson Approximaitions
+
+
+XBinomial(200, 0.01) 
+
+
+P(X= k)=e-kk!
+
+
+
+
+P(X2) = 1- (0.135+0.27) = 0.595
+
+
+
 \section{Probability Formulae}
 
 \begin{itemize}
@@ -2320,11 +2436,660 @@ determining the probability of a specific number of successes X for a binomial d
 \[ \mbox{Formula} \]
 
 
+\chapter{Continuous Probability Distributions}
+MathsCast 3 : The Uniform Distribution
+
+
+
+The Uniform distribution is characterised by two parameters , the minimum and the maximum.
+
+The expected value E(x) is given by
+
+
+
+(i.e. the average of the maximum and minimum)
+
+
+
+
+
+R Code for Graphics
+
+y=c(20,20)
+x=c(20,100)
+
+plot(x,y,xlim=c(0,120),ylim=c(0,30),pch=13,col='white',axes=FALSE)
+segments(20,20,100,20,col= 'red')
+segments(0,0,120,0)
+
+segments(20,0,20,20,col='red')
+segments(100,0,100,20,col='red')
+
+segments(0,0,0,40)
+
+\section*{Uniform Distribution: Exercise 24}
+
+Use the uniform distribution to simulate 100 throws of two dice. The outcome is the combined values of both dice. Use the appropriate R command to discretize values.
+\begin{itemize}
+	\item  What is the mean and standard deviation of the outcomes?
+	\item  Make a stem-and-leaf plot of the outcomes.
+	\item Make a histogram of the outcomes. (hint: use breaks =seq(1.5,12.5))
+\end{itemize}
+
+
+
+\subsection{Example 2}
+A machine produces components whose thicknesses are normally
+distributed with a mean of 0.40 cm and a standard deviation of 0.02 cm.
+Components are rejected if they have a thickness outside the range 0.38 cm
+to 0.41 cm.
+\begin{itemize}
+\item[(i)] What is the probability that a component will have a thickness
+exceeding 0.41 cm? (4 marks)
+\item[(ii)] What is the probability that a component will have a thickness between
+0.38 cm and 0.41 cm? (4 marks)
+\item[(iii)] What is the thickness below which 25\% of the components will be? (4 marks)
+\end{itemize}
+
+\subsection{Example 3}
+A charity believes that when it puts out an appeal for charitable donations the
+donations it receives will normally distributed with a mean £50 and standard
+deviation £6, and it is assumed that donations will be independent of each
+other.
+\begin{itemize}
+	\item[(i)] Find the probability that the first donation it receives will be greater
+	than £40.
+	\item[(ii)] Find the probability that it will be between £55 and £60.
+	\item[(iii)] Find the value x such that 5\% of donations are more than £x.
+\end{itemize}
+
+
+%------------------------------------------------------------------------------------------------%		\section*{Session 09: Probability}
+\begin{itemize}
+	\item[9B.1] Permutation
+	
+	\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
+	
+	
+	\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
+	
+	
+	\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
+\end{itemize}
+
+
+
+\begin{itemize}
+	\item pairwise disjoint sets
+	\item The addition principle
+\end{itemize}
+\subsection*{Theorem}
+\[ |A \cup B| = |A| + |B| - |A \cap B|  \]
+
+\subsection*{Probability}
+\begin{itemize}
+	\item[9B.2] The sample space of an experiment ($S$)
+	\item[9B.3] The size of a sample space
+	\item[9B.4] Indepedent Evcents (9.3.1)
+\end{itemize}
+%------------------------------------------------%
 
 \chapter{Normal Probability Distribution}
+MA4004 Revision Class B
+Please sign the attendance sheet
+
+Today's class : Last years past paper 
+
+
+Normal Distribution Question ( Dr David Ramsey's Equine Stats Class)
+
+The mass of Arab horses is normally distributed with mean 900 lbs and standard deviation of 50lbs.
+Part i Calculate the probability that an Arab horse weighs more than 940 lbs.
+
+
+Solution
+
+Let X be mass of Arab horses.
+
+We have to find P(X940).            (Remark "equality component" is included as a formality, but it is not important)
+
+
+Find the Z value that corresponds to 940 
+
+Zo=Xo-=940 -90050= 0.8
+
+P(X940) = P(Z0.8) 
+
+
+From Murdoch Barnes tables 3, we find that  P(Z0.8) = 0.2119
+
+
+
+Part ii Calculate the probability than an Arab horse weighs between 880 lbs and 960 lbs.
+Solution 
+
+P ( 880X960).
+
+
+What proportion of horses are between 880 lbs and 960 lbs?
+
+Find out the probability of the complement event.
+The complement event is the combination of being too high  or too low for this interval.
+
+Inside interval P ( 880X960).
+
+Outside interval P (X880) +P(X960)
+
+Complement Rule P ( 880X960)  = 1 - [P (X880) +P(X960)]
+
+
+
+Find the probability of being too high?
+
+Zo=Xo-=960 -90050= 1.2
+
+P(X960) = P(Z1.2) = 0.1151
+
+
+Find the probability of being too low?
+Zo=Xo-=880 -90050= -0.4 
+P(X880) = P(Z-0.4)  
+
+How to compute P(Z-0.4)
+
+Symmetry: 	P(Z-0.4) = P(Z0.4) = 0.3446
+
+
+Outside Interval = 0.4596        (0.3446 +  0.1151)
+Inside Interval = 0.5404
+
+
+
+What weight is exceeded by 97.5% of Arab horses?
+
+Find Xo  such that P(XXo) = 0.975
+
+
+P(Z1.96) = 0.025     [From Tables] 
+
+P(Z-1.96) = 0.025  [Symmetry]
+
+P(Z-1.96) = 0.975         
+
+-1.96 =Xo- 90050
+
+
+Xo= 802 lbs  [Answer]
+
+
+
+
+
+
+
+Question 3 : Hypothesis Testing and Confidence Intervals
+Question 4 : Hypothesis Testing and Confidence Intervals
+
+Important:
+
+Formulae at back of Exam Paper
+Murdoch Barnes Table 3 (The Z distribution)
+Murdoch Barnes Table 7 (The Student t distribution)
+
+Important Considerations
+
+Significance     /    confidence 1-
+
+Number of tails   
+one tailed procedure or two tailed procedure
+Confidence intervals are always two tailed
+
+Sample size   ( degrees of freedom depends on sample size)
+
+
+
+
+Question 3 - Paired T test
+
+a) The weights of one group of Irish students were recorded both at the beginning of year 1 of their studies and at the end of year 4.
+The results (in kg) are given below:
+
+Student
+1
+2
+3
+4
+5
+6
+7
+8
+Year 1
+72
+58
+68
+81
+65
+69
+75
+84
+Year 4
+74
+61
+69
+83
+69
+74
+76
+82
+
+At a significance level of 5%, is there sufficient evidence to state that on average students gain weight over the four years of their university studies?
+
+
+Solution
+
+Before we start, we need to compute the average difference and the standard deviations of the differences. 
+
+Student
+1
+2
+3
+4
+5
+6
+7
+8
+Diff
+2
+3
+1
+2
+4
+5
+1
+-2
+Di-D
+0
+1
+-1
+0
+2
+3
+-1
+-4
+
+
+Computing the average difference
+
+
+
+
+Now we compute the standard deviation of the variances
+
+From each difference value, subtract the mean, and square the resulting term.
+
+
+Di-D
+0
+1
+-1
+0
+2
+3
+-1
+-4
+(Di-D)2
+0
+1
+1
+0
+4
+9
+1
+16
+
+
+
+
+
+= 4.571
+
+Standard deviation is the square root of the variance
+
+SD=4.571=2.137
+
+
+
+hypotheses
+
+H0:D0    Students have not gained weight through college
+
+
+
+Ha:D> 0    Students have  gained weight through college
+
+
+N.B. This is a one-tailed test.
+
+Test statistic
+
+Remember the general structure of a test statistic
+
+TS =Observed Value-Null ValueStd. Error 
+
+
+
+Standard Error		S.E.(D) =SDn=2.1378= 0.7555
+
+Test statistis is a t random variable
+
+Test Statistic		x-0S.E.(D)=2 - 00.755= 2.649
+
+
+Critical values
+
+The sample size (n=8) is small (n30). Use t distribution with n-1 degrees of Freedom.
+
+
+The test is one tailed.  k= 1  ( ">" symbol in the alternative hypothesis).
+
+
+Column = k =0.051= 0.05
+
+
+Murdoch Barnes table 7
+
+
+Row: df = 7
+
+Column = 0.05
+
+Critical value =  1.895    
+
+Decision rule
+
+
+Is the test statistic value greater than the critical value?
+
+If Yes: we reject the null hypothesis
+
+If No: We fail to reject the null hypothesis. (not enough evidence)
+
+
+Here TS = 2.64  is greater than CV = 1.895.
+
+
+We reject the null hypothesis. Students do put on weight during college. 
+Question 3 Part b : Confidence interval for the difference in means of two samples.
+
+b) The mean and standard deviation of the weights of a sample of Irish students according to sex are given below
+
+
+Number
+Mean
+Std. Dev.
+Male
+100
+75
+10
+Female
+110
+66
+8
+
+i)        Calculate a 99% confidence interval for the difference between the mean weight of all male
+students and the mean weight of all female students.(7 males)
+
+General Structure of a Confidence Interval
+
+
+
+
+
+Observed difference
+
+let X denote the weights of male students    X= 75
+let Y denote the weights of female students  Y= 66
+
+The difference in the mean of weights X-Y= 9
+
+Quantile
+
+Large sample (both groups are greater than 30).
+
+Population variance is unknown.
+Use t distribution with  degrees of Freedom.
+
+
+Confidence level is 99%. Therefore significance levels is 1%.
+Confidence intervals are always two tailed procedures.
+
+
+Column = k =0.012= 0.005
+
+
+Murdoch Barnes table 7
+
+
+Row: df =  
+Column = 0.005
+
+Quantile =  2.576 
+
+
+Stardard Error
+
+
+
+
+
+
+Confidence Interval is therefore
+
+99% CI = 9(2.5761.256) 
+
+
+Part (ii)
+Based on this confidence interval, test the hypothesis that on average male students are 6kgs heavier than female students.
+State your hypotheses clearly. What is the significance level of this test?   (3 marks)
+
+H0:X-y= 6
+
+
+
+
+Since  we do not reject the null hypothesis at a significance level of 1%.
+
+
+
+
+
+
+Question 4
+
+a) The mean and standard deviation of the salaries of 16 Irish full-time workers are €5000  and €3000, respectively.
+
+i)  Test the hypothesis that the mean salary of all Irish full-time workers is €4000 at a significance level of 5%.   (6 marks)
+
+
+
+Step 1 : Formally state the null and alternative hypotheses
+Step 2 : Determine the test statistic
+Step 3 : Determine the critical value
+Step 4 : Decision Rule
+
+
+
+Given
+
+Observed value : Sample mean     x= 5000 
+Null Value (Expected mean under null hypothesis)     o= 4000   
+Population standard deviation is unknown.
+Use sample standard deviation s = 3000 as an estimate.
+Significance  = 0.05
+Sample size n = 16  ( small sample)
+
+hypotheses
+
+H0:=4000    True mean salary is €4000
+Ha:4000    True mean salary is  not €4000
+
+Test statistic
+
+Remember the general structure of a test statistic
+
+TS =Observed Value-Null ValueStd. Error 
+
+
+
+Standard Error		S.E.(x) =sn=300016= 750
+
+Test Statistic		x-0S.E.(X)=5000 -4 000750= 1.33
+
+
+Critical values
+
+The sample size (n=16) is small (n30). Use t distribution with n-1 degrees of Freedom.
+
+
+The test is two tailed.  k= 2  ( "" symbol in the alternative hypothesis).
+
+
+Column = k =0.052= 0.025
+
+
+Murdoch Barnes table 7
+
+
+Row: df = 15         (n-1)
+
+Column = 0.025
+
+Critical value =  2.131 
+
+
+Decision rule
+
+
+Is the test statistic value greater than the critical value?
+
+If Yes: we reject the null hypothesis
+
+If No: We fail to reject the null hypothesis. (not enough evidence)
+
+
+Here TS = 1.33  is not greater than CV = 2.131.
+
+
+We fail to reject the null hypothesis. We can not rightly say that the mean salary is not €4000 per month.
+
+
+ii)      What assumption is made in this testing procedure? Is this assumption reasonable?  (2 marks)
+
+The assumption made in this testing procedure is that salaries are normally distributed.
+This is not a valid assumption as the distribution of salaries is known to be skewed (lots of low values, few high values).
+
+
+
+
+
+
+
+b) A survey of 1000 Irish indicates that 750 have access to the Internet. A survey of 2000 Spaniards indicates that 1400 have access to the Internet.
+
+i)        By calculating the appropriate p-value, test the hypothesis that the proportion of all Irish having access to the Internet
+is equal to the proportion of all Spaniards having access to the internet at a significance level of 5%. (8 marks)
+
+
+Step 1 : Formally state the null and alternative hypotheses
+
+Step 2 : Determine the test statistic
+Step 3a : Determine the p.value
+Step 4a : Decision Rule for p-values.
+
+
+
+Step 1 : Formally state the null and alternative hypotheses
+
+Proportion of people having internet access is the same in both Ireland and Spain
+Proportion of people having internet access differs in Ireland and Spain
+
+
+Alternatively we write the hypotheses as follows (the null value is more evident).
+
+
+
+
+
+Step 2 Compute the Test Statistic
+
+pIrl=7501000= 0.75 
+pEsp=14002000= 0.70
+
+Observed Difference = 0.75 - 0.70 = 0.05  
+
+Now lets compute the standard error (from Formulae)
+
+
+ii)      Calculate a 99% confidence interval for the difference between the proportion of all Irish having access to the
+Internet and the proportion of all Spaniards having access to the internet.  (4 marks)
+]
+
+Standard Error for confidence interval	p1(1 -p1)n1+p2(1 -p2)n2	=0.750.251000+0.700.302000     =  0.017103
+
+
+
+Quantile for a 99% confidence interval
+
+significance level  =1%
+number of tails = 2
+degrees of freedom = 
+quantile = 2.576 
+
+
+99% Confidence Interval for difference of two proportions
+
+
+
+
+
+
+
+
+
+
+
+
+Useful pieces of information
+
+
+Sample size  n=100
+
+
+
+
+Part i
+Calculate the equation of the least square regression line and interpret the value of the slope.
+part ii
+
+Using this regression model, estimate the mean weight of individuals who are 3 metres tall.
+part iii
+
+Is such an estimate reliable?  briefly explain why.
+
+No it is not reliable. Consider the range of values of the x predcitro variable
+
+
+
+
+
+
+
+
+
+
 \section{Normal Distribution: Worked Examples}
 
-MA4413    Computer Maths 3     January 2007
+% % MA4413    Computer Maths 3     January 2007
 
 
 Q5. a) Assume that the amount of wine poured into a bottle has a normal distribution with a mean of 750ml and a variance of 144ml$^2$.
@@ -2361,105 +3126,10 @@ ii)	What volume is exceeded by $20\%$ of the bottles?
 
 
 %---------------------------------%
-\section*{Question 1 : Probability Distribution}
-
-\subsection*{Introduction}{\LARGE Consider playing a game in which you are winning when a \textbf{\emph{fair die}} is showing `six'
-	and losing otherwise.}
-\subsection*{Part 1}{\LARGE If you play three such games in a row, find the probability mass function (pmf) of the number
-	X of times you have won.}
-
-{\LARGE
-	\begin{itemize}
-		\item Firstly: what type of probability distribution is this?
-		
-		\item Is this the distribution \textbf{\emph{discrete}} or  \textbf{\emph{continuous}}?
-		
-		\item The outcomes are whole numbers - so the answer is discrete.
-		
-		\item So which type of discrete distribution? (We have two to choose from. See first page of formulae)
-		
-		
-		\item \textbf{Binomial:} characterizing the number of \textbf{\emph{successes}} in a series of \textbf{\emph{$n$ independent trials}}, with the \textbf{\emph{probability of a success}} in each trial being $p$.
-		
-		\item \textbf{Poisson:}  characterizing the \textbf{\emph{number of occurrences}} in a \textbf{\emph{unit space}} (i.e. a unit length, unit area or unit volume, or a unit period in time), where $\lambda$ is the the number of occurrences per unit space.
-		
-	\end{itemize}
-}
 
 \subsection{The Standard Normal Distribution}
 
 
-
-\subsection{Standardisation Formula}
-
-\begin{equation}
-Z = ( X - \mu ) / \sigma
-\end{equation}
-
-%----------------------------------------------------------------%
-\section*{Uniform Distribution: Exercise 24}
-
-Use the uniform distribution to simulate 100 throws of two dice. The outcome is the combined values of both dice. Use the appropriate R command to discretize values.
-\begin{itemize}
-	\item  What is the mean and standard deviation of the outcomes?
-	\item  Make a stem-and-leaf plot of the outcomes.
-	\item Make a histogram of the outcomes. (hint: use breaks =seq(1.5,12.5))
-\end{itemize}
-
-
-
-\subsection{Example 2}
-A machine produces components whose thicknesses are normally
-distributed with a mean of 0.40 cm and a standard deviation of 0.02 cm.
-Components are rejected if they have a thickness outside the range 0.38 cm
-to 0.41 cm.
-(i) What is the probability that a component will have a thickness
-exceeding 0.41 cm? (4 marks)
-(ii) What is the probability that a component will have a thickness between
-0.38 cm and 0.41 cm? (4 marks)
-(iii) What is the thickness below which 25\% of the components will be? (4 marks)
-\subsection{Example 3}
-A charity believes that when it puts out an appeal for charitable donations the
-donations it receives will normally distributed with a mean £50 and standard
-deviation £6, and it is assumed that donations will be independent of each
-other.
-\begin{itemize}
-	\item Find the probability that the first donation it receives will be greater
-	than £40.
-	\item Find the probability that it will be between £55 and £60.
-	\item Find the value x such that 5\% of donations are more than £x.
-\end{itemize}
-
-
-%------------------------------------------------------------------------------------------------%		\section*{Session 09: Probability}
-		\begin{itemize}
-			\item[9B.1] Permutation
-			
-			\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
-			
-			
-			\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
-			
-			
-			\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
-		\end{itemize}
-		
-
-		
-		\begin{itemize}
-			\item pairwise disjoint sets
-			\item The addition principle
-		\end{itemize}
-		\subsection*{Theorem}
-		\[ |A \cup B| = |A| + |B| - |A \cap B|  \]
-		
-		\subsection*{Probability}
-		\begin{itemize}
-			\item[9B.2] The sample space of an experiment ($S$)
-			\item[9B.3] The size of a sample space
-			\item[9B.4] Indepedent Evcents (9.3.1)
-		\end{itemize}
-		%------------------------------------------------%
 
 \section*{Session 09: Probability}
 	
