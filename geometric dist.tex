@@ -1,0 +1,145 @@
+\documentclass[12pt]{beamer}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+%----------------------------------------------------------------------%
+\section{The Geometric Distribution}
+\begin{frame}
+\huge
+\[ \mbox{Statistics and Probability} \]
+\huge
+\[ \mbox{The Geometric Distribution} \]
+\Large
+\[ \mbox{www.Stats-Lab.com} \]
+
+\end{frame}
+%----------------------------------------------------------------------------------%
+\begin{frame}
+\frametitle{The Geometric Distribution}
+\Large
+\begin{itemize}
+\item The geometric distribution is used for Bernouilli Trials, where there outcome are classified as either failures or successes.
+\end{itemize} \bigskip
+
+In probability theory, the geometric distribution is either of two discrete probability distributions:
+\begin{itemize}
+\item The probability distribution of the number of trials needed to get first success, supported on the set $\{ 1, 2, 3, \ldots\}$
+\item The probability distribution of the number of failures before the first success, supported on the set $\{ 0, 1, 2, 3, \ldots\}$
+\end{itemize}
+\end{frame}
+
+%----------------------------------------------------------------------------------%
+\begin{frame}
+\frametitle{The Geometric Distribution}
+\Large
+\begin{itemize}
+\item Which of these one calls "the" geometric distribution is a matter of convention and convenience. A solution for one can quickly be surmised from the other.
+\item These two different geometric distributions should not be confused with each other. 
+\item Often, the name shifted geometric distribution is adopted for the former one (distribution of the number X); 
+\item however, to avoid ambiguity, it is considered wise to indicate which is intended, by mentioning the support explicitly.
+\end{itemize}
+\end{frame}
+%----------------------------------------------------------------------------------%
+\begin{frame}
+\frametitle{The Geometric Distribution}
+\Large
+\begin{itemize}
+\item It’s the probability that the first occurrence of success require k number of independent trials, each with success probability p. 
+
+\item If the probability of success on each trial is p, then the probability that the kth trial (out of k trials) is the first success is
+\[  P(X = k) = (1-p)^{k-1}\,p\, \phantom{space} for k = 1, 2, 3, \ldots \]
+
+
+\item The above form of geometric distribution is used for modeling the number of trials until the first success. 
+\end{itemize}
+\end{frame}
+%----------------------------------------------------------------------------------%
+\begin{frame}
+\frametitle{The Geometric Distribution}
+\Large
+\begin{itemize}
+\item By contrast, the following form of geometric distribution is used for modeling number of failures until the first success:
+\[ P(Y=k) = (1 - p)^k\,p\, \phantom{space} for k = 0, 1, 2, 3, \ldots\]
+\end{itemize}
+\end{frame}
+%----------------------------------------------------------------------------------%
+\begin{frame}
+\frametitle{The Geometric Distribution}
+\Large
+\begin{itemize}
+\item
+In either case, the sequence of probabilities is a geometric sequence.
+
+\itemm For example, suppose an ordinary die is thrown repeatedly until the first time a "1" appears. 
+\item The probability distribution of the number of times it is thrown is supported on the infinite set ${ 1, 2, 3, \ldots }$ and is a geometric distribution with p = 1/6.
+\end{itemize}
+\end{frame}
+%----------------------------------------------------------------------------------%
+\begin{frame}
+\frametitle{The Geometric Distribution}
+\Large
+\begin{itemize}
+\item
+
+The expected value of a geometrically distributed random variable X is 1/p and the variance is $(1 - p)/p^2$:
+\[ \mathrm{E}(X) = \frac{1}{p}, \qquad\mathrm{var}(X) = \frac{1-p}{p^2}. \]
+\item Similarly, the expected value of the geometrically distributed random variable Y (where Y corresponds to the pmf listed in the right column) is (1 - p)/p, 
+and its variance is (1 - p)/p2:
+\[ \mathrm{E}(Y) = \frac{1-p}{p}, \qquad\mathrm{var}(Y) = \frac{1-p}{p^2}.\]
+
+\end{itemize}
+\end{frame}
+%-------------------------------------------------------------------------------%
+\section{geometric Distribution - Example}
+\begin{frame}
+\frametitle{The geometric ditribution}
+
+Suppose that I am at a party and I start asking girls to dance. Let X be the number of girls that I need to ask in order to find a partner. If the first girl accepts, then X=1. If the first girl declines but the next girl accepts, then X=2. And so on. 
+
+When X=n, it means that I failed on the first n-1 tries and succeeded on the nth try. My probability of failing on the first try is (1-p). My probabilty of failing on the first two tries is (1-p)(1-p). 
+\end{frame}
+%-------------------------------------------------------------------------------%
+\begin{frame}
+\frametitle{The Geometric ditribution}
+My probability of failing on the first n-1 tries is (1-p)n-1. Then, my probability of succeeding on the nth try is p. Thus, we have 
+
+\[ P(X = n) = (1-p)n-1p \]
+
+This is known as the geometric distribution. When you have a sequence of numbers in which the (n+1)th number is a multiple of the nth number, it is called a geometric sequence. In this case, P(X = n+1) is a multiple of P(X = n). (What is that multiple?) 
+\end{frame}
+%-------------------------------------------------------------------------------%
+\begin{frame}
+\frametitle{The geometric ditribution}
+What is the probability that it will take more than n tries to succeed? We know that if I ask an infinite number of girls to dance, eventually one of them will accept. So, the probability that it will take more than n tries is the same as the probability that I fail n times. That is, 
+
+\[ P(X > n) = (1-p)n \]
+\end{frame}
+%-------------------------------------------------------------------------------%
+\begin{frame}
+\frametitle{The geometric ditribution}
+If X is geometric with parameter p, what is E(X)? 
+
+We are faced with an infinite sum. Multiplying X times P(X) for X = 1, 2, 3, ... gives 
+
+\[
+[1] S = p + 2p(1-p) + 3p(1-p)2 +...+np(1-p)n-1 
+\]
+Multiply both sides by (1-p) and you have
+
+[2] (1-p)S = p(1-p) + 2p(1-p)2 + 3p(1-p)3 +...+np(1-p)n 
+\end{frame}
+%-------------------------------------------------------------------------------%
+\begin{frame}
+\frametitle{The geometric ditribution}
+Subtracting [2] from [1] gives 
+
+S - (1-p)S = pS = p[1 + (1-p) + (1-p)2 + ...(1-p)n] = p(1/p) = 1
+S = 1/p 
+
+Therefore, the mean of the geometric distribution is equal to 1/p. If we are trying to estimate how many girls I will have to ask to dance until I find a partner, and p, the probability of one girl accepting, is .2, then on average I will have to ask five girls. 
+You will not have to know it, but for the record, the variance of the geometric distribution is (1-p)/p2. 
+\end{frame}
+%-------------------------------------------------------------------------------%
+\end{document}
