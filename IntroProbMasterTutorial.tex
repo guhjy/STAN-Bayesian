@@ -19,29 +19,294 @@
 
 \begin{document}
 \LARGE
-\section{Dice Questions}
-	%----------------------------------------------------------%
-		%http://www.indiabix.com/aptitude/probability/
 
-		Suppose a pair of fair dice is thrown. 
+
+%=========================================================%
+{ \Large
+	%\frametitle{Introduction to Probability}
+	\begin{itemize}
+		\item	There are many situations in everyday life where the outcome is not known with certainty. For example; applying for a job or sitting an examination.
+		
+		\item We use words like "Chance", "the odds", "likelihood" etc but the most effective way of dealing with uncertainty is based on the concept of probability.
+		
+		\item Probability can be thought of as a number which measures the chance or likelihood that a particular event will occur.
+		
+	\end{itemize}	
+	
+	
+}
+%=========================================================%
+{ \Large
+	\begin{itemize}
+		\item	An example of the use of probability is in decision making. Decision making usually involves uncertainty. For example, should we invest in a company if there is a chance it will fail? 
+		
+		\item	Should we start production of a product even though there is a likelihood that the raw materials will arrive on time in poor? Having a number which measures the chances of these events occurring helps us to make a decision.
+		
+		\item 	Why are we interested in probability in this module? Many statistical methods use the idea of a probability distribution for this data.
+	\end{itemize}
+	
+	
+	
+}
+%=========================================================%
+{ \Large
+	\begin{itemize}	
+		\item	We have already looked at relative frequency distribution in Section 2. Probability distributions are based on the same concepts as relative frequency distributions. They are used to calculate probabilities of different values occurring in the data collected.
+		
+		\item	We will examine probability distributions in more detail in Section 4. First we need to learn about the basic concepts of probability.
+	\end{itemize}
+	
+}
+%=========================================================%
+{ \Large
+	%\frametitle{Random experiment}
+	\begin{itemize}
+		\item \textbf{Sample Space}, S. For a given experiment the sample space, S, is the set of all
+		possible outcomes.
+		\item \textbf{Event}, E. This is a subset of S. If an event E occurs, the outcome of the experiment is contained in E.
+	\end{itemize}
+	
+}
+%=========================================================%
+{ \Large
+	\begin{itemize}
+		\item Probability concerns itself with random phenomena or probability experiments. These experiments are all different in nature, and can concern things as diverse as rolling dice or flipping coins. 
+		\item The common thread that runs throughout these probability experiments is that there are observable outcomes. If we collect all of the possible outcomes together, then this forms a set that is known as the sample space.
+		
+	\end{itemize}
+	
+	
+}
+%=========================================================%
+{ \Large
+	In this set theory formulation of probability the sample space for a problem corresponds to an important set. Since the sample space contains every outcome that is possible, it forms a setting of everything that we can consider. So the sample space becomes the universal set in use for a particular probability experiment.
+	
+	A probability distribution is a table of values showing the probabilities of various outcomes of an experiment.
+	
+	
+}
+%================================================================================ %
+%=========================================================%
+{ \Large
+	For example, if a coin is tossed three times, the number of heads obtained can be 0, 1, 2 or 3. The probabilities of each of these possibilities can be tabulated as shown:
+	
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline Number of Heads & 0 & 1 & 2 & 3 \\ 
+		\hline Probability & 1/8  & 3/8  & 3/8 & 1/8 \\ 
+		\hline 
+	\end{tabular} 
+	
+	A discrete variable is a variable which can only take a countable number of values. In this example, the number of heads can only take 4 values (0, 1, 2, 3) and so the variable is discrete. The variable is said to be random if the sum of the probabilities is one. 
+	
+	
+}
+%=========================================================%
+{ \Large
+	%--------------------------------------------------------------- %
+	%\frametitle{Common Sample Spaces}
+	
+	Sample spaces abound and are infinite in number. But there are a few that are frequently used for examples in introductory statistics. Below are the experiments and their corresponding sample spaces:
+	
+	\begin{itemize}
+		\item For the experiment of flipping a coin, the sample space is {Heads, Tails} and has two elements.
+		
+		\item For the experiment of flipping two coins, the sample space is {(Heads, Heads), (Heads, Tails), (Tails, Heads), (Tails, Tails) } and has four elements.
+	\end{itemize}
+}
+%==================================================================================== %
+{ \Large
+	%--------------------------------------------------------------- %
+	%\frametitle{Common Sample Spaces}
+	\begin{itemize}
+		
+		\item For the experiment of flipping three coins, the sample space is {(Heads, Heads, Heads), (Heads, Heads, Tails), (Heads, Tails, Heads), (Heads, Tails, Tails), (Tails, Heads, Heads), (Tails, Heads, Tails), (Tails, Tails, Heads), (Tails, Tails, Tails) } and has eight elements.
+	\end{itemize}
+}
+%==================================================================================== %
+{ \Large
+	%--------------------------------------------------------------- %
+	%\frametitle{Common Sample Spaces}
+	\begin{itemize}
+		
+		\item For the experiment of flipping n coins, where n is a positive whole number, the sample space consists of 2n elements. There are a total of $C(n, k)$ ways to obtain k heads and $n - k$ tails for each number k from 0 to n.
+		
+		\item For the experiment consisting of rolling a single six-sided die, the sample space is 
+		\[\{1, 2, 3, 4, 5, 6\} \]
+	\end{itemize}
+}
+%=========================================================%
+{ \Large
+	\begin{itemize}
+		\item For the experiment of rolling two six-sided dice, the sample space consists of the set of the 36 possible pairings of the numbers 1, 2, 3, 4, 5 and 6.
+		\item For the experiment of rolling three six-sided dice, the sample space consists of the set of the 216 possible triples of the numbers 1, 2, 3, 4, 5 and 6.
+		\item For an experiment of drawing from a standard deck of cards, the sample space is the set that lists all 52 cards in a deck. For this example the sample space could only consider certain features of the cards, such as rank or suit.
+	\end{itemize}
+}
+%=========================================================%
+{ \Large
+	\textbf{Forming Other Sample Spaces}
+	
+	\begin{itemize}
+		\item These are the basic sample spaces. Others are out there for different experiments. It is also possible to combine several of the above experiments. 
+		\item When this is done, we end up with a sample space that is the Cartesian product of our individual sample spaces. We can also use a tree diagram to form these sample spaces.
+	\end{itemize}
+	
+	
+}
+%======================================================= %
+{ \Large
+	%\frametitle{Probability}
+	\begin{itemize}
+		\item Probability theory is the mathematical study of randomness. A
+		probability model of a random experiment is defined by assigning
+		probabilities to all the different outcomes.
+		\item Probability is a numerical measure of the likelihood that an event will
+		occur. Thus, probabilities can be used as measures of degree of
+		uncertainty associated with outcomes of an experiment.
+		Probability values are always assigned on a scale from 0 to 1.
+		\item A probability of 0 means that the event is impossible, while
+		a probability near 0 means that it is highly unlikely to occur.
+		\item Similarly an event with probability 1 is certain to occur, whereas an
+		event with a probability near to 1 is very likely to occur.
+	\end{itemize}
+	
+}
+%--------------------------------------------------------------------------------%
+{ \Large
+	%\frametitle{Experiments and Outcomes}
+	\begin{itemize}
+		\item In the study of probability any process of observation is referred to as an
+		experiment.
+		\item The results of an experiment (or other situation involving uncertainty)
+		are called the outcomes of the experiment.
+		\item An experiment is called a random experiment if the outcome can not be
+		predicted.
+		\item Typical examples of a random experiment are
 		\begin{itemize}
-			\item[(a)] What is the probability of getting a sum of 9 from two throws of a dice
-		\end{itemize}
-		Find the probability that the sum is 10 or greater if
+			\item a role of a die,
+			\item a toss of a coin,
+			\item drawing a card from a deck.
+		\end{itemize}If the experiment is yet to be performed we refer to possible outcomes
+		or possibilities for short. If the experiment has been performed, we
+		refer to realized outcomes or realizations.
+	\end{itemize}
+}
+
+%--------------------------------------------------------------------------------%
+{ \Large
+	%\frametitle{Sample Spaces and Events}
+	
+	\begin{itemize}
+		\item The set of all possible outcomes of a probability experiment is called a
+		\textbf{\emph{sample space}}, which is usually denoted by \textbf{\emph{S}}.
+		\item The sample space is an exhaustive list of all the possible outcomes of an
+		experiment. We call individual elements of this list \textbf{\emph{sample points}}.
+		\item Each possible outcome is represented by one and only one sample point
+		in the sample space.
+	\end{itemize}
+}
+
+%--------------------------------------------------------------------------------%
+{ \Large
+	%\frametitle{Sample Spaces: Examples}
+	For each of the following experiments, write out the sample space.
+	\begin{itemize}
+		\item Experiment: Rolling a die once
 		\begin{itemize}
-			\item[(b)] a 5 appears on the first die, 
-			\item[(c)] a 5 appears on at least one of the dice.
+			\item Sample space $S = \{1,2,3,4,5,6\}$
 		\end{itemize}
+		\item Experiment: Tossing a coin
+		\begin{itemize}
+			\item Sample space $S = \{ Heads , Tails\}$
+		\end{itemize}
+		\item Experiment: Measuring a randomly selected persons height (cms)
+		\begin{itemize}
+			\item Sample space $S =$ The set of all possible real numbers.
+		\end{itemize}
+	\end{itemize}
+}
+%--------------------------------------------------------------------------------%
+{ \Large
+	%\frametitle{Events}
+	
+	\begin{itemize} \item An event is a specific outcome, or any collection of outcomes of an
+		experiment.
+		\item Formally, any subset of the sample space is an event.
+		\item Any event which consists of a single outcome in the sample space is
+		called an \textbf{\emph{elementary}} or \textbf{\emph{simple event}}.
+		\item Events which consist of more than one outcome are called \textbf{\emph{compound
+				events.}}
+		\item For example, an elementary event associated with the die example could
+		be the ``die shows 3".
+		\item An compound event associated with the die example could be the ``die
+		shows an even number".
+	\end{itemize}
+}
+%--------------------------------------------------------------------------------%
+{ \Large
+	%\frametitle{The Complement Event}
+	
+	\begin{itemize} 
 		
-		
-		
-		%----------------------------------------------------------%
-	Tickets numbered 1 to 20 are mixed up and then a ticket is drawn at random. What is the probability that the ticket drawn has a number which is a multiple of 3 or 5
+		\item The complement of an event $A$ is the set of all outcomes in the sample
+		space that are not included in the outcomes of event $A$.
+		\item We call the complement event of $A$ as $A^c$.
+		\item The complement event of a die throw resulting in an even number is the
+		die throwing an odd number.
+		\item Question: if there is a $40\%$ chance of a randomly selected student being male, what is the probability of the selected student being female?
+	\end{itemize}
+}
+
+%--------------------------------------------------------------------------------%
+{ \Large
+	%\frametitle{Set Theory : Union and Intersection}
+	
+	Set theory is used to represent relationships among events.\\ \bigskip
+	
+	\noindent \textbf{Union of two events:}\\
+	The union of events A and B is the event containing all the sample points
+	belonging to A or B or both. This is denoted $A\cup B$, (pronounce as ``A union
+	B").\\ \bigskip
+	\noindent \textbf{Intersection of two events:}\\
+	The intersection of events A and B is the event containing all the sample
+	points common to both A and B. This is denoted $A\cap B$, (pronounce as ``A intersection
+	B").
+}
+
+%--------------------------------------------------------------------------------%
+{ \Large
+	%\frametitle{More Set Theory}
+	
+	In general, if A and B are two events in the sample space S, then
+	\begin{itemize} 
+		\item $A \subseteq B$ (A is a subset of B) = `if A occurs, so does B
+		\item $\varnothing$ (the empty set) = an impossible event
+		\item $S$ (the sample space) = an event that is certain to occur
+	\end{itemize}
+}
+
+%--------------------------------------------------------------------------------%
+{ \Large
+	%\frametitle{Examples of Events}
+	
+	Consider the experiment of rolling a die once. From before, the sample space
+	is given as $S = \{ 1,2,3,4,5,6\}$. The following are examples of possible events.
+	\begin{itemize} 
+		\item A = score $< 4$ = $\{ 1,2,3\}$.
+		\item B = `score is even' = $\{ 2,4,6\}$.
+		\item C = `score is 7' = 0
+		\item $A\cup B$ = `the score is $< 4$  or even or both' = $\{ 1,2,3,4,6\}$
+		\item $A\cap B$ = `the score is $< 4$  and even = $ \{ 2 \}$
+		\item $A^c$ =`event A does not occur' = $ \{ 4,5,6\}$
+	\end{itemize}
+}
+
 
 %===================================================================== %
 \chapter{Mathematical Fundamentals}
 \section*{The factorial function}
-The factorial function (symbol: !) just means to multiply a series of descending natural numbers. Examples:
+The factorial function (symbol: !) just means to multiply a series of descending natural numbers. \\ \bigskip
+\noindent \textbf{Examples:}
 
 \begin{itemize}
 	\item $4! = 4 \times 3 \times 2 \times 1 = 24$
@@ -54,95 +319,6 @@ Importantly
 For Example
 \[6! = 6 \times 5!  = 6 \times 5 \times 4! \]
 
-		%\begin{multicol}{2}
-		\begin{itemize}
-			\item ${6 \choose 2} = 15$
-			\item ${5 \choose 2} = 10$  
-			\item ${4 \choose 0} = 1$  
-			\item ${4 \choose 3} = 4$  
-		\end{itemize}
-		%\end{multicol}
-		
-			\begin{itemize}
-				\item factorials 
-				\[ n! = (n)\times (n-1)\times(n-2) \times \ldots \times 1 \]
-				\begin{itemize}
-					\item $5! = 5 \times 4 \times 3 \times 2 \times 1 = 120 $
-					\item $3! = 3 \times 2 \times 1$
-				\end{itemize}
-				\item Zero factorial
-				\[ 0! =  1 \]
-			\end{itemize}
-\section*{Session 09: Probability}
-\begin{itemize}
-	\item[9B.1] Permutation
-	
-	\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
-	
-	
-	\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
-	
-	
-	\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
-\end{itemize}
-
-%\begin{multicol}{2}
-\begin{itemize}
-	\item ${6 \choose 2} = 15$
-	\item ${5 \choose 2} = 10$  
-	\item ${4 \choose 0} = 1$  
-	\item ${4 \choose 3} = 4$  
-\end{itemize}
-%\end{multicol}
-
-%============================================== %
-\begin{framed}
-		
-		\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
-		\bigskip
-		
-		\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
-		
-		\bigskip
-		\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
-		\bigskip
-\end{framed}
-	
-%========================================================= %		
-\begin{itemize}
-	\item[9B.1] Permutation
-	
-	\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
-	
-	
-	\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
-	
-	
-	\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
-\end{itemize}
-
-%============================================================== %
-%\begin{multicol}{2}
-\begin{itemize}
-	\item ${6 \choose 2} = 15$
-	\item ${5 \choose 2} = 10$  
-	\item ${4 \choose 0} = 1$  
-	\item ${4 \choose 3} = 4$  
-\end{itemize}
-%\end{multicol}
-%============================================================== %		
-		\section{Counting Problems}
-		\large
-		\begin{itemize}
-			\item Permutations where repetition is allowed: 
-			\[ n! \]
-			\item Permutations where repetition is not allowed
-			\[ \frac{n!}{(n-k)!} \]
-		\end{itemize}
-		
-		
-		% http://www.mathsisfun.com/combinatorics/combinations-permutations.html
-		
 %%- \frametitle{Factorials Numbers}
 
 A factorial is a positive whole number, based on a number $n$ , and which is written as $``n!"$. The factorial $n!$ is defined as follows:
@@ -160,11 +336,93 @@ Remark $n!  =n \times (n-1)!$\\ \bigskip
 \end{itemize}
 Remark $0! = 1$ not $0$.
 
+	%--------------------------------------------------------%
+	{\Large
+		%%- \frametitle{Factorials Numbers}
+		
+		A factorial is a positive whole number, based on a number $n$ , and which is written as $``n!"$. The factorial $n!$ is defined as follows:
+		
+		\[n!  =n \times (n-1) \times (n-2) \times \ldots \times 2 \times 1 \]
+		
+		Remark $n!  =n \times (n-1)!$\\ \bigskip
+		
+		\textbf{ Example: }
+		
+		\begin{itemize}
+			\item $3!  = 3 \times 2  \times 1 = 6 $
+			
+			\item $4!  = 4 \times 3! = 4 \times 3 \times 2 \times 1 = 24$
+		\end{itemize}
+		Remark $0! = 1$ not $0$.
+		
+		
+	}
+\begin{itemize}
+	\item factorials 
+	\[ n! = (n)\times (n-1)\times(n-2) \times \ldots \times 1 \]
+	\begin{itemize}
+		\item $5! = 5 \times 4 \times 3 \times 2 \times 1 = 120 $
+		\item $3! = 3 \times 2 \times 1$
+	\end{itemize}
+	\item Zero factorial
+	\[ 0! =  1 \]
+\end{itemize}	
+
+
+%===========================================================================%
+%% Page READY
+\newpage
+\section*{Binomial Coefficients}
+{
+	\LARGE
+\begin{framed}
+
+		\[ {n \choose k} = \frac{n!}{k! \times (n-k)!} \]
+\end{framed}		
+		\begin{multicols}{2}
+				\begin{itemize}
+					\item ${6 \choose 2} = 15$
+					\item ${5 \choose 2} = 10$  
+					\item ${4 \choose 0} = 1$  
+					\item ${4 \choose 3} = 4$  
+				\end{itemize}
+		\end{multicols}	
+		\bigskip				
+\noindent \textbf{Exercises}\\				
+		Evaluate the following:
+		\begin{multicols}{2}
+			\begin{enumerate}
+				\item[(i)] ${5 \choose 2}$
+				\item[(ii)] ${5 \choose 0}$
+				\item[(iii)] ${6 \choose 3}$
+				\item[(iv)] ${6 \choose 6}$
+				\item[(v)] ${10 \choose 1}$
+				\item[(vi)] ${10 \choose 9}$
+			\end{enumerate}        
+		\end{multicols}		
+}
+
+%===========================================================================%
+\newpage
+		\section{Counting Problems}
+		\large
+		\begin{itemize}
+			\item Permutations where repetition is allowed: 
+			\[ n! \]
+			\item Permutations where repetition is not allowed
+			\[ \frac{n!}{(n-k)!} \]
+		\end{itemize}
+		
+		
+		% http://www.mathsisfun.com/combinatorics/combinations-permutations.html
+		
+
+
 
 
 %--------------------------------------------------------%
 {\Large
-	%%- \frametitle{Permutations and Combinations}
+\section{Permutations and Combinations}
 	
 	
 	Often we are concerned with computing the number of ways of selecting and arranging groups of items. \begin{itemize} \item  A \textbf{\emph{combination}} describes the selection of items from a larger group of items.  \item A \textbf{\emph{permutation}} is a combination that is arranged in a particular way.
@@ -224,25 +482,124 @@ Remark $0! = 1$ not $0$.
 	
 }
 
+\newpage
+\section{Permutations}
+\Large
+\begin{itemize}
+	\item Permutations where repetition is allowed: 
+	\[ n! \]
+	\item Permutations where repetition is not allowed
+	\[ \frac{n!}{(n-k)!} \]
+\end{itemize}
 
+\newpage
 
+\newpage
 %--------------------------------------------------------%
 {\Large
-	%%- \frametitle{Example of Combinations}
-	
-	A committee of 4 must be chosen from 3 females and 4 males.
+\noindent \textbf{Worked Example}
+A committee of 4 must be chosen from 3 females and 4 males.
 	
 	\begin{itemize}
-		\item In how many ways can the committee be chosen.
-		\item In how many cans 2 males and 2 females be chosen.
-		\item Compute the probability of a committee of 2 males and 2 females are chosen.
-		\item Compute the probability of at least two females.
+		\item[$\bullet$] In how many ways can the committee be chosen.
+		\item[$\bullet$] In how many can 2 males and 2 females be chosen.
+		\item[$\bullet$]  Compute the probability of a committee of 2 males and 2 females are chosen.
+		\item[$\bullet$] Compute the probability of at least two females.
 	\end{itemize}
+\bigskip
 }
 
 %--------------------------------------------------------%
 
-	%%- \frametitle{Example of Combinations}
+		%%- \frametitle{Example of Combinations}
+		
+		A committee of 4 must be chosen from 3 females and 4 males.
+		
+		\begin{itemize}
+			\item In how many ways can the committee be chosen.
+			\item In how many cans 2 males and 2 females be chosen.
+			\item Compute the probability of a committee of 2 males and 2 females are chosen.
+			\item Compute the probability of at least two females.
+		\end{itemize}
+
+	
+	%--------------------------------------------------------%
+	{\Large
+		%%- \frametitle{Example of Combinations}
+		
+		\textbf{Part 1}
+		
+		We need to choose 4 people from 7:
+		
+		This can be done in
+		
+		\[
+		^7 C_4  = {7!  \over 4! \times 3!} =  {7 \times 6 \times 5 \times 4!  \over 4! \times 3!} = 35 \mbox{ ways.}
+		\]
+		
+		
+		\textbf{Part 2}
+		
+		With 4 men to choose from, 2 men can be selected in \[
+		^4 C_2  = {4!  \over 2! \times 2!} =  {4 \times 3 \times 2!  \over 2! \times 2!} = 6\mbox{ ways.}
+		\]
+		
+		Similarly 2 women can be selected from 3 in
+		\[
+		^3 C_2  = {3!  \over 2! \times1!} =  {3 \times 2!  \over 2! \times 1!} = 3\mbox{ ways.}
+		\]
+		
+	}
+	
+	%======================================================== %
+	%%- \frametitle{Using \texttt{R}}
+	When implementing combination calculations in \texttt{R}, we use the \texttt{choose()} function.
+	
+	\begin{verbatim}
+	> choose(5,0)
+	[1] 1
+	> choose(5,1)
+	[1] 5
+	> choose(5,2)
+	[1] 10
+	> choose(5,3)
+	[1] 10
+	> choose(5,4)
+	[1] 5
+	> choose(5,5)
+	[1] 1
+	\end{verbatim}
+	
+	%% ----------------------------------%%
+	%--------------------------------------------------------%
+	{\Large
+		%%- \frametitle{Example of Combinations}
+		
+		\textbf{Part 2}
+		
+		Thus a committee of 2 men and 2 women can be selected in $ 6 \times 3  = 18 $ ways.\\
+		\bigskip
+		\textbf{Part 3}
+		
+		The probability of two men and two women on a committee is
+		\[ {\mbox{Number of ways of selecting 2 men and 2 women} \over \mbox{Number of ways of selecting 4 from 7}} = {18 \over 35 }\]
+		
+		
+		
+		\textbf{Part 4}
+		\begin{itemize}
+			\item The probability of at least two females is the probability of 2 females or 3 females being selected.
+			\item We can use the addition rule, noting that these are two mutually exclusive events.
+			\item From before we know that probability of 2 females being selected is 18/35.
+			\item We have to compute the number of ways of selecting 1 male from 4 (4 ways) and the number of ways of selecting three females from 2 ( only 1 way)
+			\item The probability of selecting three females is therefore ${4 \times 1 \over 35} = 4/35$
+			\item So using the addition rule
+			\[ Pr(\mbox{ at least 2 females }) = Pr(\mbox{ 2 females }) + Pr(\mbox{ 3 females }) \]
+			\[ Pr(\mbox{ at least 2 females })  = 18/35 + 4/35 = 22/35 \]
+		\end{itemize}
+		
+	}
+%=================================================================================%
 	
 	\textbf{Part 1}
 	
@@ -265,26 +622,10 @@ Remark $0! = 1$ not $0$.
 	\[
 	^3 C_2  = {3!  \over 2! \times1!} =  {3 \times 2!  \over 2! \times 1!} = 3\mbox{ ways.}
 	\]
-	
+\noindent 	\textit{(Hint Multiplication Rule)}
+\newpage
 
-%============================================================== %
-When implementing combination calculations in \texttt{R}, we use the \texttt{choose()} function.
-\begin{framed}	
-	\begin{verbatim}
-	> choose(5,0)
-	[1] 1
-	> choose(5,1)
-	[1] 5
-	> choose(5,2)
-	[1] 10
-	> choose(5,3)
-	[1] 10
-	> choose(5,4)
-	[1] 5
-	> choose(5,5)
-	[1] 1
-	\end{verbatim}
-\end{framed}
+
 	
 	%% ----------------------------------%%
 	%--------------------------------------------------------%
@@ -329,41 +670,203 @@ When implementing combination calculations in \texttt{R}, we use the \texttt{cho
 	}
 	
 	
+%============================================================== %
+\newpage
+\section*{Computing binomial Coefficients with R}
+When implementing combination calculations in \texttt{R}, we use the \texttt{choose()} function.
+\begin{framed}	
+	\begin{verbatim}
+	> choose(5,0)
+	[1] 1
+	> choose(5,1)
+	[1] 5
+	> choose(5,2)
+	[1] 10
+	> choose(5,3)
+	[1] 10
+	> choose(5,4)
+	[1] 5
+	> choose(5,5)
+	[1] 1
+	\end{verbatim}
+\end{framed}	
+%================================================================================== %
+%================================================================================== %
+\newpage
+
+\subsection*{Permutations}
+
+
+
+
+%------------------------------------------------------------------------------------------------%		\section*{Session 09: Probability}
+\begin{itemize}
+	\item[9B.1] Permutation
 	
-	%--------------------------------------------------------%
+	\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
+	
+	
+	\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
+	
+	
+	\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
+\end{itemize}
+
+\begin{framed}
+	
+	\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
+	\bigskip
+	
+	\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
+	
+	\bigskip
+	\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
+	\bigskip
+\end{framed}
+
+%============================================================== %		
+	\section*{Type of Permutations}
+	There are two types of permutation:
+	\begin{enumerate}
+		\item Repetition is Allowed: such as the lock above. It could be "333".
+		\item No Repetition: for example the first three people in a running race. You can't be first and second.
+	\end{enumerate}
+	
+	\subsection*{Summary}
+	\begin{itemize}
+		\item If the order doesn't matter, it is a Combination.
+		\item If the order does matter it is a Permutation.
+	\end{itemize}
+	%-------------------------------------%
+\newpage
+	
+	\subsection*{Permutations : Worked Example}
+	
+	How many anagrams (permutations of the letters) are there of the following words
+	\begin{enumerate}
+		\item ANSWER
+		\item PERMUTE
+		\item ANAGRAM
+		\item LITTLE
+	\end{enumerate}
+	
+	
+	\textbf{Part 1 : ANSWER}\\
+	Examples:
+	\begin{center}
+		ASNWRE,\;
+		SANERW,\;
+		REWSAN,\;...
+	\end{center}
+	
+	Since ANSWER has 6 distinct letters, the number of permutations (anagrams) is
+	\LARGE
+	\[6! = 6\times 5 \times 4 \times 3 \times 2\times 1 = \boldsymbol{720} \]
+	
+%==================================================================================%
+	\textbf{Part 2 : PERMUTE}\\
+	\begin{itemize}
+		\item[$\bullet$] The word PERMUTE has 7 letters, but only 6 different letters. 
+		\item[$\bullet$] There are 7! ways to arrange 7 letters.
+		\item[$\bullet$] However, interchanging the two Es does not result in a new permutation. There would be two identical anagrams.
+	\end{itemize}
+	
+	\begin{center}
+		P\textcolor{red}{E}RMUT\textcolor{blue}{E}, \; MUT\textcolor{red}{E}P\textcolor{blue}{E}R, \; P\textcolor{red}{E}T\textcolor{blue}{E}MUR,\; ..\\
+		P\textcolor{blue}{E}RMUT\textcolor{red}{E}, \; MUT\textcolor{blue}{E}P\textcolor{red}{E}R, \; P\textcolor{blue}{E}T\textcolor{red}{E}MUR,\; ..
+	\end{center}
+	
+
+	\begin{itemize}
+		\item[$\bullet$]  The number of permutations (anagrams) is half of 7! .
+		\LARGE
+		\[\frac{7!}{2} =  \frac{5040}{2} = \boldsymbol{2520} \]
+	\end{itemize}
+
+%==================================================================================%	
+	\newpage
+	\textbf{Part 3 : ANAGRAM}\\
+	\begin{itemize}
+		\item The word ANAGRAM has 7 letters, but there are three As.
+		\item From before, there are 7! ways to arrange 7 letters.
+		\item How many new permutations are found by re-arranging the As?
+	\end{itemize}
+	\LARGE
+	\begin{multicols}{2}
+	\begin{itemize}
+		\item[(i)]	\textcolor{red}{A}N\textcolor{blue}{A}GR\textcolor{green}{A}M 
+		\item[(ii)]		\textcolor{red}{A}N\textcolor{green}{A}GR\textcolor{blue}{A}M 
+		\item[(iii)] 		\textcolor{blue}{A}N\textcolor{red}{A}GR\textcolor{green}{A}M  
+		\item[(iv)]		\textcolor{green}{A}N\textcolor{red}{A}GR\textcolor{blue}{A}M 
+		\item[(v)]	\textcolor{blue}{A}N\textcolor{green}{A}GR\textcolor{red}{A}M 
+		\item[(vi)]		\textcolor{green}{A}N\textcolor{blue}{A}GR\textcolor{red}{A}M 
+	\end{itemize}
+	\end{multicols}
+
+	
+	\vspace{0.2cm}
+
+	\begin{itemize}
+		\item We divide 7! by 3! to account for the identical anagrams.
+		\LARGE
+		\[\frac{7!}{3!} =  \frac{5040}{6} = \boldsymbol{840} \]
+	\end{itemize}
+	
+	%-------------------------------------%
+	\newpage
+	\subsection{Permutations}
+	\Large
+
+	\textbf{Part 2 : PERMUTE}\\
+	\begin{itemize}
+		\item We re-express the answer from part 2 as follows:
+		\LARGE
+		\[\frac{7!}{2!} =  \frac{5040}{2} = \boldsymbol{2520} \]
+	\end{itemize}
+	
+	\textbf{Part 4 : LITTLE}\\
+	\begin{itemize}
+		\item The word LITTLE has 6 letters, but there are two Ls and two Ts.
+		\item From before, there are 6! ways to arrange 6 letters.
+		\item Again, interchanging the two Ls and Ts does not result in a new permutation. 
+		\LARGE
+		\[\frac{6!}{2!\times 2!} =  \frac{720}{4} = \boldsymbol{180} \]
+	\end{itemize}
+%====================================================================================%
+\newpage	
+	\subsection{Permutations}
+
+	\begin{itemize}
+		\item In how many permutations are there of counting a subset of k elements, when there are $n$ elements in total.
+		
+		\item The number of permutations of a set of n elements is denoted n! (pronounced n factorial.)
+	\end{itemize}
+	
+	%------------------------------------------------------ %
+	
+	\subsection{Permutation Formula}
+	
+	A formula for the number of possible permutations of k objects from a set of n. This is usually written $^nP_k$ .
+	
+	\bigskip
+	\textbf{Formula:}	
+	\[ ^nP_k = \frac{n!}{(n-k)!} =  n.(n-1).(n-2).\ldots(n-k+1) \]
+	
+	
+	
+	\textbf{Example:}\\	
+	How many ways can 4 students from a group of 15 be lined up for a photograph?\\
+	\bigskip
+	%--------------- %
+	\textbf{Answer:	}\\
+	There are $^{15}P_4$ possible permutations of 4 students from a group of 15.
+	\[ ^{15}P_4 = \frac{15!}{11!} = 15\times 14\times 13\times 12 = 32760 \]
+	There are 32760 different lineups.
+	
+
 	\section{Combinations and Permutations }
 
-\begin{itemize}
-	\item factorials 
-	\[ n! = (n)\times (n-1)\times(n-2) \times \ldots \times 1 \]
-	\begin{itemize}
-		\item $5! = 5 \times 4 \times 3 \times 2 \times 1 = 120 $
-		\item $3! = 3 \times 2 \times 1$
-	\end{itemize}
-	\item Zero factorial
-	\[ 0! =  1 \]
-\end{itemize}	
-	%--------------------------------------------------------%
-	{\Large
-		%%- \frametitle{Factorials Numbers}
-		
-		A factorial is a positive whole number, based on a number $n$ , and which is written as $``n!"$. The factorial $n!$ is defined as follows:
-		
-		\[n!  =n \times (n-1) \times (n-2) \times \ldots \times 2 \times 1 \]
-		
-		Remark $n!  =n \times (n-1)!$\\ \bigskip
-		
-		\textbf{ Example: }
-		
-		\begin{itemize}
-			\item $3!  = 3 \times 2  \times 1 = 6 $
-			
-			\item $4!  = 4 \times 3! = 4 \times 3 \times 2 \times 1 = 24$
-		\end{itemize}
-		Remark $0! = 1$ not $0$.
-		
-		
-	}
+
 	
 	%--------------------------------------------------------%
 	{\Large
@@ -416,94 +919,7 @@ When implementing combination calculations in \texttt{R}, we use the \texttt{cho
 		\[ ^5 P_3 = \frac{5!}{(5-3)!}  = {5! \over 2!} = 60\]
 		
 
-		%%- \frametitle{Example of Combinations}
-		
-		A committee of 4 must be chosen from 3 females and 4 males.
-		
-		\begin{itemize}
-			\item In how many ways can the committee be chosen.
-			\item In how many cans 2 males and 2 females be chosen.
-			\item Compute the probability of a committee of 2 males and 2 females are chosen.
-			\item Compute the probability of at least two females.
-		\end{itemize}
-	}
-	
-	%--------------------------------------------------------%
-	{\Large
-		%%- \frametitle{Example of Combinations}
-		
-		\textbf{Part 1}
-		
-		We need to choose 4 people from 7:
-		
-		This can be done in
-		
-		\[
-		^7 C_4  = {7!  \over 4! \times 3!} =  {7 \times 6 \times 5 \times 4!  \over 4! \times 3!} = 35 \mbox{ ways.}
-		\]
-		
-		
-		\textbf{Part 2}
-		
-		With 4 men to choose from, 2 men can be selected in \[
-		^4 C_2  = {4!  \over 2! \times 2!} =  {4 \times 3 \times 2!  \over 2! \times 2!} = 6\mbox{ ways.}
-		\]
-		
-		Similarly 2 women can be selected from 3 in
-		\[
-		^3 C_2  = {3!  \over 2! \times1!} =  {3 \times 2!  \over 2! \times 1!} = 3\mbox{ ways.}
-		\]
-		
-	}
-	
-%======================================================== %
-		%%- \frametitle{Using \texttt{R}}
-		When implementing combination calculations in \texttt{R}, we use the \texttt{choose()} function.
-		
-		\begin{verbatim}
-		> choose(5,0)
-		[1] 1
-		> choose(5,1)
-		[1] 5
-		> choose(5,2)
-		[1] 10
-		> choose(5,3)
-		[1] 10
-		> choose(5,4)
-		[1] 5
-		> choose(5,5)
-		[1] 1
-		\end{verbatim}
-		
-		%% ----------------------------------%%
-		%--------------------------------------------------------%
-		{\Large
-			%%- \frametitle{Example of Combinations}
-			
-			\textbf{Part 2}
-			
-			Thus a committee of 2 men and 2 women can be selected in $ 6 \times 3  = 18 $ ways.\\
-			\bigskip
-			\textbf{Part 3}
-			
-			The probability of two men and two women on a committee is
-			\[ {\mbox{Number of ways of selecting 2 men and 2 women} \over \mbox{Number of ways of selecting 4 from 7}} = {18 \over 35 }\]
-			
 
-			
-			\textbf{Part 4}
-			\begin{itemize}
-				\item The probability of at least two females is the probability of 2 females or 3 females being selected.
-				\item We can use the addition rule, noting that these are two mutually exclusive events.
-				\item From before we know that probability of 2 females being selected is 18/35.
-				\item We have to compute the number of ways of selecting 1 male from 4 (4 ways) and the number of ways of selecting three females from 2 ( only 1 way)
-				\item The probability of selecting three females is therefore ${4 \times 1 \over 35} = 4/35$
-				\item So using the addition rule
-				\[ Pr(\mbox{ at least 2 females }) = Pr(\mbox{ 2 females }) + Pr(\mbox{ 3 females }) \]
-				\[ Pr(\mbox{ at least 2 females })  = 18/35 + 4/35 = 22/35 \]
-			\end{itemize}
-			
-		}
 %=========================================================== %
 \newpage		
 
@@ -524,7 +940,7 @@ When implementing combination calculations in \texttt{R}, we use the \texttt{cho
 If the probability of C is $70 \%$ then the probability of $C^{\prime}$ is $30\%$		
 
 %================================================================ %
-\section*{Combinations}
+\section*{Worked Examples: Permuations and Combinations}
 
 \subsection*{Formula}
 \[ \binom nk  = \frac{n!}{k!(n-k)!} = \frac{n(n-1)\ldots(n-k+1)}{k(k-1)\dots 1},\]
@@ -539,13 +955,8 @@ which can be written using factorials as  whenever $k\leq n$
 \[ \binom 5 0   = \frac{5!}{0!\;(5-0)!} = \frac{5!}{0! .5!} = \frac{5!}{2!} = 1\]
 Recall $0! =1$
 %-----------------------------------------------------%
-\section{Urn Questions}	
+\subsection*{Example 3 :  Urn Question}	
 
-%----------------------------------------------------------%
-\bigskip 
-\textbf{Urn Questions}
-%----------------------------------------------------------%
-%page66
 Suppose an urn contains seven white, four black and three red beads. Three beads are picked at random without replacement.
 Find the probability that all three beads are the different in colour.
 at least two beads are the same colour.
@@ -553,23 +964,7 @@ at least two beads are the same colour.
 	%----------------------------------------------------------%
 	\item A bag contains 2 red, 3 green and 2 blue balls. Two balls are drawn at random. What is the probability that none of the balls drawn is blue?
 	
-	
-	
-	%----------------------------------------------------------%
-	\bigskip 
-	\textbf{Independent Events}
-	%----------------------------------------------------------%
-	\item Competitors A and B fire at their respective targets. The probability that A hits a target is 1/3 and the probability that B hits a target is 1/5. Find the probability that:
-	\begin{itemize}
-		\item[i.] (2 marks) A does not hit the target,
-		\item[ii.](2 marks)  both hit their respective targets,
-		\item[iii.](2 marks)  only one of them hits a target,
-		\item[iv.](2 marks) neither A nor B hit their targets.
-	\end{itemize}
-	%---------------------------------------------------------- %
-	
-	% Page 32
-	\item Four Students work independently on a mathematical problem. The probability that the four students have of solving the problem are as follows:
+
 	%----------------------------------------------------------%
 	\item An IT consultant is responsible for three software engineering projects X, Y and Z.
 	He knows that the probability of completing project X in time is 0.99, for project Y this probability is 0.95
@@ -630,36 +1025,7 @@ at least two beads are the same colour.
 \end{itemize}
 
 %============================================================================================ %
-\newpage
-		\section{Permutations}
-		\Large
-		\begin{itemize}
-			\item Permutations where repetition is allowed: 
-			\[ n! \]
-			\item Permutations where repetition is not allowed
-			\[ \frac{n!}{(n-k)!} \]
-		\end{itemize}
-\textbf{\;\;\;Choose Operator}
-%----------------------------------------------------------%
 \begin{itemize}
-	%----------------------------------------------------------%
-	
-	
-	\item[1] Choose Operator
-	\[ {n \choose k} = \frac{n!}{k! \times (n-k)!} \]
-	Evaluate the following:
-	\begin{multicols}{3}
-		\begin{enumerate}
-			\item[1] ${5 \choose 2}$
-			\item[2] ${5 \choose 0}$
-			\item[3] ${6 \choose 3}$
-			\item[4] ${6 \choose 6}$
-			\item[5] ${10 \choose 1}$
-			\item[6] ${10 \choose 9}$
-		\end{enumerate}        
-	\end{multicols}
-	%----------------------------------------------------------%
-	%Page 29
 	\item[2] In how many ways can a group of four people be selected from three men and four women?
 	In how many of these groups are there more women than men?
 	%----------------------------------------------------------%
@@ -677,142 +1043,7 @@ at least two beads are the same colour.
 	\item[5] How many different four digit numners greater than 5000 can be formed from the digits \textbf{2,4,5,8,9} if each digit can only be used once in any given number. How many of these numbers are odd?
 \end{itemize}
 %============================================================= %
-	\section*{Type of Permutations}
-		There are two types of permutation:
-		\begin{enumerate}
-			\item Repetition is Allowed: such as the lock above. It could be "333".
-			\item No Repetition: for example the first three people in a running race. You can't be first and second.
-		\end{enumerate}
-		
-		\subsection*{Summary}
-		\begin{itemize}
-			\item If the order doesn't matter, it is a Combination.
-			\item If the order does matter it is a Permutation.
-		\end{itemize}
-		%-------------------------------------%
-		
-		\subsection{Permutations}
-	
-		How many anagrams (permutations of the letters) are there of the following words
-		\begin{enumerate}
-			\item ANSWER
-			\item PERMUTE
-			\item ANAGRAM
-			\item LITTLE
-		\end{enumerate}
-		
-		
-		\textbf{Part 1 : ANSWER}\\
-		Examples:
-		\begin{center}
-			ASNWRE,\;
-			SANERW,\;
-			REWSAN,\;...
-		\end{center}
-		
-		Since ANSWER has 6 distinct letters, the number of permutations (anagrams) is
-		\LARGE
-		\[6! = 6\times 5 \times 4 \times 3 \times 2\times 1 = \boldsymbol{720} \]
-		
-		\vspace{-0.3cm}
-		\textbf{Part 2 : PERMUTE}\\
-		\begin{itemize}
-			\item The word PERMUTE has 7 letters, but only 6 different letters. 
-			\item There are 7! ways to arrange 7 letters.
-			\item However, interchanging the two Es does not result in a new permutation. There would be two identical anagrams.
-		\end{itemize}
-		
-		\begin{center}
-			P\textcolor{red}{E}RMUT\textcolor{blue}{E}, \; MUT\textcolor{red}{E}P\textcolor{blue}{E}R, \; P\textcolor{red}{E}T\textcolor{blue}{E}MUR,\; ..\\
-			P\textcolor{blue}{E}RMUT\textcolor{red}{E}, \; MUT\textcolor{blue}{E}P\textcolor{red}{E}R, \; P\textcolor{blue}{E}T\textcolor{red}{E}MUR,\; ..
-		\end{center}
-		
 
-		\textbf{Part 2 : PERMUTE}\\
-		\begin{itemize}
-			\item The number of permutations (anagrams) is half of 7! .
-			\LARGE
-			\[\frac{7!}{2} =  \frac{5040}{2} = \boldsymbol{2520} \]
-		\end{itemize}
-		
-		
-		\textbf{Part 3 : ANAGRAM}\\
-		\begin{itemize}
-			\item The word ANAGRAM has 7 letters, but there are three As.
-			\item From before, there are 7! ways to arrange 7 letters.
-			\item How many new permutations are found by re-arranging the As?
-		\end{itemize}
-		\LARGE
-		\begin{itemize}
-		\item	\textcolor{red}{A}N\textcolor{blue}{A}GR\textcolor{purple}{A}M 
-	\item		\textcolor{red}{A}N\textcolor{purple}{A}GR\textcolor{blue}{A}M 
-	\item 		\textcolor{blue}{A}N\textcolor{red}{A}GR\textcolor{purple}{A}M  \\
-	\item		\textcolor{purple}{A}N\textcolor{red}{A}GR\textcolor{blue}{A}M 
-		\item	\textcolor{blue}{A}N\textcolor{purple}{A}GR\textcolor{red}{A}M 
-	\item		\textcolor{purple}{A}N\textcolor{blue}{A}GR\textcolor{red}{A}M 
-		\end{itemize}
-
-		\vspace{-0.1cm}
-		\textbf{Part 3 : ANAGRAM}\\
-		\begin{itemize}
-			\item We divide 7! by 3! to account for the identical anagrams.
-			\LARGE
-			\[\frac{7!}{3!} =  \frac{5040}{6} = \boldsymbol{840} \]
-		\end{itemize}
-		
-		%-------------------------------------%
-		
-		\subsection{Permutations}
-		\Large
-		\vspace{-2.3cm}
-		\textbf{Part 2 : PERMUTE}\\
-		\begin{itemize}
-			\item We re-express the answer from part 2 as follows:
-			\LARGE
-			\[\frac{7!}{2!} =  \frac{5040}{2} = \boldsymbol{2520} \]
-		\end{itemize}
-		
-		\textbf{Part 4 : LITTLE}\\
-		\begin{itemize}
-			\item The word LITTLE has 6 letters, but there are two Ls and two Ts.
-			\item From before, there are 6! ways to arrange 6 letters.
-			\item Again, interchanging the two Ls and Ts does not result in a new permutation. 
-			\LARGE
-			\[\frac{6!}{2!\times 2!} =  \frac{720}{4} = \boldsymbol{180} \]
-		\end{itemize}
-		
-		%------------------------------------------------------ %
-		
-		\subsection{Permutations}
-		\large
-		\begin{itemize}
-			\item In how many permutations are there of counting a subset of k elements, when there are $n$ elements in total.
-			
-			\item The number of permutations of a set of n elements is denoted n! (pronounced n factorial.)
-		\end{itemize}
-		
-		%------------------------------------------------------ %
-		
-		\subsection{Permutation Formula}
-		
-		A formula for the number of possible permutations of k objects from a set of n. This is usually written $^nP_k$ .
-		
-		\bigskip
-		\textbf{Formula:}	
-		\[ ^nP_k = \frac{n!}{(n-k)!} =  n.(n-1).(n-2).\ldots(n-k+1) \]
-		
-		
-		
-		\textbf{Example:}\\	
-		How many ways can 4 students from a group of 15 be lined up for a photograph?\\
-		\bigskip
-		%--------------- %
-		\textbf{Answer:	}\\
-		There are $^{15}P_4$ possible permutations of 4 students from a group of 15.
-		\[ ^{15}P_4 = \frac{15!}{11!} = 15\times 14\times 13\times 12 = 32760 \]
-		There are 32760 different lineups.
-		
-	
 \section{Counting}
 % 2007 Q8
 Given S is the set of all 5 digit binary strings, E is the set of a 5 digit
@@ -826,25 +1057,6 @@ with two zeroes.
 %-------------------------------------------------------------------------%
 %-----------------------------------------------------%
 
-{\LARGE
-	%% \frametitle{Overview of Current Part of Course}
-	Probability Distributions (Question 2 for End Of Year Exam)
-	\begin{itemize}
-		\item Discrete Probability Distributions
-		\begin{itemize}
-			\item Binomial Probability Distribution (Week 3)
-			\item Geometric Probability Distribution (Week 3)
-			\item Poisson Probability Distribution (Week 3/4)
-		\end{itemize}
-		
-		\item Continuous Probability Distributions
-		\begin{itemize}
-			\item Exponential Probability Distribution (Week 4)
-			\item Uniform Probability Distribution (Week 4)
-			\item Normal Probability Distribution (Week 4/5)
-		\end{itemize}
-	\end{itemize}
-}
 
 %% ----------------------------------%%
 %% \frametitle{Continuous Random variables}
@@ -880,11 +1092,7 @@ with two zeroes.
 	\item However,  it is useful to know what the purpose of definite integrals are, because we will be using the results derived from definite integrals. \item It is assumed that students are familiar with functions.
 \end{itemize}
 %% ----------------------------------%%
-%----------------------------------------------------------------------------------------------------%
-%% ----------------------------------%%
-%% \frametitle{Functions}
 
-\vspace{-0.5cm}
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/6AFunction}
@@ -896,10 +1104,7 @@ with two zeroes.
 Some function $f(x)$ evaluated at $x=1$.
 %% ----------------------------------%%
 %----------------------------------------------------------------------------------------------------%
-%% ----------------------------------%%
-%% \frametitle{Definite Integral}
 
-\vspace{-0.5cm}
 \begin{center}
 	\includegraphics[scale=0.35]{images/6ADefiniteIntegral}
 \end{center}
@@ -960,22 +1165,14 @@ Definite integral of function is area under curve between X=1 and X=2.
 		
 		\item Intuitively, it is the ``area so far" function of the probability distribution.
 	\end{itemize}
-}
-%----------------------------------------------------------------------------------------------------%
-%% ----------------------------------%%
-%% \frametitle{Cumulative Distribution Function}
-\vspace{-0.5cm}
+
+
 \begin{center}
 	\includegraphics[scale=0.35]{images/6ACDF}
 \end{center}
 Cumulative Distribution Function $P(Z \leq 1)$ \\ Here the random variable is called $Z$ (we will see why later)
-%% ----------------------------------%%
 
 
-
-%---------------------------------------------------------------------------%
-{\LARGE
-	%% \frametitle{Continuous Random Variables}
 	
 	\begin{itemize}
 		\item Probability Density Function
@@ -996,46 +1193,27 @@ Cumulative Distribution Function $P(Z \leq 1)$ \\ Here the random variable is ca
 
 %---------------------------------------------------------------------------%
 {\LARGE
-	%% \frametitle{Continuous Uniform Distribution}
-	A random variable X is called a continuous uniform random variable over the interval $(a,b)$ if it's probability density function is given by
-	
-	\[ f_{X}(x)  =  { 1 \over b-a}   \hspace{2cm}  \mbox{ when } a \leq x \leq b\]
-	
-	The corresponding cumulative density function is
-	
-	\[ F_x(x) = { x-a \over b-a}   \hspace{2cm}  \mbox{ when } a \leq x \leq b\]
-	
-}
 
-%-----------------------------------------------------------------------------%
+\chapter{Compound Events}
+	%----------------------------------------------------------%
+\section{Probability Formulae}
 
-{\LARGE
+\begin{itemize}
 	
-	The mean of the continuous uniform distribution is
+	\item Conditional probability:
+	\begin{equation*}
+	P(B|A)=\frac{P\left( A\text{ and }B\right) }{P\left( A\right) }.
+	\end{equation*}
 	
-	\[ E(X) = {a+b \over 2}\]
 	
-	\[ V(X) = {(b-a)^2\over12}\]
-}
+	\item Bayes' Theorem:
+	\begin{equation*}
+	P(B|A)=\frac{P\left(A|B\right) \times P(B) }{P\left( A\right) }.
+	\end{equation*}
+\end{itemize}
 
-%-----------------------------------------------------------------------------%
 
-{\LARGE
-	%% \frametitle{The Memoryless property}
-	The most interesting property of the exponential distribution is the \textbf{\emph{memoryless}} property. By this , we mean that if  the lifetime of a component is exponentially distributed, then an item which has been in use for some time is a good as a brand new item with regards to the likelihood of failure.
-	
-	The exponential distribution is the only distribution that has this property.
-}
-
-%--------------------------------------------------------%
-\section{Mutually Exclusive Events}
-Mutually exclusive events are events that cannot happen at the same time.
-\[ P(A and B) = P(A) + P(B) \]
-
-%------------------------------------------------------------------------------------------------%
-%------------------------------------------------------------------------------------------------%
-%------------------------------------------------------------------------------------------------%
-\section*{Session 09: Probability}
+\section{Basic of Compound Events}
 
 \begin{itemize}
 	\item pairwise disjoint sets
@@ -1043,6 +1221,324 @@ Mutually exclusive events are events that cannot happen at the same time.
 \end{itemize}
 \subsection*{Theorem}
 \[ |A \cup B| = |A| + |B| - |A \cap B|  \]
+%------------------------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------------------------%
+\section*{Complement Rule}
+
+
+%---------------------------------------------- %
+
+\[P(A |B) = \frac{P(A \cap B)}{P(B)})\]
+
+The complement rule in Probability
+
+$P(C^{\prime}) = 1- P(C)$
+
+
+If the probability of C is $70 \%$ then the probability of $C^{\prime}$ is $30\%$
+
+%------------------------------------------------------------%
+{\LARGE
+	%\frametitle{Random Variables}
+	\begin{itemize} \item The outcome of an experiment need not be a number, for example, the outcome when a coin is tossed can be `heads' or `tails'. \item
+		However, we often want to represent outcomes as numbers. \item
+		A \textbf{\emph{random variable}} is a function that associates a unique numerical value with every outcome of an experiment.
+		\item The value of the random variable will vary from trial to trial as the experiment is repeated.
+		\item Numeric values can be assigned to outcomes that are not usually considered numeric. \item For example, we could assign a `head' a value of $0$, and a `tail' a value of $1$, or vice versa.
+	\end{itemize}
+}
+%------------------------------------------------------------%
+{\LARGE
+	%\frametitle{Random Variables}
+	There are two types of random variable - discrete and continuous. The distinction between both types will be important later on in the course.\\ \bigskip
+	
+	\textbf{Examples}
+	\begin{itemize}
+		\item A coin is tossed ten times. The random variable X is the number of tails that are noted.
+		X can only take the values $\{0, 1, ..., 10\}$, so $X$ is a discrete random variable.
+		\item A light bulb is burned until it burns out. The random variable Y is its lifetime in hours.
+		Y can take any positive real value, so Y is a continuous random variable.
+	\end{itemize}
+}
+
+%--------------------------------------------------------------------------------%
+{\LARGE
+	%\frametitle{Discrete Random Variable}
+	\begin{itemize}
+		\item A discrete random variable is one which may take on only a countable number of distinct values such as $\{0, 1, 2, 3, 4, ... \}$.\item Discrete random variables are usually (but not necessarily) counts. \item If a random variable can take only a finite number of distinct values, then it must be discrete. \item Examples of discrete random variables include the number of children in a family, the Friday night attendance at a cinema, the number of patients in a doctor's surgery, the number of defective light bulbs in a box of ten.
+	\end{itemize}
+}
+
+
+%--------------------------------------------------------------------------------%
+{\LARGE
+	%\frametitle{Continuous Random Variable}
+	\begin{itemize} \item
+		A continuous random variable is one which takes an infinite number of possible values. \item Continuous random variables are usually measurements. \item Examples include height, weight, the amount of sugar in an orange, the time required to run a computer simulation. \end{itemize}
+	
+}
+
+%=================================================================== %
+
+
+%\frametitle{Random Variables}
+A pair of dice is thrown. Let X denote the minimum of the two numbers which occur.
+Find the distributions and expected value of X.
+
+
+%=================================================================== %
+
+%\frametitle{Random Variables}
+A fair coin is tossed four times.
+Let X denote the longest string of heads.
+Find the distribution and expectation of X.
+
+%=================================================================== %
+
+%\frametitle{Random Variables}
+A fair coin is tossed until a head or five tails occurs.
+Find the expected number E of tosses of the coin.
+
+%=================================================================== %
+
+%\frametitle{Random Variables}A coin is weighted so that P(H) = 0.75 and P(T ) = 0.25
+
+The coin is tossed three times. Let X denote the number of
+heads that appear.
+\begin{itemize}
+	\item (a) Find the distribution f of X.
+	\item (b) Find the expectation E(X).
+\end{itemize}
+
+
+%=================================================================== %
+
+%\frametitle{Graphical Procedures for Statistics}
+\begin{itemize}
+	\item Bar-plots
+	\item Histograms
+	\item Boxplots
+	
+\end{itemize}
+
+\begin{itemize}
+	\item Consider an experiment in which each student in a class of 60 rolls a die 100 times.
+	\item Each score is recorded, and a total score is calculated.
+	\item As the expected value of rolled die is 3.5, the expected total is 350 for each student.
+	\item At the end of the experiment the students reported their totals.
+	\item The totals were put into ascending order, and tabulated as follows (next slide).
+\end{itemize}
+
+
+
+%=================================================================== %
+
+%\frametitle{Outcomes of die-throw experiment}
+\small
+\begin{center}
+	\begin{tabular}{|c c c c c c c c c c|}
+		\hline
+		% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+		307 & 321 & 324 & 328 & 329 & 330 & 334 & 335 & 336 &337 \\
+		337 & 337 & 338 & 339 & 339 & 342 & 343 & 343 & 344 &344 \\
+		346 & 346 & 347 & 348 & 348 & 348 & 350 & 351 & 352 &352 \\
+		353 & 353 & 353 & 354 & 354 & 356 & 356 & 357 & 357 &358 \\
+		358 & 360 & 360 & 361 & 362 & 363 & 365 & 365 & 369 &369 \\
+		370 & 370 & 374 & 378 & 381 & 384 & 385 & 386 & 392 &398 \\
+		\hline
+	\end{tabular}
+\end{center}
+\normalsize
+\begin{itemize}
+	\item What proportion of outcomes are less than or equal to 330? \\ (Answer: $10\%$)
+	\item What proportion of outcomes are greater than or equal to 370?\\ (Answer: $16.66\%$)
+\end{itemize}
+
+
+
+
+
+
+%=================================================================== %
+
+%\frametitle{Constructing Histograms}
+\begin{itemize}
+	\item Compute an appropriate number of class intervals.
+	\item As a rule of thumb, the number of class intervals is usually approximately the square root of the number of observations.
+	\item As there are 60 observations, we would normally use 7 or 8 class intervals.
+	\item To save time, we will just use 5 class intervals.
+\end{itemize}
+
+
+
+%=================================================================== %
+
+
+%\frametitle{Histograms}
+
+\begin{center}
+	\includegraphics[scale=0.30]{images/3aDieHist2}
+\end{center}
+
+
+
+%=================================================================== %
+
+%\frametitle{Histograms}
+\begin{itemize}
+	\item Suppose that the experiment of throwing a die 100 times and recording the total was repeated 100,000 times.
+	\item (If implemented on a computer, we would call this a simulation study)
+	\item The histogram of data (with a class interval width of 2) is shown on the next slide.
+	\item How should the shape of the histogram be described?
+	\item ``Bell-shaped" would be a suitable description.
+\end{itemize}
+
+
+%=================================================================== %
+
+%\frametitle{Histograms}
+
+\begin{center}
+	\includegraphics[scale=0.30]{images/3aDieHist3}
+\end{center}
+
+
+
+%=================================================================== %
+
+%\frametitle{Simulation Study}
+A couple of remarks about the simulation study, some of which will be relevant later on.
+\begin{itemize}
+	% \item Approximately 76\% of the values are between 330 and 370.
+	\item Approximately 68.7\% of the values in the simulation study are between 332 and 367.
+	\item Approximately 95\% of the values are between 316 and 383.
+	\item $2.5\%$ of the values output are less than 316.
+	\item $2.5\%$ of the values study output are greater than 383.
+	\item 175 values are greater than or equal to 400, whereas 198 values are less than or equal to 300.
+	\item Results such as these are unusual, but they are not impossible.
+\end{itemize}
+
+
+%=================================================================== %
+
+%\frametitle{Random Variables}
+A pair of dice is thrown. Let X denote the minimum of the two numbers which occur.
+Find the distributions and expected value of X.
+
+
+%=================================================================== %
+
+%\frametitle{Random Variables}
+A fair coin is tossed four times.
+Let X denote the longest string of heads.
+Find the distribution and expectation of X.
+
+
+%=================================================================== %
+
+%\frametitle{Random Variables}
+A fair coin is tossed until a head or five tails occurs.
+Find the expected number E of tosses of the coin.
+
+%=================================================================== %
+
+%\frametitle{Random Variables}A coin is weighted so that P(H) = 0.75 and P(T ) = 0.25
+
+The coin is tossed three times. Let X denote the number of
+heads that appear.
+\begin{itemize}
+	\item (a) Find the distribution f of X.
+	\item (b) Find the expectation E(X).
+\end{itemize}
+
+
+%=================================================================== %
+
+\begin{itemize}
+	\item Now consider an experiment with only two outcomes. Independent repeated trials of such an experiment are
+	called Bernoulli trials, named after the Swiss mathematician Jacob Bernoulli (16541705). \item The term \textbf{\emph{independent
+			trials}} means that the outcome of any trial does not depend on the previous outcomes (such as tossing a coin).
+	\item We will call one of the outcomes the ``success" and the other outcome the ``failure".
+\end{itemize}
+
+
+%=================================================================== %
+
+\begin{itemize} \item
+	Let $p$ denote the probability of success in a Bernoulli trial, and so $q = 1 - p$ is the probability of failure.
+	A binomial experiment consists of a fixed number of Bernoulli trials. \item A binomial experiment with $n$ trials and
+	probability $p$ of success will be denoted by
+	\[B(n, p)\]
+\end{itemize}
+
+%=================================================================== %
+
+MA4004 – Section 1b - Probability Questions
+
+Repeat 2008
+
+Spring 2008
+Question 1
+
+a)   One in 10, 000 people have a particular condition. Given that an individual has this condition, a test for this condition gives a positive result with probability 0.999. Given that an individual does not have this condition, this test gives a positive result with probability 0.001.
+
+Suppose the individual tested is chosen at random from the population as a whole
+i)                  Calculate the probability that the test result is positive.
+
+ii)                Calculate the probability that the individual has the condition, given that the result of the test is positive.
+(6 marks)
+
+Repeats 2007
+
+a) A company obtains 2000 components/week from supplier A, 2000 components/week from supplier B and 1000 components/week from supplier C. 3% of the components from supplier A are defective, 4% of the components from supplier B and 5% of the components from supplier C.
+
+i) Calculate the probability that a randomly chosen component is defective.
+
+ii) Calculate the probability that the component is from supplier A, given that it is not defective.
+(6 marks)
+
+2.              c) Calculate the probability of obtaining exactly 3 sixes when I roll a die
+5 times.
+(4 marks)
+
+
+
+
+
+Spring 2007
+
+a) A company obtains 1500 components/week from supplier A, 1000 components/week from supplier B and 500 components/week from supplier C. 3% of the components from supplier A are defective, 5% of the components from supplier B and 6% of the components from supplier C.
+
+i) Calculate the probability that a randomly chosen component is defective.
+
+ii) Calculate the probability that the component is from supplier C, given that it is defective.
+(6 marks)
+Question 3
+c) Calculate the probability of obtaining exactly 2 sixes when I roll a die 5 times.
+(4 marks)
+
+Repeats 2006
+(c)              A worker-operated machine produces a defective item with probability 0.01 if the worker follows the machine’s operating instructions exactly, and with probability 0.04 if he does not. If the worker follows the instructions 90% of the time, what is the probability that an item produced by the machine, selected at random, will be defective?
+
+
+
+\section{Independent Events}
+Competitors A and B fire at their respective targets. The probability that A hits a target is 1/3 and the probability that B hits a target is 1/5. Find the probability that:
+	\begin{itemize}
+		\item[i.] (2 marks) A does not hit the target,
+		\item[ii.](2 marks)  both hit their respective targets,
+		\item[iii.](2 marks)  only one of them hits a target,
+		\item[iv.](2 marks) neither A nor B hit their targets.
+	\end{itemize}
+%------------------------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------------------------%
+	
+	
+\section{Mutually Exclusive Events}
+Mutually exclusive events are events that cannot happen at the same time.
+\[ P(A and B) = P(A) + P(B) \]
+
+
 
 
 \subsection*{Probability}
@@ -1053,6 +1549,154 @@ Mutually exclusive events are events that cannot happen at the same time.
 \end{itemize}
 %------------------------------------------------%\subsection*{Probability}
 %------------------------------------------------%
+\section{Conditional Probability}
+What is the probability of one event given that another event occurs? For example, what is the probability of a mouse finding the end of the maze, given that it finds the room before the end of the maze?
+
+This is represented as:
+
+
+\[P[A | B]\]
+or "the probability of A given B."
+
+\[P(A | B) = \frac{P(A\cap B)}{P(B)}\]
+
+If A and B are independent of one another, such as with coin tosses or child births, then:
+
+
+\[P[A | B] = P[ A ]\]
+Thus, "what is the probability that the next child a family bears will be a boy, given that the last child is a boy."
+
+This can also be stacked where the probability of A with several "givens."
+
+
+\[P[A | B_1, B_2, B_3 ]\]
+or "the probability of A given that B1, B2, and B3 are true?"
+
+
+
+\begin{itemize}
+	\item pairwise disjoint sets
+	\item The addition principle
+\end{itemize}
+
+%------------------------------------------------%
+
+
+%---------------------------------------------------- %
+%SLIDE1 - GOOD
+\Large
+Suppose an electronics assembly subcontractor receives resistors from two suppliers: A and B
+
+\begin{itemize}
+	\item Supplier A supplies 80\% of the resistors
+	\vspace{2cm}
+	\item Supplier B supplies 20\% of the resistors
+	\vspace{2cm}
+\end{itemize}
+
+
+%SLIDE2 - Slide 1 with reveal - GOOD
+\Large
+Suppose an electronics assembly subcontractor recieves resistors from two suppliers A and B
+
+\begin{itemize}
+	\item Supplier A supplies 80\% of the resistors
+	{
+		\Large
+		
+		\item \textit{Probability that a randomly chosen resistor comes from A is 80 \%}
+		\item \textit{P(A) = 0.80 }
+		
+	}
+	\item Supplier B supplies 20\% of the resistors
+	\item \textit{Probability that a randomly chosen resistor comes from B is therefore 20\%}
+	\item \textit{P(B) = 0.20}
+\end{itemize}
+
+%----------------------------------------------------- %
+% Slide 4
+\Large
+\begin{itemize}
+	\item We are giving information about the rate of faulty components from each supplier. \\(Faulty : resistor fails some quality test)
+	\vspace{1cm}
+	\item 1\% of the resistors supplied by A are faulty
+	\vspace{1cm}
+	\item 3\% of the resistors supplied by B are faulty 
+	\vspace{1cm}
+\end{itemize}
+
+%-----------------------------------------------------%
+% Slide 4 - Slide 3 with Reveal
+\Large
+\begin{itemize}
+	\item We are giving information about the rate of faulty components from each supplier. \\(Faulty : resistor fails some quality test)
+	\item  \textit{P(F) probability that randomly selecting compoent is faulty}
+	\item 1\% of the resistors supplied by A are faulty.
+	\item\textit{ We write this as $P(F|A) =0.01$}
+	\item 3\% of the resistors supplied by B are faulty 
+	\item \textit{We write this as $P(F|B) =0.03$}
+\end{itemize}
+
+\textbf{Question 1:}
+\begin{itemize}
+	\item What is the probability that a randomly selected resistor fails the final test?
+	
+	\item In mathematical terms, compute P(F) 
+\end{itemize}
+
+
+
+%------------------------------------------------------%
+
+
+\Large
+\textbf{Law of Total Probability:}
+\begin{itemize}
+	\item Faulty Resistors are either from Supplier A or Supplier B.
+	\vspace{0.3cm} 
+	\item \textit{Resistors MUST come from one of the two suppliers.}
+	\item \textit{A and B are mutually exclusive.}
+\end{itemize}
+\vspace{0.3cm} 
+\[ P(F) = P(F \mbox{ and } A) + P(F \mbox{ and } B) \]
+
+
+
+
+\Large
+\textbf{Conditional Probability}
+
+\[ P(X|Y)  = \frac{P(X \mbox{ and } Y)}{P(Y)} \]
+
+Re-arranging
+\[ P(X \mbox{ and } Y) =  P(X|Y)\times P(Y) \]
+Therefore we can say
+\[ P(F \mbox{ and } A) =  P(F|A)\times P(A) \]\\
+\[ P(F \mbox{ and } B) =  P(F|B)\times P(B) \]
+
+
+
+\Large
+
+\[ P(F \mbox{ and } A) =  P(F|A)\times P(A) \]\\
+\vspace{1.7cm}
+\[ P(F \mbox{ and } B) =  P(F|B)\times P(B) \]
+
+
+
+\Large
+\[ P(F \mbox{ and } A) =  P(F|A)\times P(A) = 0.80 \times 0.01\]\\
+\[ P(F \mbox{ and } A) = 0.008\]
+\bigskip
+\[ P(F \mbox{ and } B) =  P(F|B)\times P(B) = 0.20 \times 0.03\]\\
+\[ P(F \mbox{ and } B) = 0.006\]
+
+%=================================================================================================$		
+\textbf{Recall:}
+\[ P(F) = P(F \mbox{ and } A) + P(F \mbox{ and } B) \]
+
+
+
 \section*{Session 09: Probability}
 \begin{itemize}
 	\item[9A.1] Counting Methods
@@ -1061,23 +1705,16 @@ Mutually exclusive events are events that cannot happen at the same time.
 	\item[9A.4] Independent Events
 \end{itemize}
 
-\begin{itemize}
-	\item pairwise disjoint sets
-	\item The addition principle
-\end{itemize}
 
-
-\section*{Session 9 Probability}
-%------------------------------------------------------------%
-{ \Large
-	%---------------------------% \frametitle{Random Variables}
+\chapter{Introduction to Random Variables}
+\section{Random Variables}
 	\begin{itemize} \item The outcome of an experiment need not be a number, for example, the outcome when a coin is tossed can be `heads' or `tails'. \item
 		However, we often want to represent outcomes as numbers. \item
 		A \textbf{\emph{random variable}} is a function that associates a unique numerical value with every outcome of an experiment.
 		\item The value of the random variable will vary from trial to trial as the experiment is repeated.
 		\item Numeric values can be assigned to outcomes that are not usually considered numeric. \item For example, we could assign a `head' a value of $0$, and a `tail' a value of $1$, or vice versa.
 	\end{itemize}
-}
+
 %------------------------------------------------------------%
 { \Large
 	%---------------------------% \frametitle{Random Variables}
@@ -1291,12 +1928,7 @@ A fair coin is tossed until a head or five tails occurs.
 		called Bernoulli trials, named after the Swiss mathematician Jacob Bernoulli (16541705). \item The term \textbf{\emph{independent
 				trials}} means that the outcome of any trial does not depend on the previous outcomes (such as tossing a coin).
 		\item We will call one of the outcomes the ``success" and the other outcome the ``failure".
-	\end{itemize}
-	
-	%--------------------------------------%
-	%=================================================================== %
-	%--------------------------------------%
-	\begin{itemize} \item
+\item
 		Let $p$ denote the probability of success in a Bernoulli trial, and so $q = 1 - p$ is the probability of failure.
 		A binomial experiment consists of a fixed number of Bernoulli trials. \item A binomial experiment with $n$ trials and
 		probability $p$ of success will be denoted by
@@ -1304,45 +1936,15 @@ A fair coin is tossed until a head or five tails occurs.
 	\end{itemize}
 	%--------------------------------------%
 	%=================================================================== %
+%------------------------------%
+\newpage
+\Large
+\section{What is a Probability Distribution}
+
+A statistical function that describes all the possible values and likelihoods that a random variable can take within a given range. This range will be between the minimum and maximum statistically possible values, but where the possible value is likely to be plotted on the probability distribution depends on a number of factors, including the distributions mean, standard deviation, skewness and kurtosis.
 	
-%---------------------------------------------- %
-
-% \[P(A |B = \frac{P(A \cap B)}{P(B)})\]
-
-The complement rule in Probability
-
-$P(C^{\prime}) = 1- P(C)$
 
 
-%--------------------------------------------------------------------------------------%
-{ \Large
-	%%- \frametitle{Discrete Probability Distributions}
-	
-	\begin{itemize}
-		
-		\item Over the next set of lectures, we are now going to look at two important discrete probability distributions
-		
-		\item The first is the \textbf{\emph{binomial}} probability distribution.
-		
-		\item The second is the Poisson probability distribution.
-		
-		\item In \texttt{R}, calculations are performed using the \texttt{binom} family of functions and \texttt{pois} family of functions respectively.
-		
-		\item Now consider an experiment with only two outcomes. Independent repeated trials of such an experiment are
-		called Bernoulli trials, named after the Swiss mathematician Jacob Bernoulli (16541705). \item The term \textbf{\emph{independent
-				trials}} means that the outcome of any trial does not depend on the previous outcomes (such as tossing a coin).
-		\item We will call one of the outcomes the ``success" and the other outcome the ``failure".
-		
-		\item
-		Let $p$ denote the probability of success in a Bernoulli trial, and so $q = 1 - p$ is the probability of failure.
-		A binomial experiment consists of a fixed number of Bernoulli trials. \item A binomial experiment with $n$ trials and
-		probability $p$ of success will be denoted by
-		\[B(n, p)\]
-		\item a probability mass function (pmf) is a function that gives the probability that a 
-		discrete random variable is exactly equal to some value. 
-		\item The probability mass function is often the primary means of defining a discrete probability distribution 
-	\end{itemize}
-}
 %------------------------------------------------------------------%
 { \Large
 	Thirty-eight students took the test. The X-axis shows various intervals of scores (the interval labeled 35 includes any score from 32.5 to 37.5). The Y-axis shows the number of students scoring in the interval or below the interval.
@@ -1350,171 +1952,64 @@ $P(C^{\prime}) = 1- P(C)$
 	\textbf{\emph{cumulative frequency distribution}}A  can show either the actual frequencies at or below each interval (as shown here) or the percentage of the scores at or below each interval. The plot can be a histogram as shown here or a polygon.
 }
 
+{\LARGE
+	%% \frametitle{Overview of Current Part of Course}
+	Probability Distributions (Question 2 for End Of Year Exam)
+	\begin{itemize}
+		\item Discrete Probability Distributions
+		\begin{itemize}
+			\item Binomial Probability Distribution (Week 3)
+			\item Geometric Probability Distribution (Week 3)
+			\item Poisson Probability Distribution (Week 3/4)
+		\end{itemize}
+		
+		\item Continuous Probability Distributions
+		\begin{itemize}
+			\item Exponential Probability Distribution (Week 4)
+			\item Uniform Probability Distribution (Week 4)
+			\item Normal Probability Distribution (Week 4/5)
+		\end{itemize}
+	\end{itemize}
+}
+
+
+
+\section{Quantiles}
+
+The quantile (this term was first used by Kendall, 1940) of a distribution of values is a number xp such that a proportion p of the population values are less than or equal to xp. For example, the .25 quantile (also referred to as the 25th percentile or lower quartile) of a variable is a value (xp) such that $25\%$ (p) of the values of the variable fall below that value.
+
+Similarly, the $0.75$ quantile (also referred to as the 75th percentile or upper quartile) is a value such that $75\%$ of the values of the variable fall below that value and is calculated accordingly.
+
+See
+
+
+
 
 
 
 \chapter{Probability}
+\section{Dice Questions}
+%----------------------------------------------------------%
+%http://www.indiabix.com/aptitude/probability/
+
+Suppose a pair of fair dice is thrown. 
+\begin{itemize}
+	\item[(a)] What is the probability of getting a sum of 9 from two throws of a dice
+\end{itemize}
+Find the probability that the sum is 10 or greater if
+\begin{itemize}
+	\item[(b)] a 5 appears on the first die, 
+	\item[(c)] a 5 appears on at least one of the dice.
+\end{itemize}
+
+
+
+%----------------------------------------------------------%
+Tickets numbered 1 to 20 are mixed up and then a ticket is drawn at random. What is the probability that the ticket drawn has a number which is a multiple of 3 or 5
+
+
 \Large
-\section{Conditional Probability}
-What is the probability of one event given that another event occurs? For example, what is the probability of a mouse finding the end of the maze, given that it finds the room before the end of the maze?
 
-This is represented as:
-
-
-\[P[A | B]\]
-or "the probability of A given B."
-
-\[P(A | B) = \frac{P(A\cap B)}{P(B)}\]
-
-If A and B are independent of one another, such as with coin tosses or child births, then:
-
-
-\[P[A | B] = P[ A ]\]
-Thus, "what is the probability that the next child a family bears will be a boy, given that the last child is a boy."
-
-This can also be stacked where the probability of A with several "givens."
-
-
-\[P[A | B_1, B_2, B_3 ]\]
-or "the probability of A given that B1, B2, and B3 are true?"
-
-
-		
-		\begin{itemize}
-			\item pairwise disjoint sets
-			\item The addition principle
-		\end{itemize}
-		\subsection*{Theorem}
-		\[ |A \cup B| = |A| + |B| - |A \cap B|  \]
-		
-		\subsection*{Probability}
-		\begin{itemize}
-			\item[9B.2] The sample space of an experiment ($S$)
-			\item[9B.3] The size of a sample space
-			\item[9B.4] Indepedent Evcents (9.3.1)
-		\end{itemize}
-		%------------------------------------------------%
-		
-		
-		%---------------------------------------------------- %
-		%SLIDE1 - GOOD
-		\Large
-		Suppose an electronics assembly subcontractor receives resistors from two suppliers: A and B
-		
-		\begin{itemize}
-			\item Supplier A supplies 80\% of the resistors
-			\vspace{2cm}
-			\item Supplier B supplies 20\% of the resistors
-			\vspace{2cm}
-		\end{itemize}
-		
-		
-		%SLIDE2 - Slide 1 with reveal - GOOD
-		\Large
-		Suppose an electronics assembly subcontractor recieves resistors from two suppliers A and B
-		
-		\begin{itemize}
-			\item Supplier A supplies 80\% of the resistors
-			{
-				\Large
-				
-				\item \textit{Probability that a randomly chosen resistor comes from A is 80 \%}
-				\item \textit{P(A) = 0.80 }
-				
-			}
-			\item Supplier B supplies 20\% of the resistors
-			\item \textit{Probability that a randomly chosen resistor comes from B is therefore 20\%}
-			\item \textit{P(B) = 0.20}
-		\end{itemize}
-		
-		%----------------------------------------------------- %
-		% Slide 4
-		\Large
-		\begin{itemize}
-			\item We are giving information about the rate of faulty components from each supplier. \\(Faulty : resistor fails some quality test)
-			\vspace{1cm}
-			\item 1\% of the resistors supplied by A are faulty
-			\vspace{1cm}
-			\item 3\% of the resistors supplied by B are faulty 
-			\vspace{1cm}
-		\end{itemize}
-		
-		%-----------------------------------------------------%
-		% Slide 4 - Slide 3 with Reveal
-		\Large
-		\begin{itemize}
-			\item We are giving information about the rate of faulty components from each supplier. \\(Faulty : resistor fails some quality test)
-			\item  \textit{P(F) probability that randomly selecting compoent is faulty}
-			\item 1\% of the resistors supplied by A are faulty.
-			\item\textit{ We write this as $P(F|A) =0.01$}
-			\item 3\% of the resistors supplied by B are faulty 
-			\item \textit{We write this as $P(F|B) =0.03$}
-		\end{itemize}
-		
-		%-----------------------------------------------------%
-		% Slide 5 Good
-		\Large
-		\vspace{-1.5cm}
-		\textbf{Question 1:}
-		\begin{itemize}
-			\item What is the probability that a randomly selected resistor fails the final test?
-			
-			\item In mathematical terms, compute P(F) 
-		\end{itemize}
-		
-		
-		
-		%------------------------------------------------------%
-		
-		
-		\Large
-		\textbf{Law of Total Probability:}
-		\begin{itemize}
-			\item Faulty Resistors are either from Supplier A or Supplier B.
-			\vspace{0.3cm} 
-			\item \textit{Resistors MUST come from one of the two suppliers.}
-			\item \textit{A and B are mutually exclusive.}
-		\end{itemize}
-		\vspace{0.3cm} 
-		\[ P(F) = P(F \mbox{ and } A) + P(F \mbox{ and } B) \]
-		
-		
-		
-		
-		\Large
-		\textbf{Conditional Probability}
-		
-		\[ P(X|Y)  = \frac{P(X \mbox{ and } Y)}{P(Y)} \]
-		
-		Re-arranging
-		\[ P(X \mbox{ and } Y) =  P(X|Y)\times P(Y) \]
-		Therefore we can say
-		\[ P(F \mbox{ and } A) =  P(F|A)\times P(A) \]\\
-		\[ P(F \mbox{ and } B) =  P(F|B)\times P(B) \]
-		
-		
-		
-		\Large
-		\vspace{-1.5cm}
-		\[ P(F \mbox{ and } A) =  P(F|A)\times P(A) \]\\
-		\vspace{1.7cm}
-		\[ P(F \mbox{ and } B) =  P(F|B)\times P(B) \]
-		
-		
-		
-		\Large
-		\[ P(F \mbox{ and } A) =  P(F|A)\times P(A) = 0.80 \times 0.01\]\\
-		\[ P(F \mbox{ and } A) = 0.008\]
-		\bigskip
-		\[ P(F \mbox{ and } B) =  P(F|B)\times P(B) = 0.20 \times 0.03\]\\
-		\[ P(F \mbox{ and } B) = 0.006\]
-		
-%=================================================================================================$		
-		\textbf{Recall:}
-		\[ P(F) = P(F \mbox{ and } A) + P(F \mbox{ and } B) \]
-		
-		
-		
 		\section*{Session 9 Probability}
 
 		%---------------------------------------------- %
@@ -1548,22 +2043,12 @@ or "the probability of A given that B1, B2, and B3 are true?"
 	
 	% http://www.hss.caltech.edu/~mshum/stats/lect2.pdf
 	
+
+\section{Expected Values of Random Variables}
+
 	
 	
-	\bigskip
-	{
-		\huge
-		\[ \mbox{Expected Values of Random Variables}\]
-		\Large
-		\[ \mbox{Example Exercise}\]
-		\bigskip
-		\Large
-		\[ \mbox{www.MathsResource.com}\]
-	}
-	
-	
-	
-	%\frametitle{Expected Values of Random Variables}
+
 	\Large
 	If the random variable $Z$ has a distribution which is standard normal, show that the expected value of $e^{sZ}$ is given as follows:
 	
@@ -1572,12 +2057,7 @@ or "the probability of A given that B1, B2, and B3 are true?"
 		\[E(e^{sZ})  =  e^{\frac{s^2}{2}}\] 
 	}
 	
-	
-	
-	%---------------------------------------------------- %
-	
-	
-	%\frametitle{Expected Values of Random Variables}
+
 	\Large
 	\begin{itemize}
 		\item In general, the expected value is computed using this formula
@@ -1590,15 +2070,7 @@ or "the probability of A given that B1, B2, and B3 are true?"
 			\LARGE
 			\[ E( tf(X) ) =  \int_{-\infty}^{\infty}  tf(x) \times f(x) dx   \]
 		}
-	\end{itemize}
-	
-	
-	%---------------------------------------------------- %
-	
-	
-	%\frametitle{Expected Values of Random Variables}
-	\Large
-	\begin{itemize}
+
 		\item 
 		The probability density function for the standard normal distribution is
 		{
@@ -1611,12 +2083,7 @@ or "the probability of A given that B1, B2, and B3 are true?"
 			\[f(z) = f(x, \mu= 0, \sigma=1) = \frac{1}{\sqrt{2\pi}} e^{ -{x \over 2}^2 }\]
 		}
 	\end{itemize}
-	
-	%---------------------------------------------------- %
-	
-	%\frametitle{Expected Values of Random Variables}
-	\Large
-	%\vspace{-4cm}
+
 	
 	
 	
@@ -1624,15 +2091,7 @@ or "the probability of A given that B1, B2, and B3 are true?"
 		\LARGE
 		\[ E( e^{sZ} ) =  \int_{-\infty}^{\infty}  e^{sx} \;\times\; \frac{1}{\sqrt{2\pi}} \;e^{ -{x \over 2}^2 }\]
 	}
-	
-	
-	
-	%---------------------------------------------------- %
-	
-	%\frametitle{Expected Values of Random Variables}
-	\Large
-	%\vspace{-4cm}
-	
+
 	
 	
 	{
@@ -1640,13 +2099,7 @@ or "the probability of A given that B1, B2, and B3 are true?"
 		\[ E( e^{sZ} ) =  \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}   e^{ \big[sx-\frac{(x)^2}{2} \big]} dx   \]
 	}
 	
-	
-	%---------------------------------------------------- %
-	
-	%\frametitle{Expected Values of Random Variables}
-	\Large
-	%\vspace{-4cm}
-	
+
 	
 	
 	{
@@ -1655,11 +2108,7 @@ or "the probability of A given that B1, B2, and B3 are true?"
 	}
 	
 	
-	%---------------------------------------------------- %
-	
-	%\frametitle{Expected Values of Random Variables}
-	\Large
-	%\vspace{-3cm}
+
 	\textbf{Mathematical Identity}
 	\begin{itemize}
 		\item Proven in a separate video
@@ -1670,13 +2119,7 @@ or "the probability of A given that B1, B2, and B3 are true?"
 		
 	}
 	
-	
-	%---------------------------------------------------- %
-	
-	%\frametitle{Expected Values of Random Variables}
-	\Large
-	%\vspace{-2.5cm}
-	
+
 	
 	
 	{
@@ -1688,51 +2131,37 @@ or "the probability of A given that B1, B2, and B3 are true?"
 	}
 	
 	
-	
-	
+\section{Worked Example}	
+		
+		\Large
 	Suppose an electronics assembly subcontractor recieves resistors from two suppliers A and B
 	
-	Supplier A supplies 80% of the resistors
+	Supplier A supplies 80\% of the resistors
 	
 	P(A) = 0.80 probability that a randomly chosen resistor comes from A
 	
-	Supplier B supplies 20% of the resistors
+	Supplier B supplies 20\% of the resistors
 	
 	P(B) = 0.20 probability that a randomly chosen resistor comes from B
 	
 	
 	%-----------------------------------------------------%
-	
-	\Large
+
 	\begin{itemize}
-		\item 1% of the resistors supplied by A are faulty (i.e. resistor fails the final test)
-		\item 3% of the resistors supplied by B are faulty 
+		\item 1\% of the resistors supplied by A are faulty (i.e. resistor fails the final test)
+		\item 3\% of the resistors supplied by B are faulty 
 	\end{itemize}
 	
 	%-----------------------------------------------------%
 	
 	
-	Qeustion: What is the probability that a randomly selected resistor fails the final test?
+	Question: What is the probability that a randomly selected resistor fails the final test?
 	
 	Compute P(F) 
-	
-	
-	%------------------------------------------------------%
-	
-	
-	\Large
-	P(F) = P(FandA) + P(FandB)
-	
-	
-	
 
-
-
-
-
-%\frametitle{Probability Distribution}
-
-%--------------------------------------%
+\[	P(F) = P(FandA) + P(FandB)\]
+	
+%=====================================================================================%
 
 
 
@@ -1761,23 +2190,16 @@ distributions describe variables that can take on arbitrary values in a continuu
 
 
 
-Binomial Distribution
+\subsection*{Binomial Distribution : Worked Example}
 
-A manufacturer of hospital equipment knows from experience that 5% of the production will have some type of minor default, and will require adjustment.
+A manufacturer of hospital equipment knows from experience that 5\% of the production will have some type of minor default, and will require adjustment.
 
 Number of independent trials    n
 
 Probability of a "success" p
 
 
-
-
-
-
-%\frametitle{Poisson Distribution}
-
-%--------------------------------------%
-
+%=================================================================================%
 
 
 
@@ -1788,12 +2210,12 @@ A basic introduction to the concept
 
 Example
 
-Certain events happen at unpredictable intervals. But for some reason, no matter how recent or long ago last event was, the probability that another event will occur within the next hour is exactly the same (say, 10%). The same holds for any other time interval (say, second). Moreover, the number of events within any given time interval is statistically independent of numbers of events in other intervals that do not overlap the given interval. Also, two events never occur simultaneously.
+Certain events happen at unpredictable intervals. But for some reason, no matter how recent or long ago last event was, the probability that another event will occur within the next hour is exactly the same (say, 10\%). The same holds for any other time interval (say, second). Moreover, the number of events within any given time interval is statistically independent of numbers of events in other intervals that do not overlap the given interval. Also, two events never occur simultaneously.
 
 Then the number of events per day is Poisson distributed.
 
 %---------------------------------------%
-Formal definition
+\subsubsection{Formal definition}
 
 Let X be a stochastic variable taking non-negative integer values with probability density function
 
@@ -1801,7 +2223,7 @@ Let X be a stochastic variable taking non-negative integer values with probabili
 Then X follows the Poisson distribution with parameter $\lambda$.
 
 %---------------------------------------%
-Characteristics of the Poisson distribution
+\subsubsection{Characteristics of the Poisson distribution}
 
 If X is a Poisson distribution stochastic variable with parameter $\lambda$, then
 
@@ -1852,17 +2274,7 @@ Symmetric Intervals
 
 %---------------------------------------------------%
 
-
-
-\huge
-\[ \mbox{The Normal Distribution} \]
-\Large
-\[ \mbox{The Symmetry Rule} \]
-
-
-%---------------------------------------------------%
-
-%\frametitle{Normal Distribution : The Symmetry Rule}
+\subsection{Normal Distribution : The Symmetry Rule}
 \Large
 From statistical tables, we could determine the following:
 \begin{itemize}
@@ -1991,7 +2403,7 @@ find values of the cdf of a general normal distribution.
 MA4704 Tutorial Sheet 2. 
 
 
-Question 1
+\subsubsection{Question 1}
 
 A doctor treating a patient issues a prescription for antibiotics and provides for two repeat prescriptions. The probability that the infection will be cleared by the first prescription is p1 =0.6. 
 The probability that successive treatments are successful, given that previous prescriptions were not successful are p2 = 0.5, p3 = 0.4. Calculate the probability that  
@@ -2001,7 +2413,7 @@ The probability that successive treatments are successful, given that previous p
 3.	the patient is cured by the second prescription, given that the patient is eventually cured.
 
 
-Question 2
+\subsubsection{Question 2}
 A driver passes through 3 traffic lights. The chance he/she will stop at the first is 1/2 , at the second 1/3 and at the third ¼ independently of what happens at any of the other lights. 
 
 What is the probability that
@@ -2010,7 +2422,7 @@ What is the probability that
 6.	the driver is stopped at just one set of lights.
 7.	the driver stopped at the second set of lights, given he/she stopped at one set of lights.
 
-Question 3
+\subsubsection{Question 3}
 The masses of 30 human males and 30 arabian stallions were observed. Their masses (in lbs) are given below
 
 Humans
@@ -2032,7 +2444,7 @@ b)	Calculate the medians of these samples (from the raw data).
 
 %======================================================== %
 
-Question 4
+\subsubsection{Question 4}
 The following data give the marks of 10 students in a test (out of 20 marks). Calculate
 i) the median    ii) the mean     iii) the range    iv) the standard deviation v) The Inter-Quartile Range
 
@@ -2075,304 +2487,7 @@ Z = ( X - \mu ) / \sigma
 
 %----------------------------------------------------------------%
 
-\section*{Complement Rule}
-		
-		%---------------------------------------------- %
-		
-\[P(A |B) = \frac{P(A \cap B)}{P(B)})\]
-		
-		The complement rule in Probability
-		
-		$P(C^{\prime}) = 1- P(C)$
-		
-	
-If the probability of C is $70 \%$ then the probability of $C^{\prime}$ is $30\%$
-		
-		%------------------------------------------------------------%
-		{\LARGE
-			%\frametitle{Random Variables}
-			\begin{itemize} \item The outcome of an experiment need not be a number, for example, the outcome when a coin is tossed can be `heads' or `tails'. \item
-				However, we often want to represent outcomes as numbers. \item
-				A \textbf{\emph{random variable}} is a function that associates a unique numerical value with every outcome of an experiment.
-				\item The value of the random variable will vary from trial to trial as the experiment is repeated.
-				\item Numeric values can be assigned to outcomes that are not usually considered numeric. \item For example, we could assign a `head' a value of $0$, and a `tail' a value of $1$, or vice versa.
-			\end{itemize}
-		}
-		%------------------------------------------------------------%
-		{\LARGE
-			%\frametitle{Random Variables}
-			There are two types of random variable - discrete and continuous. The distinction between both types will be important later on in the course.\\ \bigskip
-			
-			\textbf{Examples}
-			\begin{itemize}
-				\item A coin is tossed ten times. The random variable X is the number of tails that are noted.
-				X can only take the values $\{0, 1, ..., 10\}$, so $X$ is a discrete random variable.
-				\item A light bulb is burned until it burns out. The random variable Y is its lifetime in hours.
-				Y can take any positive real value, so Y is a continuous random variable.
-			\end{itemize}
-		}
-		
-		%--------------------------------------------------------------------------------%
-		{\LARGE
-			%\frametitle{Discrete Random Variable}
-			\begin{itemize}
-				\item A discrete random variable is one which may take on only a countable number of distinct values such as $\{0, 1, 2, 3, 4, ... \}$.\item Discrete random variables are usually (but not necessarily) counts. \item If a random variable can take only a finite number of distinct values, then it must be discrete. \item Examples of discrete random variables include the number of children in a family, the Friday night attendance at a cinema, the number of patients in a doctor's surgery, the number of defective light bulbs in a box of ten.
-			\end{itemize}
-		}
-		
-		
-		%--------------------------------------------------------------------------------%
-		{\LARGE
-			%\frametitle{Continuous Random Variable}
-			\begin{itemize} \item
-				A continuous random variable is one which takes an infinite number of possible values. \item Continuous random variables are usually measurements. \item Examples include height, weight, the amount of sugar in an orange, the time required to run a computer simulation. \end{itemize}
-			
-		}
-		
-		%=================================================================== %
-		
-		
-		%\frametitle{Random Variables}
-		A pair of dice is thrown. Let X denote the minimum of the two numbers which occur.
-		Find the distributions and expected value of X.
-		
-		
-		%=================================================================== %
-		
-		%\frametitle{Random Variables}
-		A fair coin is tossed four times.
-		Let X denote the longest string of heads.
-		Find the distribution and expectation of X.
-		
-		%=================================================================== %
-		
-		%\frametitle{Random Variables}
-		A fair coin is tossed until a head or five tails occurs.
-		Find the expected number E of tosses of the coin.
-		
-		%=================================================================== %
-		
-		%\frametitle{Random Variables}A coin is weighted so that P(H) = 0.75 and P(T ) = 0.25
-		
-		The coin is tossed three times. Let X denote the number of
-		heads that appear.
-		\begin{itemize}
-			\item (a) Find the distribution f of X.
-			\item (b) Find the expectation E(X).
-		\end{itemize}
-		
-		
-		%=================================================================== %
-		
-		%\frametitle{Graphical Procedures for Statistics}
-		\begin{itemize}
-			\item Bar-plots
-			\item Histograms
-			\item Boxplots
-			
-		\end{itemize}
-		
-		\begin{itemize}
-			\item Consider an experiment in which each student in a class of 60 rolls a die 100 times.
-			\item Each score is recorded, and a total score is calculated.
-			\item As the expected value of rolled die is 3.5, the expected total is 350 for each student.
-			\item At the end of the experiment the students reported their totals.
-			\item The totals were put into ascending order, and tabulated as follows (next slide).
-		\end{itemize}
-		
-		
-		
-		%=================================================================== %
-		
-		%\frametitle{Outcomes of die-throw experiment}
-		\small
-		\begin{center}
-			\begin{tabular}{|c c c c c c c c c c|}
-				\hline
-				% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
-				307 & 321 & 324 & 328 & 329 & 330 & 334 & 335 & 336 &337 \\
-				337 & 337 & 338 & 339 & 339 & 342 & 343 & 343 & 344 &344 \\
-				346 & 346 & 347 & 348 & 348 & 348 & 350 & 351 & 352 &352 \\
-				353 & 353 & 353 & 354 & 354 & 356 & 356 & 357 & 357 &358 \\
-				358 & 360 & 360 & 361 & 362 & 363 & 365 & 365 & 369 &369 \\
-				370 & 370 & 374 & 378 & 381 & 384 & 385 & 386 & 392 &398 \\
-				\hline
-			\end{tabular}
-		\end{center}
-		\normalsize
-		\begin{itemize}
-			\item What proportion of outcomes are less than or equal to 330? \\ (Answer: $10\%$)
-			\item What proportion of outcomes are greater than or equal to 370?\\ (Answer: $16.66\%$)
-		\end{itemize}
-		
-		
-		
-		
-		
-		
-		%=================================================================== %
-		
-		%\frametitle{Constructing Histograms}
-		\begin{itemize}
-			\item Compute an appropriate number of class intervals.
-			\item As a rule of thumb, the number of class intervals is usually approximately the square root of the number of observations.
-			\item As there are 60 observations, we would normally use 7 or 8 class intervals.
-			\item To save time, we will just use 5 class intervals.
-		\end{itemize}
-		
-		
-		
-		%=================================================================== %
-		
-		
-		%\frametitle{Histograms}
-		
-		\begin{center}
-			\includegraphics[scale=0.30]{images/3aDieHist2}
-		\end{center}
-		
-		
-		
-		%=================================================================== %
-		
-		%\frametitle{Histograms}
-		\begin{itemize}
-			\item Suppose that the experiment of throwing a die 100 times and recording the total was repeated 100,000 times.
-			\item (If implemented on a computer, we would call this a simulation study)
-			\item The histogram of data (with a class interval width of 2) is shown on the next slide.
-			\item How should the shape of the histogram be described?
-			\item ``Bell-shaped" would be a suitable description.
-		\end{itemize}
-		
-		
-		%=================================================================== %
-		
-		%\frametitle{Histograms}
-		
-		\begin{center}
-			\includegraphics[scale=0.30]{images/3aDieHist3}
-		\end{center}
-		
-		
-		
-		%=================================================================== %
-		
-		%\frametitle{Simulation Study}
-		A couple of remarks about the simulation study, some of which will be relevant later on.
-		\begin{itemize}
-			% \item Approximately 76\% of the values are between 330 and 370.
-			\item Approximately 68.7\% of the values in the simulation study are between 332 and 367.
-			\item Approximately 95\% of the values are between 316 and 383.
-			\item $2.5\%$ of the values output are less than 316.
-			\item $2.5\%$ of the values study output are greater than 383.
-			\item 175 values are greater than or equal to 400, whereas 198 values are less than or equal to 300.
-			\item Results such as these are unusual, but they are not impossible.
-		\end{itemize}
-		
-		
-		%=================================================================== %
-		
-		%\frametitle{Random Variables}
-		A pair of dice is thrown. Let X denote the minimum of the two numbers which occur.
-		Find the distributions and expected value of X.
-		
-		
-		%=================================================================== %
-		
-		%\frametitle{Random Variables}
-		A fair coin is tossed four times.
-		Let X denote the longest string of heads.
-		Find the distribution and expectation of X.
-		
-		
-		%=================================================================== %
-		
-		%\frametitle{Random Variables}
-		A fair coin is tossed until a head or five tails occurs.
-		Find the expected number E of tosses of the coin.
-		
-		%=================================================================== %
-		
-		%\frametitle{Random Variables}A coin is weighted so that P(H) = 0.75 and P(T ) = 0.25
-		
-		The coin is tossed three times. Let X denote the number of
-		heads that appear.
-		\begin{itemize}
-			\item (a) Find the distribution f of X.
-			\item (b) Find the expectation E(X).
-		\end{itemize}
-		
-		
-		%=================================================================== %
-		
-		\begin{itemize}
-			\item Now consider an experiment with only two outcomes. Independent repeated trials of such an experiment are
-			called Bernoulli trials, named after the Swiss mathematician Jacob Bernoulli (16541705). \item The term \textbf{\emph{independent
-					trials}} means that the outcome of any trial does not depend on the previous outcomes (such as tossing a coin).
-			\item We will call one of the outcomes the ``success" and the other outcome the ``failure".
-		\end{itemize}
-		
-		
-		%=================================================================== %
-		
-		\begin{itemize} \item
-			Let $p$ denote the probability of success in a Bernoulli trial, and so $q = 1 - p$ is the probability of failure.
-			A binomial experiment consists of a fixed number of Bernoulli trials. \item A binomial experiment with $n$ trials and
-			probability $p$ of success will be denoted by
-			\[B(n, p)\]
-		\end{itemize}
-		
-		%=================================================================== %
-		
-		MA4004 – Section 1b - Probability Questions
-		
-		Repeat 2008
-		
-		Spring 2008
-		Question 1
-		
-		a)   One in 10, 000 people have a particular condition. Given that an individual has this condition, a test for this condition gives a positive result with probability 0.999. Given that an individual does not have this condition, this test gives a positive result with probability 0.001.
-		
-		Suppose the individual tested is chosen at random from the population as a whole
-		i)                  Calculate the probability that the test result is positive.
-		
-		ii)                Calculate the probability that the individual has the condition, given that the result of the test is positive.
-		(6 marks)
-		
-		Repeats 2007
-		
-		a) A company obtains 2000 components/week from supplier A, 2000 components/week from supplier B and 1000 components/week from supplier C. 3% of the components from supplier A are defective, 4% of the components from supplier B and 5% of the components from supplier C.
-		
-		i) Calculate the probability that a randomly chosen component is defective.
-		
-		ii) Calculate the probability that the component is from supplier A, given that it is not defective.
-		(6 marks)
-		
-		2.              c) Calculate the probability of obtaining exactly 3 sixes when I roll a die
-		5 times.
-		(4 marks)
-		
-		
-		
-		
-		
-		Spring 2007
-		
-		a) A company obtains 1500 components/week from supplier A, 1000 components/week from supplier B and 500 components/week from supplier C. 3% of the components from supplier A are defective, 5% of the components from supplier B and 6% of the components from supplier C.
-		
-		i) Calculate the probability that a randomly chosen component is defective.
-		
-		ii) Calculate the probability that the component is from supplier C, given that it is defective.
-		(6 marks)
-		Question 3
-		c) Calculate the probability of obtaining exactly 2 sixes when I roll a die 5 times.
-		(4 marks)
-		
-		Repeats 2006
-		(c)              A worker-operated machine produces a defective item with probability 0.01 if the worker follows the machine’s operating instructions exactly, and with probability 0.04 if he does not. If the worker follows the instructions 90% of the time, what is the probability that an item produced by the machine, selected at random, will be defective?
-		
-		
-		
+
 \section{Discrete Random Variables}
 %----------------------------------------------------------%
 \begin{enumerate}
@@ -2488,6 +2603,82 @@ Overview
 2) The Poisson distribution
 3) 
 
+
+
+\subsection*{Section 3 : Probability}
+
+How to Compute Probability: Equally Likely Outcomes
+Sometimes, a statistical experiment can have n possible outcomes, each of which is equally likely. Suppose a subset of r outcomes are classified as "successful" outcomes.
+
+The probability that the experiment results in a successful outcome (S) is:
+
+P(S) = ( Number of successful outcomes ) / ( Total number of equally likely outcomes ) = r / n
+
+Consider the following experiment. An urn has 10 marbles. Two marbles are red, three are green, and five are blue. If an experimenter randomly selects 1 marble from the urn, what is the probability that it will be green?
+
+In this experiment, there are 10 equally likely outcomes, three of which are green marbles. Therefore, the probability of choosing a green marble is 3/10 or 0.30.
+
+\begin{itemize}
+	\item Conditional probability
+	\item Independent events
+	\item Repeated independent events
+\end{itemize}
+
+
+%------------------------------------------------%
+
+\section{Discrete Probability Distributions}
+%--------------------------------------------------------------------------------------%
+{ \Large
+	
+	
+	\begin{itemize}
+		
+		\item Over the next set of lectures, we are now going to look at two important discrete probability distributions
+		
+		\item The first is the \textbf{\emph{binomial}} probability distribution.
+		
+		\item The second is the Poisson probability distribution.
+		
+		\item In \texttt{R}, calculations are performed using the \texttt{binom} family of functions and \texttt{pois} family of functions respectively.
+		
+		\item Now consider an experiment with only two outcomes. Independent repeated trials of such an experiment are
+		called Bernoulli trials, named after the Swiss mathematician Jacob Bernoulli (16541705). \item The term \textbf{\emph{independent
+				trials}} means that the outcome of any trial does not depend on the previous outcomes (such as tossing a coin).
+		\item We will call one of the outcomes the ``success" and the other outcome the ``failure".
+		
+		\item
+		Let $p$ denote the probability of success in a Bernoulli trial, and so $q = 1 - p$ is the probability of failure.
+		A binomial experiment consists of a fixed number of Bernoulli trials. \item A binomial experiment with $n$ trials and
+		probability $p$ of success will be denoted by
+		\[B(n, p)\]
+		\item a probability mass function (pmf) is a function that gives the probability that a 
+		discrete random variable is exactly equal to some value. 
+		\item The probability mass function is often the primary means of defining a discrete probability distribution 
+	\end{itemize}
+}
+\section{The Binomial distribution }
+
+The binomial distribution  is a discrete probability distribution that is applicable as a model for decisionmaking
+situations in which a sampling process can be assumed to conform to a Bernoulli process. A Bernoulli
+process is a sampling process in which
+\begin{itemize}
+\item[(1)] Only two mutually exclusive possible outcomes are possible in each trial, or observation. For
+convenience these are called success and failure.
+\item[(2)] The outcomes in the series of trials, or observations, constitute independent events.
+\item[(3)] The probability of success in each trial, denoted by p, remains constant from trial to trial. That is,
+the process is stationary.
+\end{itemize}
+
+The binomial distribution can be used to determine the probability of obtaining a designated number of
+successes in a Bernoulli process. Three values are required: the designated number of successes (X); the number
+of trials, or observations (n); and the probability of success in each trial (p). Where $q = (1 - p)$, the formula for
+determining the probability of a specific number of successes X for a binomial distribution is
+
+\[ \mbox{Formula} \]
+
+%=========================================================================================%
+\newpage
 \section{Poisson Approximation}
 The Poisson Approximation of the binomial ditribution
 
@@ -2515,81 +2706,41 @@ P(X2) = 1- (0.135+0.27) = 0.595
 
 
 
-\section{Probability Formulae}
+\section{The Hypergeometric Distribution }
+\subsection{Definition}
 
+The following conditions characterize the hypergeometric distribution:
+The result of each draw (the elements of the population being sampled) can be classified into one of two mutually exclusive categories (e.g. Pass/Fail or Female/Male or Employed/Unemployed).
+The probability of a success changes on each draw, as each draw decreases the population (sampling without replacement from a finite population).
+
+A random variable X follows the hypergeometric distribution if its probability mass function (pmf) is given by[1]
+\[ P(X = k) = \frac{\binom{K}{k} \binom{N - K}{n-k}}{\binom{N}{n}},\]
+where
 \begin{itemize}
-	
-	\item Conditional probability:
-	\begin{equation*}
-	P(B|A)=\frac{P\left( A\text{ and }B\right) }{P\left( A\right) }.
-	\end{equation*}
-	
-	
-	\item Bayes' Theorem:
-	\begin{equation*}
-	P(B|A)=\frac{P\left(A|B\right) \times P(B) }{P\left( A\right) }.
-	\end{equation*}
-\end{itemize}
-\subsection*{Section 3 : Probability}
-
-How to Compute Probability: Equally Likely Outcomes
-Sometimes, a statistical experiment can have n possible outcomes, each of which is equally likely. Suppose a subset of r outcomes are classified as "successful" outcomes.
-
-The probability that the experiment results in a successful outcome (S) is:
-
-P(S) = ( Number of successful outcomes ) / ( Total number of equally likely outcomes ) = r / n
-
-Consider the following experiment. An urn has 10 marbles. Two marbles are red, three are green, and five are blue. If an experimenter randomly selects 1 marble from the urn, what is the probability that it will be green?
-
-In this experiment, there are 10 equally likely outcomes, three of which are green marbles. Therefore, the probability of choosing a green marble is 3/10 or 0.30.
-
-\begin{itemize}
-	\item Conditional probability
-	\item Independent events
-	\item Repeated independent events
+	\item N is the population size,
+	\item K is the number of success states in the population,
+	\item n is the number of draws,
+	\item k is the number of observed successes,
+	\item $\textstyle {a \choose b}$ is a binomial coefficient.
 \end{itemize}
 
 
-%------------------------------------------------%
 
-\section{Quantiles}
-
-The quantile (this term was first used by Kendall, 1940) of a distribution of values is a number xp such that a proportion p of the population values are less than or equal to xp. For example, the .25 quantile (also referred to as the 25th percentile or lower quartile) of a variable is a value (xp) such that $25\%$ (p) of the values of the variable fall below that value.
-
-Similarly, the $0.75$ quantile (also referred to as the 75th percentile or upper quartile) is a value such that $75\%$ of the values of the variable fall below that value and is calculated accordingly.
-
-See
+When sampling is done without replacement of each sampled item taken from a finite population of items, the
+Bernoulli process does not apply because there is a systematic change in the probability of success as items are
+removed from the population. 
 
 
-
-%------------------------------%
-\section{Probability Distribution}
-
-A statistical function that describes all the possible values and likelihoods that a random variable can take within a given range. This range will be between the minimum and maximum statistically possible values, but where the possible value is likely to be plotted on the probability distribution depends on a number of factors, including the distributions mean, standard deviation, skewness and kurtosis.
-
-
-
-\section{The binomial distribution }
-
-The binomial distribution  is a discrete probability distribution that is applicable as a model for decisionmaking
-situations in which a sampling process can be assumed to conform to a Bernoulli process. A Bernoulli
-process is a sampling process in which
 \begin{itemize}
-\item[(1)] Only two mutually exclusive possible outcomes are possible in each trial, or observation. For
-convenience these are called success and failure.
-\item[(2)] The outcomes in the series of trials, or observations, constitute independent events.
-\item[(3)] The probability of success in each trial, denoted by p, remains constant from trial to trial. That is,
-the process is stationary.
+	\item	When sampling without replacement is used in a situation that would otherwise
+	qualify as a Bernoulli process, the hypergeometric distribution is the appropriate discrete probability distribution.
+	\item	Given that X is the designated number of successes, N is the total number of items in the population, T is
+	the total number of successes included in the population, and n is the number of items in the sample, the formula
+	for determining hypergeometric probabilities is
 \end{itemize}
 
-The binomial distribution can be used to determine the probability of obtaining a designated number of
-successes in a Bernoulli process. Three values are required: the designated number of successes (X); the number
-of trials, or observations (n); and the probability of success in each trial (p). Where $q = (1 - p)$, the formula for
-determining the probability of a specific number of successes X for a binomial distribution is
 
-\[ \mbox{Formula} \]
-
-
+%=========================================================================================%
 \chapter{Continuous Probability Distributions}
 MathsCast 3 : The Uniform Distribution
 
@@ -2620,7 +2771,34 @@ segments(20,0,20,20,col='red')
 segments(100,0,100,20,col='red')
 
 segments(0,0,0,40)
+\section{Continuous Uniform Distribution}
+A random variable X is called a continuous uniform random variable over the interval $(a,b)$ if it's probability density function is given by
 
+\[ f_{X}(x)  =  { 1 \over b-a}   \hspace{2cm}  \mbox{ when } a \leq x \leq b\]
+
+The corresponding cumulative density function is
+
+\[ F_x(x) = { x-a \over b-a}   \hspace{2cm}  \mbox{ when } a \leq x \leq b\]
+
+
+
+The mean of the continuous uniform distribution is
+
+\[ E(X) = {a+b \over 2}\]
+
+\[ V(X) = {(b-a)^2\over12}\]
+
+
+%================================================================%
+\newpage
+\section*{The Exponential Distribution}
+\subsection*{The Memoryless property}
+The most interesting property of the exponential distribution is the \textbf{\emph{memoryless}} property. By this , we mean that if  the lifetime of a component is exponentially distributed, then an item which has been in use for some time is a good as a brand new item with regards to the likelihood of failure.
+
+The exponential distribution is the only distribution that has this property.
+}
+
+%--------------------------------------------------------%
 \section*{Uniform Distribution: Exercise 24}
 
 Use the uniform distribution to simulate 100 throws of two dice. The outcome is the combined values of both dice. Use the appropriate R command to discretize values.
@@ -2632,7 +2810,7 @@ Use the uniform distribution to simulate 100 throws of two dice. The outcome is 
 
 
 
-\subsection{Example 2}
+\subsection{Normal Distribution : Example 2}
 A machine produces components whose thicknesses are normally
 distributed with a mean of 0.40 cm and a standard deviation of 0.02 cm.
 Components are rejected if they have a thickness outside the range 0.38 cm
@@ -2645,7 +2823,7 @@ exceeding 0.41 cm? (4 marks)
 \item[(iii)] What is the thickness below which 25\% of the components will be? (4 marks)
 \end{itemize}
 %=========================================================== %
-\subsection{Example 3}
+\subsection{Normal Distribution : Example 3}
 A charity believes that when it puts out an appeal for charitable donations the
 donations it receives will normally distributed with a mean £50 and standard
 deviation £6, and it is assumed that donations will be independent of each
@@ -2658,34 +2836,10 @@ other.
 \end{itemize}
 
 
-%------------------------------------------------------------------------------------------------%		\section*{Session 09: Probability}
-\begin{itemize}
-	\item[9B.1] Permutation
-	
-	\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
-	
-	
-	\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
-	
-	
-	\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
-\end{itemize}
 
 
 
-\begin{itemize}
-	\item pairwise disjoint sets
-	\item The addition principle
-\end{itemize}
-\subsection*{Theorem}
-\[ |A \cup B| = |A| + |B| - |A \cap B|  \]
 
-\subsection*{Probability}
-\begin{itemize}
-	\item[9B.2] The sample space of an experiment ($S$)
-	\item[9B.3] The size of a sample space
-	\item[9B.4] Indepedent Evcents (9.3.1)
-\end{itemize}
 %------------------------------------------------%
 
 \chapter{Normal Probability Distribution}
@@ -2923,12 +3077,15 @@ Ha:D> 0    Students have  gained weight through college
 
 N.B. This is a one-tailed test.
 
+%=====================================================================%
+\chapter{Inference Procedures}
 \subsubsection{Test Statistic}
 
 Remember the general structure of a test statistic
 
+\begin{framed}
 \[TS =  \frac{\mbox{Observed Value-Null Value}}{\mbox{Std. Error}} \]
-
+\end{framed}
 
 
 Standard Error		S.E.(D) =SDn=2.1378= 0.7555
@@ -2940,38 +3097,32 @@ Test Statistic		x-0S.E.(D)=2 - 00.755= 2.649
 
 \subsubsection{Critical values}
 
-The sample size (n=8) is small (n30). Use t distribution with n-1 degrees of Freedom.
+\begin{itemize}
+\item The sample size (n=8) is small ($n \leq 30$). Use t distribution with n-1 degrees of Freedom.
+\item The test is one tailed.  k= 1  ( why?  ">" symbol in the alternative hypothesis).
+\item Murdoch Barnes table 7
+\item Column:  $\alpha/k = 0.05/1= 0.05$
+\item Row: df = 7
+\item Critical value =  1.895    
+\end{itemize}
+\subsubsection{Decision rule}
 
+\begin{framed}
+\noindent Is the absolute value of the test statistic value greater than the critical value?
+\begin{itemize}
+\item If Yes: we reject the null hypothesis
 
-The test is one tailed.  k= 1  ( ">" symbol in the alternative hypothesis).
-
-
-Column = k =0.051= 0.05
-
-
-Murdoch Barnes table 7
-
-
-Row: df = 7
-
-Column = 0.05
-
-Critical value =  1.895    
-
-Decision rule
-
-
-Is the test statistic value greater than the critical value?
-
-If Yes: we reject the null hypothesis
-
-If No: We fail to reject the null hypothesis. (not enough evidence)
-
+\item If No: We fail to reject the null hypothesis. (not enough evidence)
+\end{itemize}
+\end{framed}
 
 Here TS = 2.64  is greater than CV = 1.895.
 
-
+\subsubsection{Decision rule}
 We reject the null hypothesis. Students do put on weight during college. 
+
+%==================================================%
+\newpage
 Question 3 Part b : Confidence interval for the difference in means of two samples.
 
 b) The mean and standard deviation of the weights of a sample of Irish students according to sex are given below
@@ -3125,13 +3276,16 @@ Column = 0.025
 
 Critical value =  2.131 
 
+\subsubsection{Decision rule}
 
-Decision rule
-
-
-Is the test statistic value greater than the critical value?
-
-If Yes: we reject the null hypothesis
+\begin{framed}
+	\noindent Is the absolute value of the test statistic value greater than the critical value?
+	\begin{itemize}
+		\item If Yes: we reject the null hypothesis
+		
+		\item If No: We fail to reject the null hypothesis. (not enough evidence)
+	\end{itemize}
+\end{framed}
 
 If No: We fail to reject the null hypothesis. (not enough evidence)
 
@@ -3184,8 +3338,8 @@ Alternatively we write the hypotheses as follows (the null value is more evident
 
 Step 2 Compute the Test Statistic
 
-pIrl=7501000= 0.75 
-pEsp=14002000= 0.70
+\[p_{Irl}= \frac{750}{1000}= 0.75\] 
+\[p_{Esp}= \frac{1400}{2000}= 0.70\]
 
 Observed Difference = 0.75 - 0.70 = 0.05  
 
@@ -3300,11 +3454,6 @@ The amount of beer in a bottle has a normal distribution with mean 500ml and var
 %		\includegraphics[width=1.10\linewidth]{images/Q01}
 %		
 %	\end{figure}
-
-%=========================================================== %
-
-
-% RSS Grad Dip 3 - Question 3B2
 
 
 %----------------------------------------------------------------------------------------------%
