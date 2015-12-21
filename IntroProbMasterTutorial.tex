@@ -73,27 +73,40 @@ For Example
 				\item Zero factorial
 				\[ 0! =  1 \]
 			\end{itemize}
+\section*{Session 09: Probability}
+\begin{itemize}
+	\item[9B.1] Permutation
 	
-	\begin{itemize}
-		\item[9B.1] Permutation
+	\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
+	
+	
+	\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
+	
+	
+	\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
+\end{itemize}
+
+%\begin{multicol}{2}
+\begin{itemize}
+	\item ${6 \choose 2} = 15$
+	\item ${5 \choose 2} = 10$  
+	\item ${4 \choose 0} = 1$  
+	\item ${4 \choose 3} = 4$  
+\end{itemize}
+%\end{multicol}
+
+%============================================== %
+\begin{framed}
 		
 		\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
-		
+		\bigskip
 		
 		\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
 		
-		
+		\bigskip
 		\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
-	\end{itemize}
-	
-	%\begin{multicol}{2}
-	\begin{itemize}
-		\item ${6 \choose 2} = 15$
-		\item ${5 \choose 2} = 10$  
-		\item ${4 \choose 0} = 1$  
-		\item ${4 \choose 3} = 4$  
-	\end{itemize}
-	%\end{multicol}
+		\bigskip
+\end{framed}
 	
 %========================================================= %		
 		
@@ -427,61 +440,7 @@ When implementing combination calculations in \texttt{R}, we use the \texttt{cho
 		\]
 		
 	}
-	MA4704 Tutorial Sheet 2. 
-
-
-Question 1
-
-A doctor treating a patient issues a prescription for antibiotics and provides for two repeat prescriptions. The probability that the infection will be cleared by the first prescription is p1 =0.6. 
-The probability that successive treatments are successful, given that previous prescriptions were not successful are p2 = 0.5, p3 = 0.4. Calculate the probability that  
-   
-1.	the patient is still infected after the third prescription
-2.	the patient is cured by the second prescription.
-3.	the patient is cured by the second prescription, given that the patient is eventually cured.
-
-
-Question 2
-A driver passes through 3 traffic lights. The chance he/she will stop at the first is 1/2 , at the second 1/3 and at the third ¼ independently of what happens at any of the other lights. 
-
-What is the probability that
-4.	the driver makes the whole journey without being stopped at any of the lights
-5.	the driver is only stopped at the first and third lights
-6.	the driver is stopped at just one set of lights.
-7.	the driver stopped at the second set of lights, given he/she stopped at one set of lights.
-
-Question 3
-The masses of 30 human males and 30 arabian stallions were observed. Their masses (in lbs) are given below
-
-Humans
-106, 120, 130, 138, 145, 151, 156, 161, 166, 171
-176, 180, 185, 189, 194, 198, 203, 208, 212, 217
-223, 228, 234, 240, 247, 255, 264, 276, 290, 313
-
-
-
-Stallions
-808, 824, 835, 843, 851, 857, 862, 868, 872, 877
-881, 886, 890, 894, 898, 902, 906, 910, 914, 919
-923, 928, 932, 938, 943, 949, 957, 965, 976, 992
-
-
-a)	Draw histograms for these samples and compare them with respect to shape, centrality and relative dispersion. 
-b)	Calculate the medians of these samples (from the raw data).
-
-
-
-
-Question 4
-
- 
-
-Question 5
-The following data give the marks of 10 students in a test (out of 20 marks). Calculate
-i) the median    ii) the mean     iii) the range    iv) the standard deviation v) The Inter-Quartile Range
-
-12, 17, 7, 11, 18, 6, 14, 15, 11, 9.
-
-
+	
 %======================================================== %
 		%%- \frametitle{Using \texttt{R}}
 		When implementing combination calculations in \texttt{R}, we use the \texttt{choose()} function.
@@ -1065,6 +1024,23 @@ Cumulative Distribution Function $P(Z \leq 1)$ \\ Here the random variable is ca
 
 %--------------------------------------------------------%
 \section*{Session 09: Probability}
+
+\begin{itemize}
+	\item pairwise disjoint sets
+	\item The addition principle
+\end{itemize}
+\subsection*{Theorem}
+\[ |A \cup B| = |A| + |B| - |A \cap B|  \]
+
+
+\subsection*{Probability}
+\begin{itemize}
+	\item[9B.2] The sample space of an experiment ($S$)
+	\item[9B.3] The size of a sample space
+	\item[9B.4] Indepedent Evcents (9.3.1)
+\end{itemize}
+%------------------------------------------------%
+\section*{Session 09: Probability}
 \begin{itemize}
 	\item[9A.1] Counting Methods
 	\item[9A.2] Counting using Sets
@@ -1096,8 +1072,6 @@ Cumulative Distribution Function $P(Z \leq 1)$ \\ Here the random variable is ca
 	\item pairwise disjoint sets
 	\item The addition principle
 \end{itemize}
-\subsection*{Theorem}
-\[ |A \cup B| = |A| + |B| - |A \cap B|  \]
 
 \subsection*{Probability}
 \begin{itemize}
@@ -1412,27 +1386,32 @@ $P(C^{\prime}) = 1- P(C)$
 
 
 
-		\section*{Session 09: Probability}
-		\begin{itemize}
-			\item[9B.1] Permutation
-			
-			\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
-			
-			
-			\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
-			
-			
-			\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
-		\end{itemize}
-		
-		%\begin{multicol}{2}
-		\begin{itemize}
-			\item ${6 \choose 2} = 15$
-			\item ${5 \choose 2} = 10$  
-			\item ${4 \choose 0} = 1$  
-			\item ${4 \choose 3} = 4$  
-		\end{itemize}
-		%\end{multicol}
+\chapter{Probability}
+\Large
+\section{Conditional Probability}
+What is the probability of one event given that another event occurs? For example, what is the probability of a mouse finding the end of the maze, given that it finds the room before the end of the maze?
+
+This is represented as:
+
+
+\[P[A | B]\]
+or "the probability of A given B."
+
+\[P(A | B) = \frac{P(A\cap B)}{P(B)}\]
+
+If A and B are independent of one another, such as with coin tosses or child births, then:
+
+
+\[P[A | B] = P[ A ]\]
+Thus, "what is the probability that the next child a family bears will be a boy, given that the last child is a boy."
+
+This can also be stacked where the probability of A with several "givens."
+
+
+\[P[A | B_1, B_2, B_3 ]\]
+or "the probability of A given that B1, B2, and B3 are true?"
+
+
 		
 		\begin{itemize}
 			\item pairwise disjoint sets
@@ -2043,6 +2022,93 @@ find values of the cdf of a general normal distribution.
 	
 	
 \end{enumerate}
+MA4704 Tutorial Sheet 2. 
+
+
+Question 1
+
+A doctor treating a patient issues a prescription for antibiotics and provides for two repeat prescriptions. The probability that the infection will be cleared by the first prescription is p1 =0.6. 
+The probability that successive treatments are successful, given that previous prescriptions were not successful are p2 = 0.5, p3 = 0.4. Calculate the probability that  
+
+1.	the patient is still infected after the third prescription
+2.	the patient is cured by the second prescription.
+3.	the patient is cured by the second prescription, given that the patient is eventually cured.
+
+
+Question 2
+A driver passes through 3 traffic lights. The chance he/she will stop at the first is 1/2 , at the second 1/3 and at the third ¼ independently of what happens at any of the other lights. 
+
+What is the probability that
+4.	the driver makes the whole journey without being stopped at any of the lights
+5.	the driver is only stopped at the first and third lights
+6.	the driver is stopped at just one set of lights.
+7.	the driver stopped at the second set of lights, given he/she stopped at one set of lights.
+
+Question 3
+The masses of 30 human males and 30 arabian stallions were observed. Their masses (in lbs) are given below
+
+Humans
+106, 120, 130, 138, 145, 151, 156, 161, 166, 171
+176, 180, 185, 189, 194, 198, 203, 208, 212, 217
+223, 228, 234, 240, 247, 255, 264, 276, 290, 313
+
+
+
+Stallions
+808, 824, 835, 843, 851, 857, 862, 868, 872, 877
+881, 886, 890, 894, 898, 902, 906, 910, 914, 919
+923, 928, 932, 938, 943, 949, 957, 965, 976, 992
+
+
+a)	Draw histograms for these samples and compare them with respect to shape, centrality and relative dispersion. 
+b)	Calculate the medians of these samples (from the raw data).
+
+
+%======================================================== %
+
+Question 4
+The following data give the marks of 10 students in a test (out of 20 marks). Calculate
+i) the median    ii) the mean     iii) the range    iv) the standard deviation v) The Inter-Quartile Range
+
+12, 17, 7, 11, 18, 6, 14, 15, 11, 9.
+
+
+%======================================================== %
+
+\section*{Question 1 : Probability Distribution}
+
+\subsection*{Introduction}{\LARGE Consider playing a game in which you are winning when a \textbf{\emph{fair die}} is showing `six'
+	and losing otherwise.}
+\subsection*{Part 1}{\LARGE If you play three such games in a row, find the probability mass function (pmf) of the number
+	X of times you have won.}
+
+{\LARGE
+	\begin{itemize}
+		\item Firstly: what type of probability distribution is this?
+		
+		\item Is this the distribution \textbf{\emph{discrete}} or  \textbf{\emph{continuous}}?
+		
+		\item The outcomes are whole numbers - so the answer is discrete.
+		
+		\item So which type of discrete distribution? (We have two to choose from. See first page of formulae)
+		
+		
+		\item \textbf{Binomial:} characterizing the number of \textbf{\emph{successes}} in a series of \textbf{\emph{$n$ independent trials}}, with the \textbf{\emph{probability of a success}} in each trial being $p$.
+		
+		\item \textbf{Poisson:}  characterizing the \textbf{\emph{number of occurrences}} in a \textbf{\emph{unit space}} (i.e. a unit length, unit area or unit volume, or a unit period in time), where $\lambda$ is the the number of occurrences per unit space.
+		
+	\end{itemize}
+}
+
+
+\subsection{Standardisation Formula}
+
+\begin{equation}
+Z = ( X - \mu ) / \sigma
+\end{equation}
+
+%----------------------------------------------------------------%
+
 		\section*{Complement Rule}
 		
 		%---------------------------------------------- %
@@ -2056,48 +2122,48 @@ find values of the cdf of a general normal distribution.
 		
 		
 		If the probability of C is $70 \%$ then the probability of $C^{\prime}$ is $30\%$
-
-%------------------------------------------------------------%
-{\LARGE
-	%\frametitle{Random Variables}
-	\begin{itemize} \item The outcome of an experiment need not be a number, for example, the outcome when a coin is tossed can be `heads' or `tails'. \item
-		However, we often want to represent outcomes as numbers. \item
-		A \textbf{\emph{random variable}} is a function that associates a unique numerical value with every outcome of an experiment.
-		\item The value of the random variable will vary from trial to trial as the experiment is repeated.
-		\item Numeric values can be assigned to outcomes that are not usually considered numeric. \item For example, we could assign a `head' a value of $0$, and a `tail' a value of $1$, or vice versa.
-	\end{itemize}
-}
-%------------------------------------------------------------%
-{\LARGE
-	%\frametitle{Random Variables}
-	There are two types of random variable - discrete and continuous. The distinction between both types will be important later on in the course.\\ \bigskip
-	
-	\textbf{Examples}
-	\begin{itemize}
-		\item A coin is tossed ten times. The random variable X is the number of tails that are noted.
-		X can only take the values $\{0, 1, ..., 10\}$, so $X$ is a discrete random variable.
-		\item A light bulb is burned until it burns out. The random variable Y is its lifetime in hours.
-		Y can take any positive real value, so Y is a continuous random variable.
-	\end{itemize}
-}
-
-%--------------------------------------------------------------------------------%
-{\LARGE
-	%\frametitle{Discrete Random Variable}
-	\begin{itemize}
-		\item A discrete random variable is one which may take on only a countable number of distinct values such as $\{0, 1, 2, 3, 4, ... \}$.\item Discrete random variables are usually (but not necessarily) counts. \item If a random variable can take only a finite number of distinct values, then it must be discrete. \item Examples of discrete random variables include the number of children in a family, the Friday night attendance at a cinema, the number of patients in a doctor's surgery, the number of defective light bulbs in a box of ten.
-	\end{itemize}
-}
-
-
-%--------------------------------------------------------------------------------%
-{\LARGE
-	%\frametitle{Continuous Random Variable}
-	\begin{itemize} \item
-		A continuous random variable is one which takes an infinite number of possible values. \item Continuous random variables are usually measurements. \item Examples include height, weight, the amount of sugar in an orange, the time required to run a computer simulation. \end{itemize}
-	
-}
-
+		
+		%------------------------------------------------------------%
+		{\LARGE
+			%\frametitle{Random Variables}
+			\begin{itemize} \item The outcome of an experiment need not be a number, for example, the outcome when a coin is tossed can be `heads' or `tails'. \item
+				However, we often want to represent outcomes as numbers. \item
+				A \textbf{\emph{random variable}} is a function that associates a unique numerical value with every outcome of an experiment.
+				\item The value of the random variable will vary from trial to trial as the experiment is repeated.
+				\item Numeric values can be assigned to outcomes that are not usually considered numeric. \item For example, we could assign a `head' a value of $0$, and a `tail' a value of $1$, or vice versa.
+			\end{itemize}
+		}
+		%------------------------------------------------------------%
+		{\LARGE
+			%\frametitle{Random Variables}
+			There are two types of random variable - discrete and continuous. The distinction between both types will be important later on in the course.\\ \bigskip
+			
+			\textbf{Examples}
+			\begin{itemize}
+				\item A coin is tossed ten times. The random variable X is the number of tails that are noted.
+				X can only take the values $\{0, 1, ..., 10\}$, so $X$ is a discrete random variable.
+				\item A light bulb is burned until it burns out. The random variable Y is its lifetime in hours.
+				Y can take any positive real value, so Y is a continuous random variable.
+			\end{itemize}
+		}
+		
+		%--------------------------------------------------------------------------------%
+		{\LARGE
+			%\frametitle{Discrete Random Variable}
+			\begin{itemize}
+				\item A discrete random variable is one which may take on only a countable number of distinct values such as $\{0, 1, 2, 3, 4, ... \}$.\item Discrete random variables are usually (but not necessarily) counts. \item If a random variable can take only a finite number of distinct values, then it must be discrete. \item Examples of discrete random variables include the number of children in a family, the Friday night attendance at a cinema, the number of patients in a doctor's surgery, the number of defective light bulbs in a box of ten.
+			\end{itemize}
+		}
+		
+		
+		%--------------------------------------------------------------------------------%
+		{\LARGE
+			%\frametitle{Continuous Random Variable}
+			\begin{itemize} \item
+				A continuous random variable is one which takes an infinite number of possible values. \item Continuous random variables are usually measurements. \item Examples include height, weight, the amount of sugar in an orange, the time required to run a computer simulation. \end{itemize}
+			
+		}
+		
 		%=================================================================== %
 		
 		
@@ -2175,7 +2241,7 @@ find values of the cdf of a general normal distribution.
 		\end{itemize}
 		
 		
-
+		
 		
 		
 		
@@ -2292,89 +2358,164 @@ find values of the cdf of a general normal distribution.
 		\end{itemize}
 		
 		%=================================================================== %
- 
- MA4004 – Section 1b - Probability Questions
- 
- Repeat 2008
- 
- Spring 2008
- Question 1
- 
- a)   One in 10, 000 people have a particular condition. Given that an individual has this condition, a test for this condition gives a positive result with probability 0.999. Given that an individual does not have this condition, this test gives a positive result with probability 0.001.
- 
- Suppose the individual tested is chosen at random from the population as a whole
- i)                  Calculate the probability that the test result is positive.
- 
- ii)                Calculate the probability that the individual has the condition, given that the result of the test is positive.
- (6 marks)
- 
- Repeats 2007
- 
- a) A company obtains 2000 components/week from supplier A, 2000 components/week from supplier B and 1000 components/week from supplier C. 3% of the components from supplier A are defective, 4% of the components from supplier B and 5% of the components from supplier C.
- 
- i) Calculate the probability that a randomly chosen component is defective.
- 
- ii) Calculate the probability that the component is from supplier A, given that it is not defective.
- (6 marks)
- 
- 2.              c) Calculate the probability of obtaining exactly 3 sixes when I roll a die
- 5 times.
- (4 marks)
- 
- 
- 
- 
- 
- Spring 2007
- 
- a) A company obtains 1500 components/week from supplier A, 1000 components/week from supplier B and 500 components/week from supplier C. 3% of the components from supplier A are defective, 5% of the components from supplier B and 6% of the components from supplier C.
- 
- i) Calculate the probability that a randomly chosen component is defective.
- 
- ii) Calculate the probability that the component is from supplier C, given that it is defective.
- (6 marks)
- Question 3
- c) Calculate the probability of obtaining exactly 2 sixes when I roll a die 5 times.
- (4 marks)
- 
- Repeats 2006
- (c)              A worker-operated machine produces a defective item with probability 0.01 if the worker follows the machine’s operating instructions exactly, and with probability 0.04 if he does not. If the worker follows the instructions 90% of the time, what is the probability that an item produced by the machine, selected at random, will be defective?
- 
- 
- 
-\section*{Question 1 : Probability Distribution}
-
-\subsection*{Introduction}{\LARGE Consider playing a game in which you are winning when a \textbf{\emph{fair die}} is showing `six'
-	and losing otherwise.}
-\subsection*{Part 1}{\LARGE If you play three such games in a row, find the probability mass function (pmf) of the number
-	X of times you have won.}
-
-{\LARGE
+		
+		MA4004 – Section 1b - Probability Questions
+		
+		Repeat 2008
+		
+		Spring 2008
+		Question 1
+		
+		a)   One in 10, 000 people have a particular condition. Given that an individual has this condition, a test for this condition gives a positive result with probability 0.999. Given that an individual does not have this condition, this test gives a positive result with probability 0.001.
+		
+		Suppose the individual tested is chosen at random from the population as a whole
+		i)                  Calculate the probability that the test result is positive.
+		
+		ii)                Calculate the probability that the individual has the condition, given that the result of the test is positive.
+		(6 marks)
+		
+		Repeats 2007
+		
+		a) A company obtains 2000 components/week from supplier A, 2000 components/week from supplier B and 1000 components/week from supplier C. 3% of the components from supplier A are defective, 4% of the components from supplier B and 5% of the components from supplier C.
+		
+		i) Calculate the probability that a randomly chosen component is defective.
+		
+		ii) Calculate the probability that the component is from supplier A, given that it is not defective.
+		(6 marks)
+		
+		2.              c) Calculate the probability of obtaining exactly 3 sixes when I roll a die
+		5 times.
+		(4 marks)
+		
+		
+		
+		
+		
+		Spring 2007
+		
+		a) A company obtains 1500 components/week from supplier A, 1000 components/week from supplier B and 500 components/week from supplier C. 3% of the components from supplier A are defective, 5% of the components from supplier B and 6% of the components from supplier C.
+		
+		i) Calculate the probability that a randomly chosen component is defective.
+		
+		ii) Calculate the probability that the component is from supplier C, given that it is defective.
+		(6 marks)
+		Question 3
+		c) Calculate the probability of obtaining exactly 2 sixes when I roll a die 5 times.
+		(4 marks)
+		
+		Repeats 2006
+		(c)              A worker-operated machine produces a defective item with probability 0.01 if the worker follows the machine’s operating instructions exactly, and with probability 0.04 if he does not. If the worker follows the instructions 90% of the time, what is the probability that an item produced by the machine, selected at random, will be defective?
+		
+		
+		
+\section{Discrete Random Variables}
+%----------------------------------------------------------%
+\begin{enumerate}
+	\item  The probability distribution of discrete random variable $X$ is tabulated below. There are 6 possible outcome of $X$, i.e. 0, 1, 2, 4 ,8 and 10.
+	\begin{center}
+		\begin{tabular}{|c||c|c|c|c|c|c|}
+			\hline
+			$x_i$  & 0 & 1 & 2 & 4 & 8 & 10 \\\hline
+			$P(x_i)$ & 0.25 & 0.15 & 0.25 & 0.15 & k & 0.10\\
+			\hline
+		\end{tabular}
+	\end{center}
+	
 	\begin{itemize}
-		\item Firstly: what type of probability distribution is this?
+		\item[i.] (1 marks) Compute the value for $k$.
+		\item[ii.] (3 marks) Determine the expected value $E(X)$.
+		\item[iii.] (2 marks) Evaluate $E(X^2)$.
+		\item[iv.] (3 marks) Compute the variance of random variable $X$.
+	\end{itemize}
+	%---------------------------------------------------------- %
+	%Question 2
+	\item 
+	Suppose $X$ is a random variable with 
+	\begin{itemize}
+		\item $E(X^2)=3.6$
+		\item $P(X=2)=0.6$
+		\item $P(X=3)=0.1$
+	\end{itemize}
+	
+	\begin{itemize}
+		\item[(a)] The random variable takes just one other value besides 2 and 3. This value is greater than 0. What is this value?
+		\item[(b)] What is the variance of $X$?
+	\end{itemize}
+	
+	
+	%Question 6
+	\item Consider the random variables $X$ and $Y$. Both $X$ and $Y$ take the values 0,$\;$1 and 2. 
+	The joint probabilities for each pair are given by the following table.
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+			\hline  & $X=0$ & $X=1$ & $X=2$ \\ 
+			\hline $Y=0$ & 0.1 & 0.15 & 0.1 \\ 
+			\hline $Y=1$ & 0.1 & 0.1 & 0.1 \\ 
+			\hline $Y=2$ & 0.2 & 0.05 & 0.1 \\ 
+			\hline 
+		\end{tabular} 
+	\end{center}
+	Compute the $E(U)$ expected value of $U$, where $U=X-Y$.
+\end{enumerate}
+\newpage
+{\Large
+	\begin{itemize}
 		
-		\item Is this the distribution \textbf{\emph{discrete}} or  \textbf{\emph{continuous}}?
+		\item Suppose we have a set of \textbf{n} items.
+		\item From that set, we create a subset of \textbf{k} items.
+		\item The \textbf{order} in which items are selected is recorded. (The ordering of selected items is very important.) 
+		\item The total number of \textbf{ordered subsets} of \textbf{k} items chosen from a set of \textbf{n} items is
 		
-		\item The outcomes are whole numbers - so the answer is discrete.
-		
-		\item So which type of discrete distribution? (We have two to choose from. See first page of formulae)
-		
-		
-		\item \textbf{Binomial:} characterizing the number of \textbf{\emph{successes}} in a series of \textbf{\emph{$n$ independent trials}}, with the \textbf{\emph{probability of a success}} in each trial being $p$.
-		
-		\item \textbf{Poisson:}  characterizing the \textbf{\emph{number of occurrences}} in a \textbf{\emph{unit space}} (i.e. a unit length, unit area or unit volume, or a unit period in time), where $\lambda$ is the the number of occurrences per unit space.
-		
+		\[\frac{n!}{n-k!}\]
 	\end{itemize}
 }
+%----------------------------------------------------------------------------------------------------%
 
 
-\subsection{Standardisation Formula}
+An ordered sequence of four digits is formed by choosing digits without
+repetition from the set $\{1, 2, 3, 4, 5, 6, 7\}$ .
 
-\begin{equation}
-Z = ( X - \mu ) / \sigma
-\end{equation}
+\begin{itemize}
+	\item[(i)] the total number of such sequences; (780)
+	\item[(ii)] the number of sequences which begin with an odd number; (480) N(A)
+	\item[(iii)] the number of sequences which end with an odd number; (480) (NB)
+	\item[(iv)] the number of sequences which begin and end with an odd number;(240)
+	\item[(v)] the number of sequneces which begin with an odd number or end with an
+	odd number or both; (720)
+	\item[(vi)] the number of sequences which begin with an odd number or end with an
+	odd number but not both. (480)
+\end{itemize}
 
-%----------------------------------------------------------------%
+%----------------------------------------------------------------------------------------------------%
+
+
+A college teaches a range of courses including maths, physics and IT.
+Students choose a range of courses from these three subject areas. Currently 600
+students are enrolled of whom 300 study maths courses, 120 study IT
+and 380 study physics courses. 
+
+\begin{itemize}
+	\item 40 students study courses from all three subject
+	areas. 
+	\item 200 maths students study physics as well. 60 physics students
+	also study IT and 70 IT students also study maths. 20 students study physics and IT, but not maths.
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------------------%
+
+\begin{itemize}
+	\item How many students study none of these courses at all? (90)
+	
+	\item How many students study maths but not physics or IT? (70)
+	
+	\item How many students study both maths and physics but not IT? (160)
+	
+	\item How many students study courses from precisely two of these subject
+	areas? (210)
+\end{itemize}
+
+%----------------------------------------------------------------------------------------------------%
 
  		\chapter{Discrete Probability Distributions}
 Overview
@@ -3159,159 +3300,85 @@ Because random variations the weight of a filled bag is normally distributed
 $N(\mu, \sigma^2)$. The variance ($\sigma^2$) is known to be 0.01kg$^2$ and $\mu$ is set by the
 operator to a particular value.
 
-(i) If ? = 50kg calculate the probability of a bag containing less than
+\begin{itemize}
+	\item[(i)] If ? = 50kg calculate the probability of a bag containing less than
 49.95kg?
-(ii) Calculate the value of "?" such that only $2\%$ of the output are under the
+	\item[(ii)] Calculate the value of "?" such that only $2\%$ of the output are under the
 nominal weight?
-
-
+\end{itemize}
+%================================================================== %
 
 MA4004     Engineering Statistics    SPRING 2008
 
 
-a)	The amount of beer in a bottle has a normal distribution with mean 500ml and variance 25ml2.
-i)	Calculate the probability that the amount of beer in the bottle is between 498ml and 504ml.
-ii)	What volume is exceeded by $20\%$ of the bottles?
+The amount of beer in a bottle has a normal distribution with mean 500ml and variance 25ml2.
+\begin{itemize}
+\item[(i)]	Calculate the probability that the amount of beer in the bottle is between 498ml and 504ml.
+\item[(ii)]	What volume is exceeded by $20\%$ of the bottles?
 (6 marks)
+\end{itemize}
 
 %--------------------------------------------------------------------------------------%
-
-
-
-
-%---------------------------------%
-
-\subsection{The Standard Normal Distribution}
-
-
-
-\section*{Session 09: Probability}
 	
-		\begin{itemize}
-			\item pairwise disjoint sets
-			\item The addition principle
-		\end{itemize}
-		\subsection*{Theorem}
-		\[ |A \cup B| = |A| + |B| - |A \cap B|  \]
-		
-		\subsection*{Probability}
-		\begin{itemize}
-			\item[9B.2] The sample space of an experiment ($S$)
-			\item[9B.3] The size of a sample space
-			\item[9B.4] Indepedent Evcents (9.3.1)
-		\end{itemize}
-		%------------------------------------------------%
-		\section*{Session 9 Probability}
-
-		
-
-\section{Discrete Random Variables}
-	%----------------------------------------------------------%
-	\begin{enumerate}
-		\item  The probability distribution of discrete random variable $X$ is tabulated below. There are 6 possible outcome of $X$, i.e. 0, 1, 2, 4 ,8 and 10.
-		\begin{center}
-			\begin{tabular}{|c||c|c|c|c|c|c|}
-				\hline
-				$x_i$  & 0 & 1 & 2 & 4 & 8 & 10 \\\hline
-				$P(x_i)$ & 0.25 & 0.15 & 0.25 & 0.15 & k & 0.10\\
-				\hline
-			\end{tabular}
-		\end{center}
-		
-		\begin{itemize}
-			\item[i.] (1 marks) Compute the value for $k$.
-			\item[ii.] (3 marks) Determine the expected value $E(X)$.
-			\item[iii.] (2 marks) Evaluate $E(X^2)$.
-			\item[iv.] (3 marks) Compute the variance of random variable $X$.
-		\end{itemize}
-		%---------------------------------------------------------- %
-		%Question 2
-		\item 
-		Suppose $X$ is a random variable with 
-		\begin{itemize}
-			\item $E(X^2)=3.6$
-			\item $P(X=2)=0.6$
-			\item $P(X=3)=0.1$
-		\end{itemize}
-		
-		\begin{itemize}
-			\item[(a)] The random variable takes just one other value besides 2 and 3. This value is greater than 0. What is this value?
-			\item[(b)] What is the variance of $X$?
-		\end{itemize}
-		
-		
-		%Question 6
-		\item Consider the random variables $X$ and $Y$. Both $X$ and $Y$ take the values 0,$\;$1 and 2. 
-		The joint probabilities for each pair are given by the following table.
-		\begin{center}
-			\begin{tabular}{|c|c|c|c|}
-				\hline  & $X=0$ & $X=1$ & $X=2$ \\ 
-				\hline $Y=0$ & 0.1 & 0.15 & 0.1 \\ 
-				\hline $Y=1$ & 0.1 & 0.1 & 0.1 \\ 
-				\hline $Y=2$ & 0.2 & 0.05 & 0.1 \\ 
-				\hline 
-			\end{tabular} 
-		\end{center}
-		Compute the $E(U)$ expected value of $U$, where $U=X-Y$.
-	\end{enumerate}
-	\newpage
-	{\Large
-		\begin{itemize}
-			
-			\item Suppose we have a set of \textbf{n} items.
-			\item From that set, we create a subset of \textbf{k} items.
-			\item The \textbf{order} in which items are selected is recorded. (The ordering of selected items is very important.) 
-			\item The total number of \textbf{ordered subsets} of \textbf{k} items chosen from a set of \textbf{n} items is
-			
-			\[\frac{n!}{n-k!}\]
-		\end{itemize}
-	}
-	%----------------------------------------------------------------------------------------------------%
+	%%--- http://www.wyzant.com/resources/lessons/math/statistics_and_probability/probability_distributions/joint_probability_distributions
 	
 	
-	An ordered sequence of four digits is formed by choosing digits without
-	repetition from the set $\{1, 2, 3, 4, 5, 6, 7\}$ .
+	A certain farm produces two kinds of eggs on any given day; organic and non-organic. 
+	Let these two kinds of eggs be represented by the random variables X and Y respectively. 
+	Given that the joint probability density function of these variables is given by
+	
 	
 	\begin{itemize}
-		\item[(i)] the total number of such sequences; (780)
-		\item[(ii)] the number of sequences which begin with an odd number; (480) N(A)
-		\item[(iii)] the number of sequences which end with an odd number; (480) (NB)
-		\item[(iv)] the number of sequences which begin and end with an odd number;(240)
-		\item[(v)] the number of sequneces which begin with an odd number or end with an
-		odd number or both; (720)
-		\item[(vi)] the number of sequences which begin with an odd number or end with an
-		odd number but not both. (480)
+		\item[a)] Find the marginal PDF of X
+		
+		\item[b)] Find the marginal PDF of Y
+		
+		\item[c)] Find the $P(X = 1/2, Y = 1/2)$
 	\end{itemize}
+
+%============================================================%
+
+	%http://www.rss.org.uk/Images/PDF/pro-dev/Exam%20past%20papers/Specimen/rss-higher-cert-module2-specimen-a.pdf
+	%Question 2
+%	
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=1.10\linewidth]{images/Q01}
+%		
+%	\end{figure}
+
+%=========================================================== %
+
+
+% RSS Grad Dip 3 - Question 3B2
+
+
+%----------------------------------------------------------------------------------------------%
+
 	
-	%----------------------------------------------------------------------------------------------------%
+	% SPECIMEN A
+	Consider the AR(2) model
 	
 	
-	A college teaches a range of courses including maths, physics and IT.
-	Students choose a range of courses from these three subject areas. Currently 600
-	students are enrolled of whom 300 study maths courses, 120 study IT
-	and 380 study physics courses. 
+	\[Y_t={1\over 3}Y_{t-1}+{1\over 12}Y_{t-2}+ \epsilon_t\]
+	
+	for a process $Y_t$, where {$\epsilon_t$} is a white noise process.($-\infty \leq t \leq \infty$)
 	
 	\begin{itemize}
-		\item 40 students study courses from all three subject
-		areas. 
-		\item 200 maths students study physics as well. 60 physics students
-		also study IT and 70 IT students also study maths. 20 students study physics and IT, but not maths.
+		\item[(i)] Find the roots of the autoregressive characteristic equation and check that the stationarity condition is satisfied.
+		
+		\item[(ii)] Find the Yule-Walker equations that are satisfied by the autocorrelation function t.
+		
+		\item[(iii)] Obtain the value of $\rho_1$.
+
+		\item[(iv)] Show that a general expression for the autocorrelation function is given by
 	\end{itemize}
+	\[\rho_t={35\over 44}{1\over 12}^t +{9\over 44}{-1\over 6}^t
+	\]
 	
-	
-	%----------------------------------------------------------------------------------------------------%
-	
-	\begin{itemize}
-		\item How many students study none of these courses at all? (90)
-		
-		\item How many students study maths but not physics or IT? (70)
-		
-		\item How many students study both maths and physics but not IT? (160)
-		
-		\item How many students study courses from precisely two of these subject
-		areas? (210)
-	\end{itemize}
-	
-	%----------------------------------------------------------------------------------------------------%
-	
+	where $\tau \geq 0$     (9)
+
+
+
+
 \end{document}
