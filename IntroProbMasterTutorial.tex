@@ -109,7 +109,28 @@ For Example
 \end{framed}
 	
 %========================================================= %		
-		
+\begin{itemize}
+	\item[9B.1] Permutation
+	
+	\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
+	
+	
+	\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
+	
+	
+	\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
+\end{itemize}
+
+%============================================================== %
+%\begin{multicol}{2}
+\begin{itemize}
+	\item ${6 \choose 2} = 15$
+	\item ${5 \choose 2} = 10$  
+	\item ${4 \choose 0} = 1$  
+	\item ${4 \choose 3} = 4$  
+\end{itemize}
+%\end{multicol}
+%============================================================== %		
 		\section{Counting Problems}
 		\large
 		\begin{itemize}
@@ -220,7 +241,7 @@ Remark $0! = 1$ not $0$.
 }
 
 %--------------------------------------------------------%
-{\Large
+
 	%%- \frametitle{Example of Combinations}
 	
 	\textbf{Part 1}
@@ -245,7 +266,6 @@ Remark $0! = 1$ not $0$.
 	^3 C_2  = {3!  \over 2! \times1!} =  {3 \times 2!  \over 2! \times 1!} = 3\mbox{ ways.}
 	\]
 	
-}
 
 %============================================================== %
 When implementing combination calculations in \texttt{R}, we use the \texttt{choose()} function.
@@ -311,8 +331,18 @@ When implementing combination calculations in \texttt{R}, we use the \texttt{cho
 	
 	
 	%--------------------------------------------------------%
-	\section{ Combinations and Permutations }
-	
+	\section{Combinations and Permutations }
+
+\begin{itemize}
+	\item factorials 
+	\[ n! = (n)\times (n-1)\times(n-2) \times \ldots \times 1 \]
+	\begin{itemize}
+		\item $5! = 5 \times 4 \times 3 \times 2 \times 1 = 120 $
+		\item $3! = 3 \times 2 \times 1$
+	\end{itemize}
+	\item Zero factorial
+	\[ 0! =  1 \]
+\end{itemize}	
 	%--------------------------------------------------------%
 	{\Large
 		%%- \frametitle{Factorials Numbers}
@@ -364,10 +394,6 @@ When implementing combination calculations in \texttt{R}, we use the \texttt{cho
 		
 		\[ ^n C_k =  {n \choose k} \]
 		
-	}
-	
-	%--------------------------------------------------------%
-	{\Large
 		%%- \frametitle{Example of Combinations}
 		How many ways are there of selecting two items from possible 5?
 		
@@ -376,18 +402,12 @@ When implementing combination calculations in \texttt{R}, we use the \texttt{cho
 		\bigskip
 		Discuss how combinations can be used to compute the number of rugby matches for each group in the Rugby World Cup.
 		
-	}
-	%--------------------------------------------------------%
-	{\Large
 		%%- \frametitle{The Permutation Formula}
 		The number of different permutations of r items from n unique items is written as $^n P_k$
 		
 		
 		\[ ^n P_k = \frac{n!}{(n-k)!}\]
-	}
-	
-	%--------------------------------------------------------%
-	{\Large
+
 		%%- \frametitle{Permutations}
 		\textbf{Example:}
 		How many ways are there of arranging 3 different jobs, between 5 workers, where each worker can only do one job?
@@ -395,12 +415,7 @@ When implementing combination calculations in \texttt{R}, we use the \texttt{cho
 		
 		\[ ^5 P_3 = \frac{5!}{(5-3)!}  = {5! \over 2!} = 60\]
 		
-	}
-	
-	
-	
-	%--------------------------------------------------------%
-	{\Large
+
 		%%- \frametitle{Example of Combinations}
 		
 		A committee of 4 must be chosen from 3 females and 4 males.
@@ -474,23 +489,13 @@ When implementing combination calculations in \texttt{R}, we use the \texttt{cho
 			The probability of two men and two women on a committee is
 			\[ {\mbox{Number of ways of selecting 2 men and 2 women} \over \mbox{Number of ways of selecting 4 from 7}} = {18 \over 35 }\]
 			
-		}
-		%--------------------------------------------------------%
-		{\Large
-			%%- \frametitle{Example of Combinations}
+
 			
 			\textbf{Part 4}
 			\begin{itemize}
 				\item The probability of at least two females is the probability of 2 females or 3 females being selected.
 				\item We can use the addition rule, noting that these are two mutually exclusive events.
 				\item From before we know that probability of 2 females being selected is 18/35.
-			\end{itemize}
-			
-		}
-		%--------------------------------------------------------%
-		{\Large
-
-			\begin{itemize}
 				\item We have to compute the number of ways of selecting 1 male from 4 (4 ways) and the number of ways of selecting three females from 2 ( only 1 way)
 				\item The probability of selecting three females is therefore ${4 \times 1 \over 35} = 4/35$
 				\item So using the addition rule
@@ -501,7 +506,7 @@ When implementing combination calculations in \texttt{R}, we use the \texttt{cho
 		}
 %=========================================================== %
 \newpage		
-		\section*{Combinations and Permutations }
+
 		\section*{Combinations}
 		In mathematical terms, a combination is an subset of items from a larger set such that the order of the items does not matter.
 		
@@ -1023,6 +1028,13 @@ Cumulative Distribution Function $P(Z \leq 1)$ \\ Here the random variable is ca
 }
 
 %--------------------------------------------------------%
+\section{Mutually Exclusive Events}
+Mutually exclusive events are events that cannot happen at the same time.
+\[ P(A and B) = P(A) + P(B) \]
+
+%------------------------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------------------------%
 \section*{Session 09: Probability}
 
 \begin{itemize}
@@ -1039,6 +1051,7 @@ Cumulative Distribution Function $P(Z \leq 1)$ \\ Here the random variable is ca
 	\item[9B.3] The size of a sample space
 	\item[9B.4] Indepedent Evcents (9.3.1)
 \end{itemize}
+%------------------------------------------------%\subsection*{Probability}
 %------------------------------------------------%
 \section*{Session 09: Probability}
 \begin{itemize}
@@ -1047,39 +1060,13 @@ Cumulative Distribution Function $P(Z \leq 1)$ \\ Here the random variable is ca
 	\item[9A.3] Probability
 	\item[9A.4] Independent Events
 \end{itemize}
-\begin{itemize}
-	\item[9B.1] Permutation
-	
-	\[ {n \choose r} = \frac{n!}{(n-r)! r!} \]
-	
-	
-	\[ {6 \choose 3} = \frac{6!}{(6-3)! 3!} = \frac{6!}{3! \times 3!}\]
-	
-	
-	\[ \frac{6!}{3! \times 3!} = \frac{6 \times 5 \times 4 \times 3!}{3! \times 3!} = \frac{120}{6} = 120\]
-\end{itemize}
-
-%\begin{multicol}{2}
-\begin{itemize}
-	\item ${6 \choose 2} = 15$
-	\item ${5 \choose 2} = 10$  
-	\item ${4 \choose 0} = 1$  
-	\item ${4 \choose 3} = 4$  
-\end{itemize}
-%\end{multicol}
 
 \begin{itemize}
 	\item pairwise disjoint sets
 	\item The addition principle
 \end{itemize}
 
-\subsection*{Probability}
-\begin{itemize}
-	\item[9B.2] The sample space of an experiment ($S$)
-	\item[9B.3] The size of a sample space
-	\item[9B.4] Indepedent Evcents (9.3.1)
-\end{itemize}
-%------------------------------------------------%
+
 \section*{Session 9 Probability}
 %------------------------------------------------------------%
 { \Large
@@ -1194,15 +1181,6 @@ A fair coin is tossed until a head or five tails occurs.
 		\item What proportion of outcomes are greater than or equal to 370?\\ (Answer: $16.66\%$)
 	\end{itemize}
 	
-	%--------------------------------------%
-	%=================================================================== %
-	%--------------------------------------%
-	%---------------------------% \frametitle{What is a Histograms}
-	
-	TEXT HERE
-	
-	
-	%--------------------------------------%
 	%=================================================================== %
 	%--------------------------------------%
 	%---------------------------% \frametitle{Histograms}
@@ -1327,17 +1305,6 @@ A fair coin is tossed until a head or five tails occurs.
 	%--------------------------------------%
 	%=================================================================== %
 	
-	\subsection*{Binomial Coefficients}
-\begin{itemize}
-	\item factorials 
-	\[ n! = (n)\times (n-1)\times(n-2) \times \ldots \times 1 \]
-	\begin{itemize}
-		\item $5! = 5 \times 4 \times 3 \times 2 \times 1 = 120 $
-		\item $3! = 3 \times 2 \times 1$
-	\end{itemize}
-	\item Zero factorial
-	\[ 0! =  1 \]
-\end{itemize}
 %---------------------------------------------- %
 
 % \[P(A |B = \frac{P(A \cap B)}{P(B)})\]
@@ -1548,7 +1515,6 @@ or "the probability of A given that B1, B2, and B3 are true?"
 		
 		
 		
-		\newpage
 		\section*{Session 9 Probability}
 
 		%---------------------------------------------- %
@@ -2109,19 +2075,18 @@ Z = ( X - \mu ) / \sigma
 
 %----------------------------------------------------------------%
 
-		\section*{Complement Rule}
+\section*{Complement Rule}
 		
 		%---------------------------------------------- %
 		
-		% \[P(A |B = \frac{P(A \cap B)}{P(B)})\]
+\[P(A |B) = \frac{P(A \cap B)}{P(B)})\]
 		
 		The complement rule in Probability
 		
 		$P(C^{\prime}) = 1- P(C)$
 		
-		
-		
-		If the probability of C is $70 \%$ then the probability of $C^{\prime}$ is $30\%$
+	
+If the probability of C is $70 \%$ then the probability of $C^{\prime}$ is $30\%$
 		
 		%------------------------------------------------------------%
 		{\LARGE
@@ -2528,11 +2493,11 @@ The Poisson Approximation of the binomial ditribution
 
 Example
 
-P(X2) = 1- (0.134+0.27) = 0.596
+\[P(X2) = 1- (0.134+0.27) = 0.596\]
 
-P(X=1) = 2000.010.99199
+\[P(X=1) = 2000.010.99199\]
 
-P(X=1) = 0.270
+\[P(X=1) = 0.270\]
 
 
 Poisson Approximaitions
@@ -2586,13 +2551,7 @@ In this experiment, there are 10 equally likely outcomes, three of which are gre
 
 
 %------------------------------------------------%
-\section{Mutually Exclusive Events}
-Mutually exclusive events are events that cannot happen at the same time.
-\[ P(A and B) = P(A) + P(B) \]
 
-%------------------------------------------------------------------------------------------------%
-%------------------------------------------------------------------------------------------------%
-%------------------------------------------------------------------------------------------------%
 \section{Quantiles}
 
 The quantile (this term was first used by Kendall, 1940) of a distribution of values is a number xp such that a proportion p of the population values are less than or equal to xp. For example, the .25 quantile (also referred to as the 25th percentile or lower quartile) of a variable is a value (xp) such that $25\%$ (p) of the values of the variable fall below that value.
@@ -2685,7 +2644,7 @@ exceeding 0.41 cm? (4 marks)
 0.38 cm and 0.41 cm? (4 marks)
 \item[(iii)] What is the thickness below which 25\% of the components will be? (4 marks)
 \end{itemize}
-
+%=========================================================== %
 \subsection{Example 3}
 A charity believes that when it puts out an appeal for charitable donations the
 donations it receives will normally distributed with a mean £50 and standard
@@ -2746,60 +2705,66 @@ Solution
 
 Let X be mass of Arab horses.
 
-We have to find P(X940).            (Remark "equality component" is included as a formality, but it is not important)
+We have to find $P(X\leq940)$.            (Remark "equality component" is included as a formality, but it is not important)
 
 
 Find the Z value that corresponds to 940 
 
-Zo=Xo-=940 -90050= 0.8
+\[Zo=\frac{Xo-\mu}{\sigma}= \frac{940 -900}{50}= 0.8\]
 
-P(X940) = P(Z0.8) 
+\[P(X \leq 940) = P(Z \leq 0.8) \]
 
 
-From Murdoch Barnes tables 3, we find that  P(Z0.8) = 0.2119
+From Murdoch Barnes tables 3, we find that $P(Z \leq 0.8) = 0.2119$
 
 
 
 Part ii Calculate the probability than an Arab horse weighs between 880 lbs and 960 lbs.
 Solution 
 
-P ( 880X960).
+\[P ( 880 \leq X \leq 960).\]
 
 
 What proportion of horses are between 880 lbs and 960 lbs?
+\begin{itemize}
+\item Find out the probability of the complement event.
+\item The complement event is the combination of being too high  or too low for this interval.
 
-Find out the probability of the complement event.
-The complement event is the combination of being too high  or too low for this interval.
+\item Inside interval $P ( 880 \leq X \leq 960).$
 
-Inside interval P ( 880X960).
+\item Outside interval $P (X \leq 880) + P(X \geq 960)$
 
-Outside interval P (X880) +P(X960)
+\item Complement Rule $P ( 880\leq X \leq 960)  = 1 - [P (X\leq 880) +P(X\geq 960)]$
 
-Complement Rule P ( 880X960)  = 1 - [P (X880) +P(X960)]
+\end{itemize}
 
 
 
 Find the probability of being too high?
 
-Zo=Xo-=960 -90050= 1.2
+\[Zo=\frac{Xo-\mu}{\sigma}= \frac{960 -900}{50}= 1.2\]
 
-P(X960) = P(Z1.2) = 0.1151
+\[P(X \leq 960) = P(Z \leq 1.2) = 0.1151\]
 
 
 Find the probability of being too low?
 Zo=Xo-=880 -90050= -0.4 
 P(X880) = P(Z-0.4)  
 
+%------------------------------------------------------------- %
 How to compute P(Z-0.4)
 
 Symmetry: 	P(Z-0.4) = P(Z0.4) = 0.3446
 
 
-Outside Interval = 0.4596        (0.3446 +  0.1151)
-Inside Interval = 0.5404
+\begin{itemize}
+\item Outside Interval = 0.4596        (0.3446 +  0.1151)
+\item Inside Interval = 0.5404
+\end{itemize}
 
 
 
+%------------------------------------------------------------- %
 What weight is exceeded by 97.5% of Arab horses?
 
 Find Xo  such that P(XXo) = 0.975
@@ -2816,14 +2781,7 @@ P(Z-1.96) = 0.975
 
 Xo= 802 lbs  [Answer]
 
-
-
-
-
-
-
-Question 3 : Hypothesis Testing and Confidence Intervals
-Question 4 : Hypothesis Testing and Confidence Intervals
+%------------------------------------------------------------- %
 
 Important:
 
@@ -2842,7 +2800,7 @@ Confidence intervals are always two tailed
 Sample size   ( degrees of freedom depends on sample size)
 
 
-
+%------------------------------------------------------------- %
 
 Question 3 - Paired T test
 
@@ -2877,9 +2835,9 @@ Year 4
 76
 82
 
-At a significance level of 5%, is there sufficient evidence to state that on average students gain weight over the four years of their university studies?
+At a significance level of 5\%, is there sufficient evidence to state that on average students gain weight over the four years of their university studies?
 
-
+%======================================================= %
 Solution
 
 Before we start, we need to compute the average difference and the standard deviations of the differences. 
@@ -2965,11 +2923,11 @@ Ha:D> 0    Students have  gained weight through college
 
 N.B. This is a one-tailed test.
 
-Test statistic
+\subsubsection{Test Statistic}
 
 Remember the general structure of a test statistic
 
-TS =Observed Value-Null ValueStd. Error 
+\[TS =  \frac{\mbox{Observed Value-Null Value}}{\mbox{Std. Error}} \]
 
 
 
@@ -2980,7 +2938,7 @@ Test statistis is a t random variable
 Test Statistic		x-0S.E.(D)=2 - 00.755= 2.649
 
 
-Critical values
+\subsubsection{Critical values}
 
 The sample size (n=8) is small (n30). Use t distribution with n-1 degrees of Freedom.
 
@@ -3040,12 +2998,15 @@ General Structure of a Confidence Interval
 
 
 
+%------------------------------------------------------------- %
 Observed difference
 
-let X denote the weights of male students    X= 75
-let Y denote the weights of female students  Y= 66
+\begin{itemize}
+\item let X denote the weights of male students    X= 75
+\item let Y denote the weights of female students  Y= 66
+\item The difference in the mean of weights X-Y= 9
+\end{itemize}
 
-The difference in the mean of weights X-Y= 9
 
 Quantile
 
@@ -3073,6 +3034,7 @@ Quantile =  2.576
 
 Stardard Error
 
+%------------------------------------------------------------- %
 
 
 
@@ -3098,6 +3060,7 @@ Since  we do not reject the null hypothesis at a significance level of 1%.
 
 
 
+%------------------------------------------------------------- %
 
 Question 4
 
@@ -3106,11 +3069,12 @@ a) The mean and standard deviation of the salaries of 16 Irish full-time workers
 i)  Test the hypothesis that the mean salary of all Irish full-time workers is €4000 at a significance level of 5%.   (6 marks)
 
 
-
-Step 1 : Formally state the null and alternative hypotheses
-Step 2 : Determine the test statistic
-Step 3 : Determine the critical value
-Step 4 : Decision Rule
+\begin{description}
+\item[Step 1 :] Formally state the null and alternative hypotheses
+\item[Step 2 :] Determine the test statistic
+\item[Step 3 :] Determine the critical value
+\item[Step 4 :] Decision Rule
+\end{description}
 
 
 
@@ -3195,6 +3159,8 @@ i)        By calculating the appropriate p-value, test the hypothesis that the p
 is equal to the proportion of all Spaniards having access to the internet at a significance level of 5%. (8 marks)
 
 
+%================================================================= %
+
 Step 1 : Formally state the null and alternative hypotheses
 
 Step 2 : Determine the test statistic
@@ -3202,6 +3168,7 @@ Step 3a : Determine the p.value
 Step 4a : Decision Rule for p-values.
 
 
+%================================================================= %
 
 Step 1 : Formally state the null and alternative hypotheses
 
@@ -3210,7 +3177,7 @@ Proportion of people having internet access differs in Ireland and Spain
 
 
 Alternatively we write the hypotheses as follows (the null value is more evident).
-
+%================================================================= %
 
 
 
@@ -3243,15 +3210,7 @@ quantile = 2.576
 
 99% Confidence Interval for difference of two proportions
 
-
-
-
-
-
-
-
-
-
+%================================================================= %
 
 
 Useful pieces of information
@@ -3264,6 +3223,7 @@ Sample size  n=100
 
 Part i
 Calculate the equation of the least square regression line and interpret the value of the slope.
+
 part ii
 
 Using this regression model, estimate the mean weight of individuals who are 3 metres tall.
@@ -3274,13 +3234,7 @@ Is such an estimate reliable?  briefly explain why.
 No it is not reliable. Consider the range of values of the x predcitro variable
 
 
-
-
-
-
-
-
-
+%------------------------------------------------------------- %
 
 \section{Normal Distribution: Worked Examples}
 
